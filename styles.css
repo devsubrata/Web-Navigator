@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: #e3f3f3;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
@@ -28,12 +28,13 @@ select {
     outline: 2px solid lightseagreen;
     border: none;
 }
-input {
+#search_term {
     min-width: 300px;
 }
 
 .btns {
     max-width: 400px;
+    margin: 0 auto;
 }
 
 button {
@@ -56,6 +57,66 @@ button:hover {
     background-color: rgb(2, 61, 2);
 }
 
+.searches {
+    text-align: center;
+}
+
 .btns button {
     margin: 2px auto;
+}
+
+#checkboxes {
+    position: relative;
+    border: 2px solid lightseagreen;
+    background-color: #b5e9e9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    column-gap: 5px;
+}
+
+#checkboxes::before {
+    content: "Extensive Search Options"; /* Title text */
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ceebeb;
+    padding: 2px 10px;
+    font-size: 15px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 2px;
+    text-align: center;
+}
+
+@media (max-width: 730px) {
+    #checkboxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 445px) {
+    #checkboxes {
+        padding-top: 20px;
+    }
+    #checkboxes::before {
+        top: -22px;
+    }
+}
+
+#checkboxes input {
+    outline: none;
+}
+
+#generate_link a {
+    display: inline-block;
+    margin: 2px;
+    text-decoration: none;
+    border: 1px solid lightseagreen;
+    padding: 5px;
+    border-radius: 2px;
 }
