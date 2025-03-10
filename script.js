@@ -19,6 +19,7 @@ const dicts = [
     "https://www.ldoceonline.com/dictionary/",
     "https://www.vocabulary.com/dictionary/",
     "https://en.wikipedia.org/wiki/",
+    "https://youglish.com/pronounce/",
 ];
 
 // Populate the select element with options from the object
@@ -52,3 +53,8 @@ document.getElementById("ox_btn").addEventListener("click", (event) => search(di
 document.getElementById("long_btn").addEventListener("click", (event) => search(dicts[3]));
 document.getElementById("vocab_btn").addEventListener("click", (event) => search(dicts[4]));
 document.getElementById("wiki_btn").addEventListener("click", (event) => search(dicts[5]));
+document.getElementById("youglish_btn").addEventListener("click", (event) => {
+    let search_term = document.getElementById("search_term").value;
+    if (!search_term) return;
+    window.open(dicts[6] + search_term + "/english", "_blank");
+});

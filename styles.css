@@ -50,7 +50,12 @@ button:hover {
 
 #clear_btn {
     background-color: green;
+    margin-top: 0;
 }
 #clear_btn:hover {
     background-color: rgb(2, 61, 2);
+}
+
+.btns button {
+    margin: 2px auto;
 }
