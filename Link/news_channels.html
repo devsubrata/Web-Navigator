@@ -3,86 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>News Accents Hub</title>
+        <title>Podcast Listening</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            // Accent channel lists for random navigation
-            const channels = {
-                american: [
-                    "https://www.youtube.com/@CNN",
-                    "https://www.youtube.com/@NBCNews",
-                    "https://www.youtube.com/@ABCNews",
-                    "https://www.youtube.com/@PBSNewsHour",
-                    "https://www.youtube.com/@npr",
-                    "https://www.youtube.com/@VOALearningEnglish",
-                ],
-                british: [
-                    "https://www.youtube.com/@BBCNews",
-                    "https://www.youtube.com/@BBCWorldService",
-                    "https://www.youtube.com/@SkyNews",
-                    "https://www.youtube.com/@guardian",
-                    "https://www.youtube.com/@Channel4News",
-                ],
-                australian: [
-                    "https://www.youtube.com/@ABCNewsInDepth",
-                    "https://www.youtube.com/@abcnewsaustralia",
-                    "https://www.youtube.com/@7news",
-                    "https://www.youtube.com/@SBSNews",
-                ],
-                canadian: ["https://www.youtube.com/@CBCNews", "https://www.youtube.com/@GlobalNews"],
-                global: [
-                    "https://www.youtube.com/@AlJazeeraEnglish",
-                    "https://www.youtube.com/@DWNews",
-                    "https://www.youtube.com/@FRANCE24English",
-                    "https://www.youtube.com/@Quicktake",
-                    "https://www.youtube.com/@Reuters",
-                ],
-                docsGeneral: [
-                    "https://www.youtube.com/@NatGeo",
-                    "https://www.youtube.com/@bbcearth/videos",
-                    "https://www.youtube.com/@VICE",
-                    "https://www.youtube.com/@RealStoriesChannel",
-                    "https://www.youtube.com/@TimelineWorldHistory",
-                    "https://www.youtube.com/@DWDocumentary",
-                ],
-                docsEducation: [
-                    "https://www.youtube.com/@CrashCourse",
-                    "https://www.youtube.com/@TheSchoolOfLife",
-                    "https://www.youtube.com/@Wendoverproductions",
-                    "https://www.youtube.com/@ColdFusion",
-                    "https://www.youtube.com/@PBS",
-                ],
-                docsBusiness: [
-                    "https://www.youtube.com/@business/featured",
-                    "https://www.youtube.com/@BusinessInsider",
-                    "https://www.youtube.com/@TheAtlantic",
-                    "https://www.youtube.com/@BBCDocumentaries",
-                    "https://www.youtube.com/@SmithsonianChannel",
-                ],
-                docsHistory: [
-                    "https://www.youtube.com/@HistoryChannel",
-                    "https://www.youtube.com/@KingsandGenerals",
-                    "https://www.youtube.com/@SimpleHistory",
-                    "https://www.youtube.com/@TheArmchairHistorian",
-                    "https://www.youtube.com/@OverSimplified",
-                    "https://www.youtube.com/@HistoryTime",
-                    "https://www.youtube.com/@FallofCivilizations",
-                ],
-            };
-
-            function surprise(accent) {
-                const list = channels[accent];
-                const url = list[Math.floor(Math.random() * list.length)];
-                window.open(url, "_blank");
-            }
-        </script>
     </head>
-    <body class="bg-gray-100 font-sans p-6">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-4xl font-bold text-center mb-8 text-blue-800">🌍 News Accents Hub</h1>
-            <p class="text-center text-lg text-gray-600 mb-12">
-                Explore English news from around the world by accent — or click “Surprise Me” for a random pick!
+    <body class="bg-gray-50">
+        <!-- 🌟 Navbar -->
+        <nav class="bg-violet-700 text-white shadow-lg sticky top-0 z-50">
+            <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+                <h1 class="text-xl font-bold tracking-wide">🎧 Podcast Hub</h1>
+
+                <ul class="flex space-x-6 text-sm font-medium items-center">
+                    <li><a href="#" class="hover:text-violet-200 transition">Home</a></li>
+                    <li><a href="https://www.bbc.co.uk/learningenglish/index" class="hover:text-violet-200 transition">BBC</a></li>
+                    <li><a href="#" class="hover:text-violet-200 transition">IELTS Listening</a></li>
+
+                    <li class="relative">
+                        <button id="useful-links-btn" class="hover:text-violet-200 transition flex items-center">Useful Links ▾</button>
+
+                        <ul
+                            id="useful-links-menu"
+                            class="absolute left-0 mt-2 py-3 w-48 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 translate-y-1 pointer-events-none transition-all duration-200"
+                        >
+                            <li>
+                                <a href="./reading.html" class="px-4 py-2 rounded-t-lg" target="_blank"> Reading </a>
+                                <span>|</span>
+                                <a href="./listening.html" class="px-4 py-2 rounded-t-lg" target="_blank"> Listening </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.bbc.co.uk/learningenglish"
+                                    class="block px-4 py-2 hover:bg-violet-100 rounded-t-lg"
+                                    target="_blank"
+                                >
+                                    BBC Learning English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bbc.com/audio" class="block px-4 py-2 hover:bg-violet-100" target="_blank">BBC Sounds</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npr.org/podcasts" class="block px-4 py-2 hover:bg-violet-100" target="_blank">NPR Podcasts</a>
+                            </li>
+                            <li>
+                                <a href="https://elllo.org/" class="block px-4 py-2 hover:bg-violet-100 rounded-b-lg" target="_blank"
+                                    >Elllo English Listening</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="hover:text-violet-200 transition">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 📻 Main Section -->
+        <section class="bg-white shadow-xl rounded-2xl p-8 max-w-3xl mx-auto mt-10">
+            <h2 class="text-2xl font-bold text-violet-700 mb-2">🌍 BBC Sounds</h2>
+            <p class="text-gray-600 mb-6">
+                Explore insightful and engaging podcasts from BBC — perfect for improving your English listening skills and discovering stories that
+                inspire real-world change.
             </p>
+
+            <table class="w-full border-separate border-spacing-y-2">
+                <thead>
+                    <tr class="bg-violet-600 text-white">
+                        <th class="py-3 px-4 text-left text-sm font-semibold uppercase rounded-l-lg">BBC Podcast</th>
+                        <th class="py-3 px-4 text-left text-sm font-semibold uppercase rounded-r-lg">Links</th>
+                    </tr>
+                </thead>
+                <tbody id="bbc-podcast-tbody">
+                    <!-- JS will populate rows here -->
+                </tbody>
+            </table>
+        </section>
+        <hr class="my-10 border-t border-gray-300" />
+        <section class="max-w-5xl mx-auto">
+            <h1 class="text-4xl font-bold text-center mt-12 mb-8 text-blue-800">🌍 News Accents Hub</h1>
+            <p class="text-center text-lg text-gray-600 mb-6">Explore English news from around the world by accent</p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Accent Category Card -->
@@ -96,7 +94,6 @@
                         <li><a href="https://www.youtube.com/@npr" target="_blank">NPR</a></li>
                         <li><a href="https://www.youtube.com/@VOALearningEnglish" target="_blank">VOA Learning English</a></li>
                     </ul>
-                    <button onclick="surprise('american')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">🎲 Surprise Me</button>
                 </div>
 
                 <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -108,7 +105,6 @@
                         <li><a href="https://www.youtube.com/@guardian" target="_blank">The Guardian</a></li>
                         <li><a href="https://www.youtube.com/@Channel4News" target="_blank">Channel 4 News</a></li>
                     </ul>
-                    <button onclick="surprise('british')" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">🎲 Surprise Me</button>
                 </div>
 
                 <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -119,9 +115,6 @@
                         <li><a href="https://www.youtube.com/@7news" target="_blank">7NEWS Australia</a></li>
                         <li><a href="https://www.youtube.com/@SBSNews" target="_blank">SBS News</a></li>
                     </ul>
-                    <button onclick="surprise('australian')" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
-                        🎲 Surprise Me
-                    </button>
                 </div>
 
                 <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -130,9 +123,6 @@
                         <li><a href="https://www.youtube.com/@CBCNews" target="_blank">CBC News</a></li>
                         <li><a href="https://www.youtube.com/@GlobalNews" target="_blank">Global News</a></li>
                     </ul>
-                    <button onclick="surprise('canadian')" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-                        🎲 Surprise Me
-                    </button>
                 </div>
 
                 <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -144,16 +134,13 @@
                         <li><a href="https://www.youtube.com/@Quicktake" target="_blank">Bloomberg Quicktake</a></li>
                         <li><a href="https://www.youtube.com/@Reuters" target="_blank">Reuters</a></li>
                     </ul>
-                    <button onclick="surprise('global')" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
-                        🎲 Surprise Me
-                    </button>
                 </div>
             </div>
-            <hr class="my-16 border-t border-gray-300" />
+            <hr class="my-10 border-t border-gray-300" />
             <!-- 🎥 Documentaries Section -->
-            <div class="mt-16">
+            <div class="m-10">
                 <h2 class="text-3xl font-bold text-center text-indigo-700 mb-4">🎥 Documentaries / Educational Channels</h2>
-                <p class="text-center text-gray-600 mb-10">
+                <p class="text-center text-gray-600 mb-6">
                     Explore the world through storytelling, history, science, and more. Great for deep listening practice.
                 </p>
 
@@ -168,9 +155,6 @@
                             <li><a href="https://www.youtube.com/@TimelineWorldHistory" target="_blank">Timeline – World History</a></li>
                             <li><a href="https://www.youtube.com/@DWDocumentary" target="_blank">DW Documentary</a></li>
                         </ul>
-                        <button onclick="surprise('docsGeneral')" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">
-                            🎲 Surprise Me
-                        </button>
                     </div>
 
                     <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -182,9 +166,6 @@
                             <li><a href="https://www.youtube.com/@ColdFusion" target="_blank">ColdFusion</a></li>
                             <li><a href="https://www.youtube.com/@PBS" target="_blank">PBS</a></li>
                         </ul>
-                        <button onclick="surprise('docsEducation')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            🎲 Surprise Me
-                        </button>
                     </div>
 
                     <div class="bg-white shadow-xl rounded-2xl p-6">
@@ -196,9 +177,6 @@
                             <li><a href="https://www.youtube.com/@BBCDocumentaries" target="_blank">BBC Documentary</a></li>
                             <li><a href="https://www.youtube.com/@SmithsonianChannel" target="_blank">Smithsonian Channel</a></li>
                         </ul>
-                        <button onclick="surprise('docsBusiness')" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-                            🎲 Surprise Me
-                        </button>
                     </div>
                     <div class="bg-white shadow-xl rounded-2xl p-6">
                         <h3 class="text-xl font-semibold text-red-700 mb-2">📜 History & Civilization</h3>
@@ -211,12 +189,126 @@
                             <li><a href="https://www.youtube.com/@HistoryTime" target="_blank">History Time</a></li>
                             <li><a href="https://www.youtube.com/@FallofCivilizations" target="_blank">Fall of Civilizations</a></li>
                         </ul>
-                        <button onclick="surprise('docsHistory')" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
-                            🎲 Surprise Me
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- 🧠 Script -->
+        <script>
+            const bbc_podcasts = [
+                {
+                    podcast_name: "BBC Learning English",
+                    links: ["https://www.youtube.com/@bbclearningenglish", "https://www.bbc.co.uk/learningenglish/english/"],
+                },
+                {
+                    podcast_name: "Six Minute English",
+                    links: [
+                        "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+                        "https://www.bbc.co.uk/programmes/p02pc9tn/episodes/downloads",
+                        "https://www.youtube.com/playlist?list=PLcetZ6gSk96-FECmH9l7Vlx5VDigvgZpt",
+                    ],
+                },
+                {
+                    podcast_name: "Learning English from the News",
+                    links: [
+                        "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2025",
+                        "https://www.bbc.co.uk/programmes/p05hw4bq/episodes/downloads",
+                        "https://www.youtube.com/playlist?list=PLcetZ6gSk96-8vlsfui2jrM0CAJ4MfrMT",
+                    ],
+                },
+                {
+                    podcast_name: "Learning English Conversations",
+                    links: [
+                        "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak",
+                        "https://www.bbc.co.uk/programmes/p02pc9zn/episodes/player",
+                        "https://www.bbc.co.uk/programmes/p02pc9zn/episodes/downloads",
+                    ],
+                },
+                {
+                    podcast_name: "Inside Health",
+                    links: ["https://www.bbc.co.uk/programmes/b019dl1b/episodes/downloads"],
+                },
+                {
+                    podcast_name: "People Fixing the World",
+                    links: ["https://www.bbc.co.uk/programmes/p04d42vf", "https://www.bbc.com/audio/series/p04grdbc"],
+                },
+                {
+                    podcast_name: "CrowdScience",
+                    links: ["https://www.bbc.co.uk/programmes/p04d42rc"],
+                },
+                {
+                    podcast_name: "All in the Mind",
+                    links: ["https://www.bbc.co.uk/programmes/b006qxx9"],
+                },
+                {
+                    podcast_name: "Business Daily",
+                    links: ["https://www.bbc.co.uk/programmes/p002vsxs"],
+                },
+                {
+                    podcast_name: "The Food Chain",
+                    links: ["https://www.bbc.co.uk/programmes/p028z2z0"],
+                },
+                {
+                    podcast_name: "Word of Mouth",
+                    links: ["https://www.bbc.co.uk/programmes/b006qtnz"],
+                },
+                {
+                    podcast_name: "The Conversation",
+                    links: ["https://www.bbc.co.uk/programmes/p0290t8h"],
+                },
+            ];
+
+            const bbcPodcastTable = document.getElementById("bbc-podcast-tbody");
+
+            // Generate table rows dynamically
+            bbc_podcasts.forEach((podcast) => {
+                const row = document.createElement("tr");
+                row.className = "bg-violet-50 hover:bg-violet-100 transition shadow-sm rounded-lg";
+
+                // Podcast name
+                const nameCell = document.createElement("td");
+                nameCell.className = "py-3 px-4 text-gray-800 font-medium rounded-l-lg";
+                nameCell.textContent = podcast.podcast_name;
+
+                // Links
+                const linksCell = document.createElement("td");
+                linksCell.className = "py-3 px-4 rounded-r-lg space-x-2";
+
+                podcast.links.forEach((link, index) => {
+                    const a = document.createElement("a");
+                    a.href = link;
+                    a.textContent = `Link ${index + 1}`;
+                    a.className = "inline-block bg-violet-600 text-white px-3 py-1 rounded-full text-sm font-medium hover:bg-violet-700 transition";
+                    linksCell.appendChild(a);
+                });
+
+                row.appendChild(nameCell);
+                row.appendChild(linksCell);
+                bbcPodcastTable.appendChild(row);
+            });
+        </script>
+        <script>
+            const btn = document.getElementById("useful-links-btn");
+            const menu = document.getElementById("useful-links-menu");
+
+            btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("opacity-100");
+                menu.classList.toggle("pointer-events-none");
+                menu.classList.toggle("pointer-events-auto");
+                menu.classList.toggle("translate-y-1");
+                menu.classList.toggle("translate-y-0");
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener("click", () => {
+                if (!menu.classList.contains("opacity-0")) {
+                    menu.classList.add("opacity-0", "pointer-events-none", "translate-y-1");
+                    menu.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                }
+            });
+        </script>
     </body>
 </html>
