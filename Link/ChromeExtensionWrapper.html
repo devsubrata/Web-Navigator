@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chrome Extensions Background</title>
+        <style>
+            body {
+                background-color: #fff;
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+            }
+            #colors-background-div {
+                position: fixed;
+                left: 50%;
+                top: 0%;
+                transform: translate(-50%, -98%); 
+                background: rgba(0, 0, 0, 0.3); 
+                border: 2px solid rgba(0, 0, 0, 0.8);
+                border-top: none;
+                padding: 8px;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-auto-flow: row;
+                gap: 4px;
+                border-radius: 0 0 8px 8px;
+                transition: transform 0.3s ease;
+                z-index: 9999;
+            }
+            #colors-background-div:hover {
+                transform: translate(-50%, 0%); /* slide into view */
+            }
+        </style>
+    </head>
+<body>
+    <!-- <div id="colors-background-div"></div> -->
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+        // pick some icon names you like
+            const iconNames = ['star', 'sun', 'camera', 'rocket', 'globe', 'bird', 'dog', 'butterfly', 'owl'];
+            const idx = Math.floor(Math.random() * iconNames.length);
+            const name = iconNames[idx];
+
+            // build URL for Icons8 public CDN
+            const style = 'ios';          // you could choose another style
+            const size  = 32;             // e.g., 32px
+            // const color = '000000';       // black (#000000)
+            const ext   = 'png';          // or 'svg'
+            // const url   = `https://img.icons8.com/${style}/${size}/${color}/${name}.${ext}`;
+            const url   = `https://img.icons8.com/color/${size}/${name}.${ext}`;
+
+            // remove existing favicon if any
+            const old = document.querySelector("link[rel~='icon']");
+            if (old) old.remove();
+
+            // create new link element
+            const link = document.createElement('link');
+            link.rel  = 'icon';
+            link.type = ext === 'svg' ? 'image/svg+xml' : `image/${ext}`;
+            link.href = url;
+
+            document.head.appendChild(link);
+        });
+
+        const bgcolors = [
+            "#7e9a9a",
+            "#8b8681",
+            "#696468",
+            "#f6d8ac",
+            "#2a6592",
+            "#8ec3eb",
+            "#b5e9e9",
+            "#5c5174",
+            "#66669a",
+            "#aaa7cc",
+            "#926d88",
+            "#be9fbf",
+            "#1F1B24",
+            "#24191d",
+            "#332940",
+            "#702917",
+            "#121212",
+            "#00172D",
+            "#20343D",
+            "#BB86FC",
+            "#3C0466",
+            "#00498D",
+            "#256A2C",
+            "#03DAC5",
+            "#000000",
+            "#FFFFFF",
+            "#FF0000",
+            "#00FF00",
+            "#0000FF",
+            "#FFFF00",
+            "#00FFFF",
+            "#FF00FF",
+        ];
+
+        // const colorsDiv = document.getElementById("colors-background-div");
+        // bgcolors.forEach(color => {
+        //     const colorBox = document.createElement("div");
+        //     colorBox.style.background = color;
+        //     colorBox.style.width = "30px";
+        //     colorBox.style.height = "30px";
+        //     colorBox.style.borderRadius = "6px";
+        //     colorBox.style.cursor = "pointer";
+        //     colorBox.title = color; // tooltip
+
+        //     // Step 3: on click, change body background
+        //     colorBox.onclick = () => {
+        //         document.body.style.backgroundColor = color;
+        //     };
+
+        //     colorsDiv.appendChild(colorBox);
+        // });
+
+        document.body.style.backgroundColor = bgcolors[Math.floor(Math.random() * bgcolors.length)];
+    </script>
+</html>
