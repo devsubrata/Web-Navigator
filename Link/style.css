@@ -69,6 +69,16 @@ nav .nav-link {
     padding: 2px 5px;
     border-radius: 5px;
     color: #fff;
+    transition: background-color 0.4s;
+}
+
+nav .nav-link:hover {
+    background-color: aqua;
+    color: #3d59f4;
+}
+
+nav .nav-link:first-child {
+    border: none;
 }
 
 td:hover {
