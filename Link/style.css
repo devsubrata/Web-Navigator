@@ -113,3 +113,21 @@ td:hover a {
     gap: 5px;
     flex-wrap: wrap;
 }
+.img-navigation button {
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.img-navigation button:hover {
+    background: #ddd;
+}
+.img-wrapper {
+    text-align: center;
+    height: 80vh;
+    overflow-y: auto;
+    border: 2px solid rgb(28, 116, 248);
+    border-radius: 10px;
+}

@@ -28,6 +28,7 @@
                 <tbody>
                     <tr>
                         <td><a href="https://www.bbc.com/future-planet">BBC Future</a></td>
+                        <td><a href="https://www.nhm.ac.uk/discover.html">NHM</a></td>
                         <td><a href="https://www.bbcearth.com/"> BBC Earth</a></td>
                         <td><a href="https://www.sciencedaily.com/">Science Daily</a></td>
                         <td>
@@ -381,6 +382,28 @@
                     <td><a href="https://www.the-scientist.com/">The Scientist</a></td>
                 </tr>
             </table>
+            <div class="img-navigation">
+                <button id="prevImage">◀</button>
+                <button id="nextImage">▶</button>
+            </div>
+            <div class="img-wrapper">
+                <img src="./resource/IELTS Reading Topics.png" />
+            </div>
         </div>
+        <script>
+            let currentImgIndex = 0;
+            const images = ["IELTS Reading Topics.png", "Reading IELTS Articles.png", "IELTS - Strategy.png", "Career.png"];
+            const img = document.querySelector(".img-wrapper img");
+
+            document.getElementById("prevImage").onclick = () => {
+                if (currentImgIndex === 0) return;
+                img.src = `./resource/${images[--currentImgIndex]}`;
+            };
+
+            document.getElementById("nextImage").onclick = () => {
+                if (currentImgIndex === images.length - 1) return;
+                img.src = `./resource/${images[++currentImgIndex]}`;
+            };
+        </script>
     </body>
 </html>
