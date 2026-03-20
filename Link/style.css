@@ -130,4 +130,9 @@ td:hover a {
     overflow-y: auto;
     border: 2px solid rgb(28, 116, 248);
     border-radius: 10px;
+    max-width: 98vw;
+}
+
+.img-wrapper img {
+    object-fit: cover;
 }

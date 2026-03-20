@@ -393,8 +393,17 @@
         </div>
         <script>
             let currentImgIndex = 0;
-            const images = ["IELTS Reading Topics.png", "Reading IELTS Articles.png", "IELTS - Strategy.png", "Career.png"];
+            const images = [
+                "Read ➜ Analysis ➜ Write.png",
+                "Read ➜ Analysis ➜ Write - 2.png",
+                "ExtractPattern.png",
+                "IELTS Reading Topics.png",
+                "Reading IELTS Articles.png",
+                "IELTS - Strategy.png",
+                "Career.png",
+            ];
             const img = document.querySelector(".img-wrapper img");
+            img.src = `./resource/${images[0]}`;
 
             document.getElementById("prevImage").onclick = () => {
                 if (currentImgIndex === 0) return;
