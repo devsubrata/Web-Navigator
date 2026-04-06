@@ -8,10 +8,12 @@
 
     <body>
         <div class="heading">
-            <h1>English Resources</h1>
-            <nav>
+            <nav class="left-nav">
                 <a class="nav-link" href="ChromeExtensionWrapper.html">🏡</a>
                 <a class="nav-link" href="vocabulary.html" title="review vocabs" style="border: none">✍🏻</a>
+            </nav>
+            <h1>English Resources</h1>
+            <nav class="right-nav">
                 <a class="nav-link" href="listening.html">Listening</a>
                 <a class="nav-link" href="news_channels.html">Podcast</a>
                 <a class="nav-link" href="https://archive.is/" target="_blank">archive.is</a>
@@ -35,7 +37,6 @@
                         <td>
                             <a href="https://www.bbc.com/news/science_and_environment">BBC Science & Environment</a>
                         </td>
-                        <td><a href="https://psyche.co/">Psyche</a></td>
                     </tr>
                     <tr>
                         <td><a href="https://www.psychologytoday.com/intl">PsychologyToday</a></td>
@@ -85,7 +86,7 @@
                     </tr>
                     <tr>
                         <td><a href=""></a></td>
-                        <td><a href=""></a></td>
+                        <td><a href="https://psyche.co/">Psyche</a></td>
                         <td class="official">
                             <a href="https://www.telegraph.co.uk/">The Telegraph</a>
                         </td>
@@ -383,37 +384,82 @@
                     <td><a href="https://www.the-scientist.com/">The Scientist</a></td>
                 </tr>
             </table>
+        </div>
+        <div class="image-viewer">
             <div class="img-navigation">
-                <button id="prevImage">◀</button>
-                <button id="nextImage">▶</button>
+                <div>
+                    <button id="prevImage">◀</button>
+                    <span id="imgCount"></span>
+                    <button id="nextImage">▶</button>
+                </div>
+                <div>
+                    <select name="imgCategory" id="imgFolder">
+                        <option value="ReadingArticle" selected>Reading Article</option>
+                        <option value="Motivation">Motivation</option>
+                        <option value="Mix">Mix</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="zoomIn">➕</button>
+                    <button id="zoomOut">➖</button>
+                </div>
             </div>
             <div class="img-wrapper">
-                <img src="./resource/IELTS Reading Topics.png" />
+                <img src="./resource/ReadingArticle/IELTS Reading Topics.png" />
             </div>
         </div>
+        <script src="./resource/imgList.js"></script>
         <script>
             let currentImgIndex = 0;
-            const images = [
-                "Read ➜ Analysis ➜ Write.png",
-                "Read ➜ Analysis ➜ Write - 2.png",
-                "ExtractPattern.png",
-                "IELTS Reading Topics.png",
-                "Reading IELTS Articles.png",
-                "IELTS - Strategy.png",
-                "Career.png",
-            ];
+
+            const imgDirSelect = document.getElementById("imgFolder");
             const img = document.querySelector(".img-wrapper img");
-            img.src = `./resource/${images[0]}`;
+            const imgCount = document.getElementById("imgCount");
 
-            document.getElementById("prevImage").onclick = () => {
-                if (currentImgIndex === 0) return;
-                img.src = `./resource/${images[--currentImgIndex]}`;
-            };
+            imgDirSelect.addEventListener("change", setImageDirectory);
 
-            document.getElementById("nextImage").onclick = () => {
-                if (currentImgIndex === images.length - 1) return;
-                img.src = `./resource/${images[++currentImgIndex]}`;
-            };
+            function setImageDirectory() {
+                let dirName = imgDirSelect.value;
+
+                let imgList;
+                if (dirName === "ReadingArticle") imgList = ReadingArticle;
+                else if (dirName === "Motivation") imgList = Motivation;
+                else imgList = Mix;
+
+                img.src = `./resource/${dirName}/${imgList[0]}`;
+                currentImgIndex = 0;
+                imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+
+                document.getElementById("prevImage").onclick = () => {
+                    if (currentImgIndex === 0) return;
+                    img.src = `./resource/${dirName}/${imgList[--currentImgIndex]}`;
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                };
+
+                document.getElementById("nextImage").onclick = () => {
+                    if (currentImgIndex === imgList.length - 1) return;
+                    img.src = `./resource/${dirName}/${imgList[++currentImgIndex]}`;
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                };
+
+                let scale = 1;
+                const wrapper = document.querySelector(".img-wrapper");
+                const baseWidth = wrapper.offsetWidth;
+
+                document.getElementById("zoomIn").onclick = () => {
+                    scale += 0.1;
+                    // img.style.transform = `scale(${scale})`;
+                    wrapper.style.width = `${baseWidth * scale}px`;
+                };
+
+                document.getElementById("zoomOut").onclick = () => {
+                    scale -= 0.1;
+                    if (scale < 0.3) scale = 0.3;
+                    // img.style.transform = `scale(${scale})`;
+                    wrapper.style.width = `${baseWidth * scale}px`;
+                };
+            }
+            setImageDirectory();
         </script>
     </body>
 </html>
