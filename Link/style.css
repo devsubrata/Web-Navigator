@@ -115,9 +115,6 @@ td:hover a {
 .img-navigation {
     display: inline-flex;
     margin: auto;
-    /* position: relative; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     align-items: center;
     gap: 10px;
     position: sticky;
@@ -127,12 +124,17 @@ td:hover a {
     border-radius: 5px;
 }
 .img-navigation button,
-#imgFolder {
-    padding: 5px 15px;
+#imgFolder,
+#loadedImgList {
+    padding: 5px 10px;
     cursor: pointer;
     outline: none;
     border: none;
     border-radius: 5px;
+}
+.img-navigation .img-nav button {
+    padding: 2px;
+    font-size: 18px;
 }
 
 #imgCount {

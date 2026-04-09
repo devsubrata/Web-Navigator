@@ -72,7 +72,7 @@
 
         <div id="fileNameHeading" class="text-2xl font-bold text-indigo-700 mb-4 text-center"></div>
         <div id="cardsContainer" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
-        <div id="mdFileContainer" class="prose max-w-[1600px] mx-auto mt-6 text-xl"></div>
+        <div id="mdFileContainer" class="prose max-w-[1800px] mx-auto mt-6 text-xl"></div>
 
         <div id="loaderOverlay" class="hidden fixed inset-0 flex items-center justify-center z-50">
             <div class="flex flex-col items-center gap-3">
@@ -89,26 +89,8 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+        <script src="./vocab-data/vocabFileList.js"></script>
         <script>
-            const pdfFiles = [
-                { fileName: "IdeaBank-1.pdf", url: "#" },
-                { fileName: "Basic_VS_Advanced.pdf", url: "https://www.youtube.com/watch?v=HK0VDZvjrfc&list=PLyXE-qp_6NO7yKWP-VcTZFOefqLE7CV-6" },
-                { fileName: "Common Paraphrasing Synonyms.pdf", url: "#" },
-            ];
-            const markDownFile = [
-                { fileName: "TheEnglishWeSpeak - 2025.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-                { fileName: "TheEnglishWeSpeak - 2026.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-                { fileName: "LearnEnglishFromTheNews.md", url: "https://www.bbc.co.uk/programmes/p05hw4bq/episodes/downloads" },
-                { fileName: "SixMinuteEnglish.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-            ];
-            const vocabFiles = [
-                { fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv", url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI" },
-                { fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv", url: "https://www.youtube.com/watch?v=_s1rIKaoAyM" },
-                { fileName: "IELTS most useful vocabulary.csv", url: "#" },
-                { fileName: "Top 300 IELTS Vocabulary.csv", url: "#" },
-                { fileName: "30 IELTS Academic Writing Vocabulary Synonyms for Band 7+.csv", url: "https://www.youtube.com/watch?v=FIfKnfQU8KU" },
-                { fileName: "Common Paraphrasing Synonyms.csv", url: "#" },
-            ];
             let pdfDoc = null;
             let currentPage = 1;
             let scale = 1.2;

@@ -388,43 +388,76 @@
         <div class="image-viewer">
             <div class="img-navigation">
                 <div>
+                    <button id="downloadImage" title="Download loaded script">🡻</button>
+                </div>
+                <div>
                     <button id="prevImage">◀</button>
                     <span id="imgCount"></span>
                     <button id="nextImage">▶</button>
                 </div>
                 <div>
-                    <select name="imgCategory" id="imgFolder">
-                        <option value="ReadingArticle" selected>Reading Article</option>
-                        <option value="Motivation">Motivation</option>
-                        <option value="Mix">Mix</option>
-                    </select>
+                    <select name="imgCategory" id="imgFolder"></select>
+                    <select name="imageList" id="loadedImgList"></select>
                 </div>
                 <div>
                     <button id="zoomIn">➕</button>
                     <button id="zoomOut">➖</button>
+                </div>
+                <div class="img-nav">
+                    <button id="up">⏫</button>
+                    <button id="down">⏬</button>
                 </div>
             </div>
             <div class="img-wrapper">
                 <img src="./resource/ReadingArticle/IELTS Reading Topics.png" />
             </div>
         </div>
+        <script src="./resource/helpfulFn.js"></script>
         <script src="./resource/imgList.js"></script>
         <script>
             let currentImgIndex = 0;
 
             const imgDirSelect = document.getElementById("imgFolder");
+            const loadedImgList = document.getElementById("loadedImgList");
             const img = document.querySelector(".img-wrapper img");
             const imgCount = document.getElementById("imgCount");
+            const imgWrapper = document.querySelector(".img-wrapper");
+
+            categoryList.forEach((t, i) => {
+                const option = document.createElement("option");
+                option.value = t;
+                option.textContent = t;
+                if (i === 0) option.setAttribute("selected", true);
+                imgDirSelect.appendChild(option);
+            });
 
             imgDirSelect.addEventListener("change", setImageDirectory);
+            loadedImgList.addEventListener("change", () => {
+                let dirName = imgDirSelect.value;
+                const selectedName = loadedImgList.value; // no extension
+
+                let imgList = loadedImageList(dirName);
+                let matched = imgList.find((image) => image === selectedName);
+
+                if (matched) {
+                    img.src = `./resource/${dirName}/${matched}`;
+                    currentImgIndex = imgList.findIndex((image) => image === matched);
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                }
+            });
 
             function setImageDirectory() {
                 let dirName = imgDirSelect.value;
+                let imgList = loadedImageList(dirName);
 
-                let imgList;
-                if (dirName === "ReadingArticle") imgList = ReadingArticle;
-                else if (dirName === "Motivation") imgList = Motivation;
-                else imgList = Mix;
+                loadedImgList.innerHTML = "";
+                imgList.forEach((t, i) => {
+                    const option = document.createElement("option");
+                    option.value = t;
+                    option.textContent = getImageName(t);
+                    if (i === 0) option.setAttribute("selected", true);
+                    loadedImgList.appendChild(option);
+                });
 
                 img.src = `./resource/${dirName}/${imgList[0]}`;
                 currentImgIndex = 0;
@@ -434,12 +467,14 @@
                     if (currentImgIndex === 0) return;
                     img.src = `./resource/${dirName}/${imgList[--currentImgIndex]}`;
                     imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                    loadedImgList.value = imgList[currentImgIndex];
                 };
 
                 document.getElementById("nextImage").onclick = () => {
                     if (currentImgIndex === imgList.length - 1) return;
                     img.src = `./resource/${dirName}/${imgList[++currentImgIndex]}`;
                     imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                    loadedImgList.value = imgList[currentImgIndex];
                 };
 
                 let scale = 1;
@@ -447,19 +482,25 @@
                 const baseWidth = wrapper.offsetWidth;
 
                 document.getElementById("zoomIn").onclick = () => {
-                    scale += 0.1;
-                    // img.style.transform = `scale(${scale})`;
+                    scale += 0.05;
                     wrapper.style.width = `${baseWidth * scale}px`;
                 };
 
                 document.getElementById("zoomOut").onclick = () => {
-                    scale -= 0.1;
+                    scale -= 0.05;
                     if (scale < 0.3) scale = 0.3;
-                    // img.style.transform = `scale(${scale})`;
                     wrapper.style.width = `${baseWidth * scale}px`;
                 };
             }
             setImageDirectory();
+
+            document.getElementById("up").onclick = () => {
+                imgWrapper.scrollTo({ top: 0, behavior: "smooth" });
+            };
+            document.getElementById("down").onclick = () => {
+                imgWrapper.scrollTo({ top: imgWrapper.scrollHeight, behavior: "smooth" });
+            };
+            document.getElementById("downloadImage").onclick = () => downloadImage(img);
         </script>
     </body>
 </html>
