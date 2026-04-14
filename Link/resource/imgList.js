@@ -1,7 +1,8 @@
-const categoryList = ["ReadingArticle", "GRA", "Motivation", "Mix"];
+const categoryList = ["ReadingArticle", "GRA", "GrammarTopics", "Motivation", "Mix"];
 
 const ReadingArticle = [
     "Read ➜ Analysis ➜ Write.png",
+	"Types of Clause.jpg",
     "Read ➜ Analysis ➜ Write - 2.png",
     "ExtractPattern.png",
     "IELTS Reading Topics.png",
@@ -25,11 +26,21 @@ const GRA = [
     "Writing improvement.png",
 ];
 
+const GrammarTopics = [
+    "Adjective Clauses (Understanding, pearson).png",
+    "Adverb Clauses (Understanding, pearson).png",
+	"Adverbial clauses (Cambridge Adv & Vocab).jpg",
+    "Noun Clause (Grammar in Context level-3, 7th edition).png",
+    "Noun Clause (Understanding, pearson).png",
+    "Noun Phrase (EnglishForToday).png",
+];
+
 const Mix = ["Career.png", "IELTS - Strategy.png"];
 
 function loadedImageList(dirName) {
     if (dirName === "ReadingArticle") return ReadingArticle;
     else if (dirName === "Motivation") return Motivation;
     else if (dirName === "GRA") return GRA;
+    else if (dirName === "GrammarTopics") return GrammarTopics;
     else return Mix;
 }

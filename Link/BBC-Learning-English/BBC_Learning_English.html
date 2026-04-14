@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BBC Learning English</title>
+        <style>
+            body {
+                padding: 0 0 50px 0;
+            }
+            .VocabBtn,
+            #programSelection {
+                padding: 10px 15px;
+                border: 3px solid #80deea;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.8);
+                color: #007c91;
+                font-size: 20px;
+                cursor: pointer;
+                outline: none;
+                padding-right: 30px;
+            }
+            .VocabBtn {
+                text-decoration: none;
+            }
+            .heading {
+                text-align: center;
+                font-size: 35px;
+                color: #6601ff;
+                font-family: "Open sans", serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="heading">Welcome To Learning English With BBC</h2>
+        <div style="text-align: center; margin: 20px">
+            <a href="../vocabulary.html" class="VocabBtn">Vocab Page</a>
+            <select name="programList" id="programSelection">
+                <option value="">Select a program</option>
+            </select>
+        </div>
+        <div
+            class="container"
+            style="text-align: center; display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; align-items: center"
+        ></div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"
+            integrity="sha512-z8IYLHO8bTgFqj+yrPyIJnzBDf7DDhWwiEsk4sY+Oe6J2M+WQequeGS7qioI5vT6rXgVRb4K1UVQC5ER7MKzKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="BBC-Learning-English-Resources.js"></script>
+        <script src="BBC-Learning-English.js"></script>
+    </body>
+</html>

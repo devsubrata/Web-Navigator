@@ -9,9 +9,6 @@ const markDownFile = [
     { fileName: "TheEnglishWeSpeak-2026.md", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
     { fileName: "LearnEnglishFromTheNews.md", url: "https://www.bbc.co.uk/programmes/p05hw4bq/episodes/downloads" },
     { fileName: "SixMinuteEnglish-2024.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-    { fileName: "SME-Podcast-2024.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-    { fileName: "SME-Podcast-2025.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
-    { fileName: "SME-Podcast-2026.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
     { fileName: "SixMinuteEnglish.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
 ];
 const vocabFiles = [
