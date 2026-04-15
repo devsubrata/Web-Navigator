@@ -6,7 +6,7 @@
         <title>BBC Learning English</title>
         <style>
             body {
-                padding: 0 0 50px 0;
+                padding: 0 10px 50px 10px;
             }
             .VocabBtn,
             #programSelection {
@@ -22,22 +22,65 @@
             }
             .VocabBtn {
                 text-decoration: none;
+                margin-bottom: 5px;
+                display: inline-block;
             }
             .heading {
-                text-align: center;
                 font-size: 35px;
-                color: #6601ff;
-                font-family: "Open sans", serif;
+                font-weight: bold;
+                text-align: center;
+                color: #a713ec;
+                text-shadow:
+                    0 0 10px rgba(0, 150, 255, 0.8),
+                    0 0 20px rgba(0, 150, 255, 0.6);
+                margin-bottom: 10px;
             }
+
+            .full-program-name {
+                font-size: 24px;
+                text-align: center;
+                color: #016b31;
+                border-top: 3px solid rgba(187, 2, 94, 0.747);
+                border-bottom: 3px solid rgba(187, 2, 94, 0.747);
+                display: inline-block;
+                padding: 3px 20px;
+                margin-top: 10px;
+            }
+            .nav-btns button {
+                position: fixed;
+                left: 5px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: none;
+                font-size: 20px;
+                margin: 0;
+                padding: 0;
+            }
+            .nav-btns .go-up {
+                top: 95vh;
+            }
+            .nav-btns .go-down {
+                top: 10px;
+            }
+
         </style>
     </head>
     <body>
-        <h2 class="heading">Welcome To Learning English With BBC</h2>
-        <div style="text-align: center; margin: 20px">
+        <h1 class="heading">Welcome To Learning English With BBC</h1>
+        <div style="text-align: center; margin-top: 10px">
             <a href="../vocabulary.html" class="VocabBtn">Vocab Page</a>
             <select name="programList" id="programSelection">
                 <option value="">Select a program</option>
             </select>
+            <div class="nav-btns">
+                <button class="go-up" >⏫</button>
+                <button class="go-down">⏬</button>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 0">
+            <h2 class="full-program-name"></h2>
         </div>
         <div
             class="container"

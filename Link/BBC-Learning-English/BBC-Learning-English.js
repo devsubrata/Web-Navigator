@@ -20,6 +20,7 @@ programName.forEach((program, i) => {
     const option = document.createElement("option");
     option.value = i;
     option.textContent = program;
+    if (i === 0) option.setAttribute("selected", true);
     programSelection.appendChild(option);
 });
 
@@ -63,9 +64,11 @@ function loadProgramData(programData) {
     addAllEventListeners();
 }
 loadProgramData(programList[0]);
+document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[0]} | Episodes: ${programList[0].length}`;
 
 programSelection.addEventListener("change", () => {
     let programIndex = programSelection.value;
+    document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[programIndex]} | Episodes: ${programList[programIndex].length}`;
     loadProgramData(programList[programIndex]);
 });
 
@@ -218,4 +221,15 @@ function addAllEventListeners() {
             }
         };
     });
+}
+
+document.querySelector(".nav-btns .go-up").onclick = () => scrollWindow("up");
+document.querySelector(".nav-btns .go-down").onclick = () => scrollWindow("down");
+
+function scrollWindow(direction) {
+    if (direction === "down") {
+        window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+    } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 }
