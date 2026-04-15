@@ -1,2 +1,5 @@
 playground/
-.vscode
+.vscode/
+node_modules/
+.env
+*.log

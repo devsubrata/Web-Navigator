@@ -1,19 +1,4 @@
 const { PDFDocument } = PDFLib;
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const colorSet1 = [
-    "#DCDCF0",
-    "#C8E6F0",
-    "#E8FFF0",
-    "#FFEDE5",
-    "#E0F8E0",
-    "#E0F0FA",
-    "#FFD9D3",
-    "#D0F8F8",
-    "#ECECD0",
-    "#F8E0EC",
-    "#FFF5D5",
-    "#C0F0F0",
-];
 
 const programSelection = document.getElementById("programSelection");
 programName.forEach((program, i) => {
@@ -26,7 +11,8 @@ programName.forEach((program, i) => {
 
 function createCard(card) {
     const btnCSS = "background: none; border: none; cursor: pointer; margin:0; padding:0;";
-    const btnCSS2 = "margin-top:5px; border: 1px solid #888; border-radius: 5px; cursor: pointer; padding: 3px 5px";
+    const btnCSS2 =
+        "margin-top:5px; background: #eee; border: 1px solid rgba(210, 215, 211, 0.9); border-radius: 5px; cursor: pointer; padding: 3px 5px";
     return `
         <div style='margin: 0; text-align: center; padding: 10px; background:${card.cardBg}; display: inline-flex; flex-direction: column; align-items: center; border-radius: 10px;  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);'>
             <span style='font-size: 15px; color: black; font-weight: bold; display: block;'>
@@ -43,7 +29,8 @@ function createCard(card) {
                 <button style="${btnCSS}" title="Download Audio" class="download-audio" data-audio="${encodeURIComponent(JSON.stringify(card))}">🎶</button>
                 <button style="${btnCSS}" title="Download Transcripts" class="download-transcript" data-transcript="${encodeURIComponent(JSON.stringify(card))}">📋</button>
                 <button style="${btnCSS}" title="Copy Card Image" class="copy-image" data-img="${encodeURIComponent(JSON.stringify(card))}">🖼️</button>
-                <button style="${btnCSS2}" title="load on player" class="loadon-player" data-audio="${encodeURIComponent(JSON.stringify(card))}">Load</button>
+                <button style="${btnCSS2}" title="load on player" class="load-on-player" data-audio="${encodeURIComponent(JSON.stringify(card))}">Load</button>
+                <button style="${btnCSS2}" title="load on play list" class="load-on-playlist" data-audio="${encodeURIComponent(JSON.stringify(card))}">LoadOnList</button>
             </div>
         </div>
     `;
@@ -51,14 +38,18 @@ function createCard(card) {
 
 function loadProgramData(programData) {
     let html = ``;
+    const colorSetIndex = Math.floor(Math.random() * colorSets.length);
+
     programData.forEach((episode) => {
         let monthIndex = 0;
         months.forEach((month, i) => {
             if (episode.episode.includes(month)) monthIndex = i;
         });
-        let cardBg = colorSet1[monthIndex];
+
+        let cardBg = colorSets[colorSetIndex][monthIndex];
         html += createCard({ ...episode, cardBg });
     });
+
     const container = document.querySelector(".container");
     container.innerHTML = html;
     addAllEventListeners();
@@ -118,7 +109,7 @@ function addAllEventListeners() {
         };
     });
 
-    document.querySelectorAll(".loadon-player").forEach((btn) => {
+    document.querySelectorAll(".load-on-player").forEach((btn) => {
         btn.onclick = async () => {
             const data = JSON.parse(decodeURIComponent(btn.dataset.audio));
             try {
@@ -127,6 +118,34 @@ function addAllEventListeners() {
                     player.innerHTML = `<source src="${data.audioLink}" type="audio/mpeg">`;
                     player.load(); // important!
                     player.play();
+                }
+            } catch (err) {
+                console.error("Loading failed", err);
+            }
+        };
+    });
+    document.querySelectorAll(".load-on-playlist").forEach((btn) => {
+        btn.onclick = async () => {
+            try {
+                const player = document.getElementById("audioPlayer");
+                if (player) {
+                    const data = JSON.parse(decodeURIComponent(btn.dataset.audio));
+
+                    const part1 = data.episode.split(" ")[1].trim();
+                    const part2 = data.type;
+                    const part3 = data.title;
+                    const filename = `${part1}_${part2} ➜ ${part3}.mp3`;
+
+                    const audioLink = data.audioLink;
+
+                    window.dispatchEvent(
+                        new CustomEvent("ADD_ONLINE_AUDIO", {
+                            detail: {
+                                filename,
+                                audioLink,
+                            },
+                        }),
+                    ); // 🔥 ADD to playlist instead of play directly
                 }
             } catch (err) {
                 console.error("Loading failed", err);
