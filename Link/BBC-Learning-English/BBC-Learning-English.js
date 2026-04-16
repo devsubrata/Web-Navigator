@@ -1,7 +1,7 @@
 const { PDFDocument } = PDFLib;
 
 const programSelection = document.getElementById("programSelection");
-programName.forEach((program, i) => {
+programmeNames.forEach((program, i) => {
     const option = document.createElement("option");
     option.value = i;
     option.textContent = program;
@@ -36,16 +36,17 @@ function createCard(card) {
     `;
 }
 
+let sorted = true;
+
 function loadProgramData(programData) {
+    if (!sorted) programData = [...programData].reverse();
+
     let html = ``;
     const colorSetIndex = Math.floor(Math.random() * colorSets.length);
+    console.log(colorSetIndex);
 
     programData.forEach((episode) => {
-        let monthIndex = 0;
-        months.forEach((month, i) => {
-            if (episode.episode.includes(month)) monthIndex = i;
-        });
-
+        let monthIndex = parseInt(episode.episode.split(" ")[1].slice(2, 4));
         let cardBg = colorSets[colorSetIndex][monthIndex];
         html += createCard({ ...episode, cardBg });
     });
@@ -54,14 +55,21 @@ function loadProgramData(programData) {
     container.innerHTML = html;
     addAllEventListeners();
 }
-loadProgramData(programList[0]);
-document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[0]} | Episodes: ${programList[0].length}`;
+loadProgramData(programmesList[0]);
+document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[0]} | Episodes: ${programmesList[0].length}`;
 
-programSelection.addEventListener("change", () => {
+function selectProgramData() {
     let programIndex = programSelection.value;
-    document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[programIndex]} | Episodes: ${programList[programIndex].length}`;
-    loadProgramData(programList[programIndex]);
-});
+    document.querySelector(".full-program-name").textContent =
+        `${fullProgrammeNames[programIndex]} | Episodes: ${programmesList[programIndex].length}`;
+    loadProgramData(programmesList[programIndex]);
+}
+
+programSelection.addEventListener("change", selectProgramData);
+document.getElementById("sort-btn").onclick = () => {
+    sorted = !sorted;
+    selectProgramData();
+};
 
 function createFilename(obj) {
     const part1 = obj.episode.split(" ")[1].trim();

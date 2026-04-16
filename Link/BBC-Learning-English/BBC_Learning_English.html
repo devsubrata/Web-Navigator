@@ -45,7 +45,6 @@
                 display: inline-block;
                 padding: 3px 20px;
                 margin: 10px 0 25px 0;
-
             }
             .nav-btns button {
                 position: fixed;
@@ -65,7 +64,13 @@
             .nav-btns .go-down {
                 top: 10px;
             }
-
+            #sort-btn {
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 25px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -75,10 +80,10 @@
             <select name="programList" id="programSelection">
                 <option value="">Select a program</option>
             </select>
+            <button id="sort-btn" title="sort cards with date">🥪</button>
             <div class="nav-btns">
-                <button class="go-up" >⏫</button>
+                <button class="go-up">⏫</button>
                 <button class="go-down">⏬</button>
-            </div>
             </div>
         </div>
         <div style="text-align: center; margin: 0">
