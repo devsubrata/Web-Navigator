@@ -43,7 +43,7 @@ function loadProgramData(programData) {
 
     let html = ``;
     const colorSetIndex = Math.floor(Math.random() * colorSets.length);
-    console.log(colorSetIndex);
+    console.log("color set: ", colorSetIndex + 1);
 
     programData.forEach((episode) => {
         let monthIndex = parseInt(episode.episode.split(" ")[1].slice(2, 4));
