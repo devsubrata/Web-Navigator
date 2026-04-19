@@ -2,6 +2,7 @@ const pdfFiles = [
     { fileName: "IdeaBank-1.pdf", url: "#" },
     { fileName: "Basic_VS_Advanced.pdf", url: "https://www.youtube.com/watch?v=HK0VDZvjrfc&list=PLyXE-qp_6NO7yKWP-VcTZFOefqLE7CV-6" },
     { fileName: "Common Paraphrasing Synonyms.pdf", url: "#" },
+    { fileName: "50-Synonyms-That-Actually-Boost-Your-Score-2.pdf", url: "#" },
 ];
 const markDownFile = [
     { fileName: "TheEnglishWeSpeak-2024.md", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },

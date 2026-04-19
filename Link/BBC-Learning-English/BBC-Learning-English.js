@@ -56,12 +56,19 @@ function loadProgramData(programData) {
     addAllEventListeners();
 }
 loadProgramData(programmesList[0]);
-document.querySelector(".full-program-name").textContent = `${fullProgrammeNames[0]} | Episodes: ${programmesList[0].length}`;
+document.querySelector(".full-program-name").innerHTML = `<a target="_blank" style="text-decoration: none;" href="${programmesURL[0]}">
+        ${fullProgrammeNames[0]}
+    </a> 
+    <br> Episodes: ${programmesList[0].length}
+    `;
 
 function selectProgramData() {
     let programIndex = programSelection.value;
-    document.querySelector(".full-program-name").textContent =
-        `${fullProgrammeNames[programIndex]} | Episodes: ${programmesList[programIndex].length}`;
+    document.querySelector(".full-program-name").innerHTML = `<a target="_blank" style="text-decoration: none;" href="${programmesURL[programIndex]}">
+            ${fullProgrammeNames[programIndex]}
+        </a> 
+        <br> Episodes: ${programmesList[programIndex].length}
+        `;
     loadProgramData(programmesList[programIndex]);
 }
 
