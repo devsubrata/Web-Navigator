@@ -19,4 +19,8 @@ const vocabFiles = [
     { fileName: "Top 300 IELTS Vocabulary.csv", url: "#" },
     { fileName: "30 IELTS Academic Writing Vocabulary Synonyms for Band 7+.csv", url: "https://www.youtube.com/watch?v=FIfKnfQU8KU" },
     { fileName: "Common Paraphrasing Synonyms.csv", url: "#" },
+    { fileName: "Synonyms-1(SW).csv", url: "#" },
+    { fileName: "PhrasalVerbs.csv", url: "#" },
+    { fileName: "Idioms.csv", url: "#" },
+    { fileName: "Categorized-words.csv", url: "#" },
 ];

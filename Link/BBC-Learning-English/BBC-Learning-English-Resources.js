@@ -4210,6 +4210,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260413",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260420_tews_can't_see_the_wood_for_the_trees_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0n67gg5.jpg",
+        episode: "Episode 260420 / 20 Apr 2026",
+        title: "Can't see the wood for the trees ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260420_tews_can't_see_the_wood_for_the_trees_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260420",
+    },
 ];
 
 const LEFTN2026 = [
