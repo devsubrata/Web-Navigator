@@ -359,26 +359,90 @@
                 `;
 
                 if (isDetailed) {
-                    // New detailed format
-                    const items = line.split("|").map((s) => s.trim());
+                    if (line.startsWith("BBC")) {
+                        const items = line.split("|").map((s) => s.trim());
+
+                        const headItems = items[0].split(";");
+                        const [head, episodeURL, audioURL] = [headItems[0].slice(4).trim(), headItems[1].trim(), headItems[2].trim()];
+                        const details = items.slice(1);
+                        console.log(head, episodeURL, audioURL);
+
+                        card.innerHTML = `
+                            <div class="relative">
+                                <span class="
+                                    absolute -top-3 -left-3
+                                    w-8 h-8 flex items-center justify-center
+                                    rounded-full bg-indigo-400 text-white
+                                    text-sm font-semibold shadow-md
+                                ">
+                                    ${sl + 1}
+                                </span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-indigo-700 mb-3 text-center">
+                                <a href="${episodeURL}" target="_blank">${head}</a>
+                            </h2>
+                            <div class="my-3 h-[3px] bg-gradient-to-r from-transparent via-orange-800 to-transparent"></div>
+                            <div class="flex justify-center mb-2">
+                                <audio controls=""><source src="${audioURL}" type="audio/mpeg"></audio>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                ${details.map((d) => formatDetail(d)).join("")}
+                            </div>
+                        `;
+                    } else {
+                        // New detailed format
+                        const items = line.split("|").map((s) => s.trim());
+                        const head = items[0];
+                        const details = items.slice(1);
+
+                        card.innerHTML = `
+                            <div class="relative">
+                                <span class="
+                                    absolute -top-3 -left-3
+                                    w-8 h-8 flex items-center justify-center
+                                    rounded-full bg-indigo-400 text-white
+                                    text-sm font-semibold shadow-md
+                                ">
+                                    ${sl + 1}
+                                </span>
+                            </div>
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-3 text-center">${head}</h2>
+                            <div class="my-3 h-[3px] bg-gradient-to-r from-transparent via-orange-800 to-transparent"></div>
+                            <div class="flex flex-col gap-2">
+                                ${details.map((d) => formatDetail(d)).join("")}
+                            </div>
+                        `;
+                    }
+                } else if (line.includes(";")) {
+                    const items = line.split(";").map((i) => i.trim());
+
                     const head = items[0];
-                    const details = items.slice(1);
+                    const synonyms = items.slice(1);
+
+                    const bullets = ["✦&nbsp;", "🕷️", "★&nbsp;", "🪰", "⭐", "❀&nbsp;"];
+                    const bullet = bullets[Math.floor(Math.random() * bullets.length)];
 
                     card.innerHTML = `
-                        <div class="relative">
+                        <div class="flex justify-center mb-2">
                             <span class="
-                                absolute -top-3 -left-3
-                                w-8 h-8 flex items-center justify-center
-                                rounded-full bg-indigo-400 text-white
-                                text-sm font-semibold shadow-md
+                                w-10 h-10 flex items-center justify-center
+                                rounded-full bg-indigo-100 text-indigo-700
+                                font-bold text-lg shadow-sm
                             ">
                                 ${sl + 1}
                             </span>
                         </div>
-                        <h2 class="text-2xl font-bold text-indigo-700 mb-3 text-center capitalize">${head}</h2>
+                        <h2 class="text-2xl font-bold text-indigo-700 mb-3 text-center">
+                            ${head}
+                        </h2>
                         <div class="my-3 h-[3px] bg-gradient-to-r from-transparent via-orange-800 to-transparent"></div>
-                        <div class="flex flex-col gap-2">
-                            ${details.map((d) => formatDetail(d)).join("")}
+                        <div class="flex flex-col gap-2 items-start">
+                            ${synonyms
+                                .map(
+                                    (s) => `
+                            <span class="bg-gray-200 text-violet-950 font-semibold flex p-1 rounded text-xl hover:bg-blue-100 hover:text-blue-700 transition"><span>${bullet}</span><span>${s}</span></span>`,
+                                )
+                                .join("")}
                         </div>
                     `;
                 } else {

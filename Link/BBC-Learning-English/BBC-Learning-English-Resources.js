@@ -2202,6 +2202,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260416",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260423_6_minute_english_why_are_we_all_so_stressed_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0n8wsks.jpg",
+        episode: "Episode 260423 / 23 Apr 2026",
+        title: "Why are we all so stressed?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260423_6_minute_english_why_are_we_all_so_stressed_worksheet__.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260423_6_minute_english_why_are_we_all_so_stressed_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260423",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4363,6 +4375,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260415_LEFTN_Hungary_election_landslide_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260415",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260422_LEFTN_Mass_shooting_at_Mexican_pyramids_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nfvqdr.jpg",
+        episode: "Episode 260422 / 22 Apr 2026",
+        title: "Mass shooting at Mexican pyramids",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260422_LEFTN_Mass_shooting_at_Mexican_pyramids_worksheet_.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260422",
     },
 ];
 
