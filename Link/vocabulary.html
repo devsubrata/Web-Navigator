@@ -372,7 +372,6 @@
                         const headItems = items[0].split(";");
                         const [head, episodeURL, audioURL] = [headItems[0].slice(4).trim(), headItems[1].trim(), headItems[2].trim()];
                         const details = items.slice(1);
-                        console.log(head, episodeURL, audioURL);
 
                         card.innerHTML = `
                             <div class="relative">
@@ -482,6 +481,11 @@
 
             // Format detail for new format (split by semicolon into spans)
             function formatDetail(text) {
+                const isList = text.includes("✦");
+                if (isList) text = text.replace("✦", "");
+                const bullets = ["✦&nbsp;", "🕷️", "■&nbsp;", "★&nbsp;", "🪰", "⭐", "❀&nbsp;", "💠"];
+                const bullet = bullets[Math.floor(Math.random() * bullets.length)];
+
                 const parts = text.split(":");
                 if (parts.length < 2) return `<div class="text-gray-700">${text}</div>`;
 
@@ -494,14 +498,33 @@
                     .map((i) => i.trim())
                     .filter((i) => i);
 
-                return `
-                    <div class="flex flex-col gap-1">
-                        <span class="font-bold text-pink-500 text-xl">${label}:</span>
-                        <div class="flex flex-wrap gap-3">
-                            ${items.map((i, sl) => `<span class="bg-gray-200 text-violet-950 flex items-center justify-center px-4 py-1 rounded-[8px] text-xl hover:bg-blue-100 hover:text-blue-700  transition">${i}</span>`).join("")}
+                let html = ``;
+
+                if (!isList)
+                    html = `
+                        <div class="flex flex-col gap-1">
+                            <span class="font-bold text-pink-500 text-xl">${label}:</span>
+                            <div class="flex flex-wrap gap-3">
+                                ${items.map((i, sl) => `<span class="bg-gray-200 text-violet-950 flex items-center justify-center px-4 py-1 rounded-[8px] text-xl hover:bg-blue-100 hover:text-blue-700  transition">${i}</span>`).join("")}
+                            </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                else
+                    html = ` 
+                        <div class="flex flex-col gap-1">
+                                    <span class="font-bold text-pink-500 text-xl">${label}:</span>
+                                <div class="flex flex-col gap-2 items-start">
+                                    ${items
+                                        .map(
+                                            (s) => `
+                                    <span class="bg-gray-200 text-violet-950 font-semibold flex p-1 pr-2 rounded text-xl hover:bg-blue-100 hover:text-blue-700 transition"><span>${bullet}</span><span>${s}</span></span>`,
+                                        )
+                                        .join("")}
+                                </div>
+                        </div>
+                    `;
+
+                return html;
             }
 
             const scrollUpBtn = document.getElementById("scrollUp");

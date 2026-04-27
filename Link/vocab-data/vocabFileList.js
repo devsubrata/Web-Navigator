@@ -13,6 +13,8 @@ const markDownFile = [
     { fileName: "SixMinuteEnglish.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
 ];
 const vocabFiles = [
+    { fileName: "Common Essay Topics with Subtopics.csv", url: "https://ieltsliz.com/common-essay-topics-for-ielts/" },
+    { fileName: "LinkingWords.csv", url: "https://ieltsliz.com/linking-words-for-writing/" },
     { fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv", url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI" },
     { fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv", url: "https://www.youtube.com/watch?v=_s1rIKaoAyM" },
     { fileName: "IELTS most useful vocabulary.csv", url: "#" },
