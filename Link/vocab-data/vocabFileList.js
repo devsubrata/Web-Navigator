@@ -30,3 +30,7 @@ const vocabFiles = [
     { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
     { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
 ];
+
+console.log(pdfFiles.length);
+console.log(markDownFile.length);
+console.log(vocabFiles.length);

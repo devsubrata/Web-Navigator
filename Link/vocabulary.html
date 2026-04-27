@@ -14,7 +14,7 @@
         </style>
     </head>
 
-    <body class="bg-gray-100 min-h-screen p-6">
+    <body class="bg-gray-100 min-h-screen py-6 px-10">
         <div class="max-w-[1600px] mx-auto">
             <!-- Title -->
             <h1 class="text-5xl font-bold text-gray-800 mb-6 text-center">Review Your Vocabulary</h1>
@@ -42,50 +42,57 @@
             </div>
 
             <h2 id="fileNameHeading" class="text-4xl font-semibold text-purple-700 mb-4 text-center"></h2>
+            <div class="text-center">
+                <input
+                    title="Change column layouts"
+                    class="cursor-pointer"
+                    type="range"
+                    id="widthSlider"
+                    min="150"
+                    max="1000"
+                    step="10"
+                    value="250"
+                />
+                <span id="label"></span>
+            </div>
+        </div>
+        <!-- Pdf Container -->
+        <div id="pdfSection" class="hidden mt-6">
+            <!-- Controls -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
+                <button id="prevPage" class="px-3 py-1 bg-[#9bcbda] text-white rounded hover:bg-[#90d0e4]">◀️</button>
 
-            <!-- Pdf Container -->
-            <div id="pdfSection" class="hidden mt-6">
-                <!-- Controls -->
-                <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
-                    <button id="prevPage" class="px-3 py-1 bg-[#9bcbda] text-white rounded hover:bg-[#90d0e4]">◀️</button>
+                <span class="text-gray-700"> Page <span id="pageNum">1</span> / <span id="pageCount">0</span> </span>
 
-                    <span class="text-gray-700"> Page <span id="pageNum">1</span> / <span id="pageCount">0</span> </span>
+                <button id="nextPage" class="px-3 py-1 bg-[#9bcbda] text-white rounded hover:bg-[#90d0e4]">▶️</button>
 
-                    <button id="nextPage" class="px-3 py-1 bg-[#9bcbda] text-white rounded hover:bg-[#90d0e4]">▶️</button>
+                <!-- Jump -->
+                <input id="pageInput" type="number" min="1" class="w-20 px-2 py-1 border rounded text-center" placeholder="Page" />
 
-                    <!-- Jump -->
-                    <input id="pageInput" type="number" min="1" class="w-20 px-2 py-1 border rounded text-center" placeholder="Page" />
+                <button id="goPage" class="px-3 py-1 bg-blue-700 text-white rounded">Go</button>
 
-                    <button id="goPage" class="px-3 py-1 bg-blue-700 text-white rounded">Go</button>
-
-                    <!-- Zoom -->
-                    <button id="zoomOut" class="px-3 py-1 bg-[#90e5d6] rounded">➖</button>
-                    <span id="zoomLevel">100%</span>
-                    <button id="zoomIn" class="px-3 py-1 bg-[#90e5d6] rounded">➕</button>
-                </div>
-
-                <!-- Canvas -->
-                <div class="flex justify-center">
-                    <canvas id="pdfCanvas" class="shadow-lg rounded"></canvas>
-                </div>
+                <!-- Zoom -->
+                <button id="zoomOut" class="px-3 py-1 bg-[#90e5d6] rounded">➖</button>
+                <span id="zoomLevel">100%</span>
+                <button id="zoomIn" class="px-3 py-1 bg-[#90e5d6] rounded">➕</button>
             </div>
 
-            <!-- Cards Container -->
-            <div id="cardsContainer" class="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"></div>
+            <!-- Canvas -->
+            <div class="flex justify-center">
+                <canvas id="pdfCanvas" class="shadow-lg rounded"></canvas>
+            </div>
         </div>
-
-        <div id="cardsContainer" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
-
         <div id="fileNameHeading" class="text-2xl font-bold text-indigo-700 mb-4 text-center"></div>
+
         <div id="cardsContainer" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
         <div id="mdFileContainer" class="prose max-w-[1800px] mx-auto mt-6 text-xl"></div>
 
-        <div id="loaderOverlay" class="hidden fixed inset-0 flex items-center justify-center z-50">
+        <div id="loaderOverlay" class="hidden fixed inset-0 flex items-center justify-center z-50 bg-black/40">
             <div class="flex flex-col items-center gap-3">
                 <!-- Spinner -->
                 <div class="w-20 h-20 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
                 <!-- Text -->
-                <p class="text-blue text-lg font-medium">Loading...</p>
+                <p class="text-indigo-800 text-xl font-medium">Loading...</p>
             </div>
         </div>
 
@@ -512,6 +519,23 @@
                     top: document.body.scrollHeight,
                     behavior: "smooth",
                 });
+            });
+
+            const slider = document.getElementById("widthSlider");
+
+            function updateGrid(width) {
+                container.style.gridTemplateColumns = `repeat(auto-fit, minmax(${width}px, 1fr))`;
+            }
+
+            // initial
+            // updateGrid(slider.value);
+
+            // on change
+            slider.addEventListener("input", (e) => {
+                const value = e.target.value;
+                updateGrid(value);
+                const label = document.getElementById("label");
+                label.textContent = `${value}px`;
             });
         </script>
     </body>
