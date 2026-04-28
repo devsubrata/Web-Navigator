@@ -3,6 +3,7 @@ const pdfFiles = [
     { fileName: "Basic_VS_Advanced.pdf", url: "https://www.youtube.com/watch?v=HK0VDZvjrfc&list=PLyXE-qp_6NO7yKWP-VcTZFOefqLE7CV-6" },
     { fileName: "Common Paraphrasing Synonyms.pdf", url: "#" },
     { fileName: "50-Synonyms-That-Actually-Boost-Your-Score-2.pdf", url: "#" },
+    { fileName: "1000 Phrasal Verbs List.pdf", url: "#" },
 ];
 const markDownFile = [
     { fileName: "TheEnglishWeSpeak-2024.md", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
@@ -15,6 +16,7 @@ const markDownFile = [
 const vocabFiles = [
     { fileName: "Common Essay Topics with Subtopics.csv", url: "https://ieltsliz.com/common-essay-topics-for-ielts/" },
     { fileName: "LinkingWords.csv", url: "https://ieltsliz.com/linking-words-for-writing/" },
+    { fileName: "Paraphrases & Alternative Expressions.csv", url: "#" },
     { fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv", url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI" },
     { fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv", url: "https://www.youtube.com/watch?v=_s1rIKaoAyM" },
     { fileName: "IELTS most useful vocabulary.csv", url: "#" },
@@ -28,7 +30,6 @@ const vocabFiles = [
     { fileName: "Idioms.csv", url: "#" },
     { fileName: "Idioms For IELTS Speaking.csv", url: "#" },
     { fileName: "Categorized Words & Expressions.csv", url: "#" },
-    { fileName: "Paraphrases & Alternative Expressions.csv", url: "#" },
     { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
     { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak" },
 ];

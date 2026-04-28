@@ -42,7 +42,7 @@
             </div>
 
             <h2 id="fileNameHeading" class="text-4xl font-semibold text-purple-700 mb-4 text-center"></h2>
-            <div class="flex justify-center items-center gap-2">
+            <div id="layoutControlDiv" class="flex justify-center items-center gap-2 hidden">
                 <div class="flex justify-center items-center gap-1">
                     <input type="radio" title="default" name="col_selection" value="0" checked />
                     <input type="radio" title="single-column layout" name="col_selection" value="1" />
@@ -316,6 +316,7 @@
                 document.getElementById("cardsContainer").innerHTML = "";
                 document.getElementById("mdFileContainer").innerHTML = "";
                 document.getElementById("pdfSection").classList.add("hidden");
+                document.getElementById("layoutControlDiv").classList.add("hidden");
             }
 
             function handleFile(event) {
@@ -357,6 +358,8 @@
             function renderCards(text) {
                 container.innerHTML = ""; // Clear previous cards
                 document.getElementById("mdFileContainer").innerHTML = ""; // 🔥 clear md
+
+                document.getElementById("layoutControlDiv").classList.remove("hidden");
 
                 // Split lines by ;\n or just \n
                 const lines = text.split(/;\n|\n/).filter((line) => line.trim() !== "");
