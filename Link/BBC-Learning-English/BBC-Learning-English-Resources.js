@@ -4231,6 +4231,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260420",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260427_TEWS_think_on_your_feet_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0n8jd97.jpg",
+        episode: "Episode 260427 / 27 Apr 2026",
+        title: "Think on your feet",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260427_tews_think_on_your_feet_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260427",
+    },
 ];
 
 const LEFTN2026 = [
