@@ -2214,6 +2214,19 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260423",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260430_6_minute_english_should_we_eat_ultra_processed_food_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nds5wl.jpg",
+        episode: "Episode 260430 / 30 Apr 2026",
+        title: "Should we eat ultra-processed food?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260430_6_minute_english_should_we_eat_ultra_processed_food_worksheet_.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260430_6_minute_english_should_we_eat_ultra_processed_food_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260430",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4681,6 +4694,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260422_LEFTN_Mass_shooting_at_Mexican_pyramids_worksheet_.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260422",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260429_LEFTN_trump_shooting_attempt_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nh6x7q.jpg",
+        episode: "Episode 260429 / 29 Apr 2026",
+        title: "Trump shooting attempt ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260429_LEFTN_trump_shooting_attempt_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260429",
     },
 ];
 
