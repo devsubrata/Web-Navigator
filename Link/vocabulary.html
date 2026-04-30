@@ -14,12 +14,11 @@
         </style>
     </head>
 
-    <body class="bg-gray-100 min-h-screen py-6 px-10">
+    <body class="bg-gray-100 min-h-screen py-6 px-10 relative">
         <div class="max-w-[1600px] mx-auto">
             <!-- Title -->
             <h1 class="text-5xl font-bold text-gray-800 mb-6 text-center">Review Your Vocabulary</h1>
 
-            <!-- Upload CSV -->
             <div class="flex justify-center items-center flex-col mb-8">
                 <div class="flex justify-center items-center flex-wrap gap-y-2">
                     <!-- navigate BBC Learning English -->
@@ -35,6 +34,13 @@
                     >
                         Load Vocabulary
                     </button>
+                    <button
+                        id="image-load"
+                        class="inline-block max-w-md text-sm text-gray-500 mr-4 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
+                        title="Show Grammar Notes"
+                    >
+                        ImageCards
+                    </button>
                     <button id="refreshBtn" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">Refresh</button>
                 </div>
                 <div id="fileList" class="mt-4 flex flex-wrap gap-3 justify-center"></div>
@@ -42,7 +48,7 @@
             </div>
 
             <h2 id="fileNameHeading" class="text-4xl font-semibold text-purple-700 mb-4 text-center"></h2>
-            <div id="layoutControlDiv" class="flex justify-center items-center gap-2 hidden">
+            <div id="layoutControlDiv" class="flex justify-center items-center gap-2 mb-4 hidden">
                 <div class="flex justify-center items-center gap-1">
                     <input type="radio" title="default" name="col_selection" value="0" checked />
                     <input type="radio" title="single-column layout" name="col_selection" value="1" />
@@ -61,10 +67,10 @@
                     step="10"
                     value="250"
                 />
-                <span id="label" style="display: inline-block; width: 220px; text-align: left"></span>
+                <span id="label" style="display: inline-block; width: 220px; text-align: left">Adjust Column Width</span>
             </div>
         </div>
-        <!-- Pdf Container -->
+
         <div id="pdfSection" class="hidden mt-6">
             <!-- Controls -->
             <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
@@ -90,10 +96,54 @@
                 <canvas id="pdfCanvas" class="shadow-lg rounded"></canvas>
             </div>
         </div>
-        <div id="fileNameHeading" class="text-2xl font-bold text-indigo-700 mb-4 text-center"></div>
-
         <div id="cardsContainer" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
         <div id="mdFileContainer" class="prose max-w-[1800px] mx-auto mt-6 text-xl"></div>
+        <div id="imageContainer" class="relative flex flex-col justify-center items-center hidden">
+            <!-- Navigation -->
+            <div class="inline-flex items-center justify-center flex-wrap gap-3 sticky top-[0] bg-[#015a29b7] p-1.5 rounded-md">
+                <!-- Download -->
+                <div>
+                    <button
+                        id="downloadImage"
+                        title="Download loaded script"
+                        class="px-2.5 py-1 cursor-pointer outline-none border-none rounded-md bg-[#f0f0f0] hover:bg-gray-300"
+                    >
+                        🡻
+                    </button>
+                </div>
+                <!-- Prev / Next -->
+                <div class="flex items-center gap-1">
+                    <button id="prevImage" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">◀</button>
+                    <span id="imgCount" class="inline-block px-2.5 py-1 rounded-md bg-white"> </span>
+                    <button id="nextImage" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">▶</button>
+                </div>
+                <!-- Selects -->
+                <div class="flex gap-1">
+                    <select id="imgFolder" class="px-2.5 py-1 rounded-md cursor-pointer outline-none border-none"></select>
+                    <select id="loadedImgList" class="px-2.5 py-1 rounded-md cursor-pointer outline-none border-none"></select>
+                </div>
+                <!-- Zoom -->
+                <div class="flex gap-1">
+                    <button id="zoomIn" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➕</button>
+                    <button id="zoomOut" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➖</button>
+                </div>
+                <!-- Up / Down -->
+                <div class="flex gap-1">
+                    <button id="up" class="p-0.5 text-lg cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">⏫</button>
+                    <button id="down" class="p-0.5 text-lg cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">⏬</button>
+                </div>
+                <div>
+                    <button id="placeTop" class="p-0.5 text-lg cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">🔝</button>
+                </div>
+            </div>
+            <!-- Image Wrapper -->
+            <div id="img-wrapper" class="text-center h-[95vh] overflow-y-auto border-2 border-blue-500 rounded-xl max-w-[98vw] mb-5">
+                <img
+                    src="./resource/ReadingArticle/IELTS Reading Topics.png"
+                    class="w-full object-cover transition-transform duration-300 origin-top-left rounded-xl"
+                />
+            </div>
+        </div>
 
         <div id="loaderOverlay" class="hidden fixed inset-0 flex items-center justify-center z-50 bg-black/40">
             <div class="flex flex-col items-center gap-3">
@@ -111,7 +161,11 @@
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
         <script src="./vocab-data/vocabFileList.js"></script>
-        <script>
+        <script src="./resource/helpfulFn.js"></script>
+
+        <script type="module">
+            import { grammarCards, idiomCards, phrasalVerbCards, categoryList, loadedImageList } from "./vocab-data/img/CardList.js";
+
             let pdfDoc = null;
             let currentPage = 1;
             let scale = 1.2;
@@ -121,6 +175,18 @@
             const btn = document.getElementById("vocab-load");
             const input = document.getElementById("fileInput");
             const container = document.getElementById("cardsContainer");
+            const imageContainer = document.getElementById("imageContainer");
+
+            document.getElementById("image-load").onclick = () => {
+                clearAllViews();
+                document.getElementById("fileNameHeading").innerHTML = "";
+                imageContainer.classList.remove("hidden");
+                imageContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+            };
+
+            document.getElementById("placeTop").onclick = () => {
+                imageContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+            };
 
             document.getElementById("refreshBtn").addEventListener("click", () => {
                 location.reload();
@@ -190,7 +256,11 @@
                     });
             }
 
-            loadCSVFromFolder({ fileName: "word-family.csv", url: "#", ...colorSet2 });
+            loadCSVFromFolder({
+                fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv",
+                url: "https://www.youtube.com/watch?v=_s1rIKaoAyM",
+                ...colorSet1,
+            });
 
             function loadMarkdown(fileObj) {
                 fetch(`vocab-data/md/${fileObj.fileName}?t=${Date.now()}`)
@@ -310,6 +380,7 @@
                 document.getElementById("mdFileContainer").innerHTML = "";
                 document.getElementById("pdfSection").classList.add("hidden");
                 document.getElementById("layoutControlDiv").classList.add("hidden");
+                document.getElementById("imageContainer").classList.add("hidden");
             }
 
             function handleFile(event) {
@@ -358,33 +429,6 @@
                 const lines = text.split(/;\n|\n/).filter((line) => line.trim() !== "");
 
                 lines.forEach((line, sl) => container.appendChild(renderCard(line, sl)));
-            }
-
-            function highlightTerms(text, colorIndex = 14) {
-                const colors = [
-                    "text-[#FF0000]", // 0
-                    "text-[#990033]", // 1
-                    "text-[#ff0066]", // 2
-                    "text-[#fe3b00]", // 3
-                    "text-[#ffa500]", // 4
-                    "text-[#00FF00]", // 5
-                    "text-[#009c1a]", // 6
-                    "text-[#0000FF]", // 7
-                    "text-[#000080]", // 8
-                    "text-[#FF00FF]", // 9
-                    "text-[#FF69B4]", // 10
-                    "text-[#FFA07A]", // 11
-                    "text-[#9400D3]", // 12
-                    "text-[#4B0082]", // 13
-                    "text-[#6600ff]", // 14
-                ];
-
-                const highlightedText = text.replace(/(\d+)?\*(.*?)\*/g, (match, index, content) => {
-                    const i = index ? Number(index) : colorIndex;
-                    const colorClass = colors[i];
-                    return `<span class="font-semibold ${colorClass}">${content.trim()}</span>`;
-                });
-                return highlightedText;
             }
 
             // Unified card renderer (supports old & new formats)
@@ -566,7 +610,7 @@
                         </div>
                     `;
                 else
-                    html = ` 
+                    html = `
                         <div class="flex flex-col gap-1">
                                     <span class="font-semibold text-rose-700 text-2xl">${label}:</span>
                                 <div class="flex flex-col gap-2 items-start">
@@ -627,6 +671,93 @@
                 const label = document.getElementById("label");
                 label.textContent = `Column Width: ${value}px`;
             });
+
+            //TODO:---------------- Handling Image-----------
+            let currentImgIndex = 0;
+
+            const imgDirSelect = document.getElementById("imgFolder");
+            const loadedImgList = document.getElementById("loadedImgList");
+            const img = document.querySelector("#img-wrapper img");
+            const imgCount = document.getElementById("imgCount");
+            const imgWrapper = document.getElementById("img-wrapper");
+
+            categoryList.forEach((t, i) => {
+                const option = document.createElement("option");
+                option.value = t;
+                option.textContent = t;
+                if (i === 0) option.setAttribute("selected", true);
+                imgDirSelect.appendChild(option);
+            });
+
+            imgDirSelect.addEventListener("change", setImageDirectory);
+            loadedImgList.addEventListener("change", () => {
+                let dirName = imgDirSelect.value;
+                const selectedName = loadedImgList.value; // no extension
+
+                let imgList = loadedImageList(dirName);
+                let matched = imgList.find((image) => image === selectedName);
+
+                if (matched) {
+                    img.src = `./vocab-data/img/${dirName}/${matched}`;
+                    currentImgIndex = imgList.findIndex((image) => image === matched);
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                }
+            });
+
+            function setImageDirectory() {
+                let dirName = imgDirSelect.value;
+                let imgList = loadedImageList(dirName);
+
+                loadedImgList.innerHTML = "";
+                imgList.forEach((t, i) => {
+                    const option = document.createElement("option");
+                    option.value = t;
+                    option.textContent = getImageName(t);
+                    if (i === 0) option.setAttribute("selected", true);
+                    loadedImgList.appendChild(option);
+                });
+                img.src = `./vocab-data/img/${dirName}/${imgList[0]}`;
+                currentImgIndex = 0;
+                imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+
+                document.getElementById("prevImage").onclick = () => {
+                    if (currentImgIndex === 0) return;
+                    img.src = `./vocab-data/img/${dirName}/${imgList[--currentImgIndex]}`;
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                    loadedImgList.value = imgList[currentImgIndex];
+                };
+
+                document.getElementById("nextImage").onclick = () => {
+                    if (currentImgIndex === imgList.length - 1) return;
+                    img.src = `./vocab-data/img/${dirName}/${imgList[++currentImgIndex]}`;
+                    imgCount.textContent = `${currentImgIndex + 1} / ${imgList.length}`;
+                    loadedImgList.value = imgList[currentImgIndex];
+                };
+
+                let scale = 1;
+                const wrapper = document.querySelector("#img-wrapper");
+                const baseWidth = wrapper.offsetWidth;
+
+                document.getElementById("zoomIn").onclick = () => {
+                    scale += 0.05;
+                    wrapper.style.width = `${baseWidth * scale}px`;
+                };
+
+                document.getElementById("zoomOut").onclick = () => {
+                    scale -= 0.05;
+                    if (scale < 0.3) scale = 0.3;
+                    wrapper.style.width = `${baseWidth * scale}px`;
+                };
+            }
+            setImageDirectory();
+
+            document.getElementById("up").onclick = () => {
+                imgWrapper.scrollTo({ top: 0, behavior: "smooth" });
+            };
+            document.getElementById("down").onclick = () => {
+                imgWrapper.scrollTo({ top: imgWrapper.scrollHeight, behavior: "smooth" });
+            };
+            document.getElementById("downloadImage").onclick = () => downloadImage(img);
         </script>
     </body>
 </html>
