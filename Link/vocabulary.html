@@ -108,7 +108,7 @@
                         title="Download loaded script"
                         class="px-2.5 py-1 cursor-pointer outline-none border-none rounded-md bg-[#f0f0f0] hover:bg-gray-300"
                     >
-                        🡻
+                        ⮟
                     </button>
                 </div>
                 <!-- Prev / Next -->
@@ -124,8 +124,8 @@
                 </div>
                 <!-- Zoom -->
                 <div class="flex gap-1">
-                    <button id="zoomIn" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➕</button>
-                    <button id="zoomOut" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➖</button>
+                    <button id="imgZoomIn" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➕</button>
+                    <button id="imgZoomOut" class="px-2.5 py-1 cursor-pointer rounded-md bg-[#f0f0f0] hover:bg-gray-300">➖</button>
                 </div>
                 <!-- Up / Down -->
                 <div class="flex gap-1">
@@ -140,7 +140,7 @@
             <div id="img-wrapper" class="text-center h-[95vh] overflow-y-auto border-2 border-blue-500 rounded-xl max-w-[98vw] mb-5">
                 <img
                     src="./resource/ReadingArticle/IELTS Reading Topics.png"
-                    class="w-full object-cover transition-transform duration-300 origin-top-left rounded-xl"
+                    class="w-full object-cover transition-transform duration-300 origin-top rounded-xl"
                 />
             </div>
         </div>
@@ -735,18 +735,14 @@
                 };
 
                 let scale = 1;
-                const wrapper = document.querySelector("#img-wrapper");
-                const baseWidth = wrapper.offsetWidth;
-
-                document.getElementById("zoomIn").onclick = () => {
+                document.getElementById("imgZoomIn").onclick = () => {
                     scale += 0.05;
-                    wrapper.style.width = `${baseWidth * scale}px`;
+                    img.style.transform = `scale(${scale})`;
                 };
 
-                document.getElementById("zoomOut").onclick = () => {
-                    scale -= 0.05;
-                    if (scale < 0.3) scale = 0.3;
-                    wrapper.style.width = `${baseWidth * scale}px`;
+                document.getElementById("imgZoomOut").onclick = () => {
+                    scale = Math.max(0.3, scale - 0.05);
+                    img.style.transform = `scale(${scale})`;
                 };
             }
             setImageDirectory();
