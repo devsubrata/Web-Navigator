@@ -16,13 +16,13 @@ function highlightTerms(text, colorIndex = 14) {
         "text-[#FF0000]", // 0
         "text-[#990033]", // 1
         "text-[#ff0066]", // 2
-        "text-[#fe3b00]", // 3
+        "text-[#e63804]", // 3
         "text-[#B37400]", // 4
-        "text-[#00FF00]", // 5
+        "text-[#5fb503]", // 5
         "text-[#009c1a]", // 6
         "text-[#0000FF]", // 7
-        "text-[#000080]", // 8
-        "text-[#FF00FF]", // 9
+        "text-[#0404bb]", // 8
+        "text-[#d303d3]", // 9
         "text-[#FF69B4]", // 10
         "text-[#E97451]", // 11
         "text-[#9400D3]", // 12
@@ -30,6 +30,8 @@ function highlightTerms(text, colorIndex = 14) {
         "text-[#6600ff]", // 14
         "text-[#e48f05]", // 15
         "text-[#04cab6]", // 16
+        "text-[#f53928]", // 17
+        "text-[#151201]", // 18
     ];
 
     const highlightedText = text.replace(/(\d+)?\*(.*?)\*/g, (match, index, content) => {

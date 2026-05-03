@@ -46,6 +46,7 @@ const writingFiles = [
 const topicSpecificVocab = [
     { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1 },
     { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1 },
+    { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2 },
 ];
 
 const phrasalVerbs = [{ fileName: "PhrasalVerbs.csv", url: "#", ...colorSet1 }];
@@ -54,7 +55,11 @@ const idioms = [
     { fileName: "Idioms For IELTS Speaking.csv", url: "#", ...colorSet1 },
 ];
 
-const collocations = [{ fileName: "pearson-academic-collocations.csv", url: "#", ...colorSet4 }];
+const collocations = [
+    { fileName: "Collocations ➜ pearson-academic-collocations.csv", url: "#", ...colorSet4 },
+    { fileName: "Collocations ➜ collocations_from_cambridge.csv", url: "#", ...colorSet4 },
+    { fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4 },
+];
 
 const wordFamily = [{ fileName: "word-family.csv", url: "#", ...colorSet2 }];
 

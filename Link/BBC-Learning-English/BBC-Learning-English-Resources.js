@@ -4253,6 +4253,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260427",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260504_TEWS_take_it_as_a_given_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0n8jf38.jpg",
+        episode: "Episode 260504 / 04 May 2026",
+        title: "Take it as a given",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260504_tews_take_it_as_a_given__transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260504",
+    },
 ];
 
 const LEFTN2025 = [
