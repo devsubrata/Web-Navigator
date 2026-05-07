@@ -41,6 +41,7 @@ const writingFiles = [
     { fileName: "Common Essay Topics with Subtopics.csv", url: "https://ieltsliz.com/common-essay-topics-for-ielts/", ...colorSet4 },
     { fileName: "LinkingWords.csv", url: "https://ieltsliz.com/linking-words-for-writing/", ...colorSet4 },
     { fileName: "Paraphrases & Alternative Expressions.csv", url: "#", ...colorSet4 },
+    { fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 },
 ];
 
 const topicSpecificVocab = [

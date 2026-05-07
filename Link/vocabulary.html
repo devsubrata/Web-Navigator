@@ -257,14 +257,15 @@
             }
 
             //TODO:-------- Preset -------------------
-            loadCSVFromFolder({
-                fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv",
-                url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI",
-                ...colorSet1,
-            });
+            // loadCSVFromFolder({
+            //     fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv",
+            //     url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI",
+            //     ...colorSet1,
+            // });
             // loadCSVFromFolder({ fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4 });
             // loadCSVFromFolder({ fileName: "collocations_from_cambridge.csv", url: "#", ...colorSet4 });
             // loadCSVFromFolder({ fileName: "word-family.csv", url: "#", ...colorSet2 });
+            loadCSVFromFolder({ fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 });
             // loadCSVFromFolder({ fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2 });
             // loadCSVFromFolder({
             //     fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv",
@@ -559,13 +560,13 @@
                             </div>
                             <h2 class="text-2xl font-bold text-indigo-700 mb-3 text-center capitalize">${highlightTerms(head)}</h2>
                             <div class="my-3 h-[3px] bg-gradient-to-r from-transparent via-orange-800 to-transparent"></div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2 flex-col">
                                 ${paragraphs
                                     .map((paragraph) => {
                                         if (paragraph.includes("│")) {
                                             const [paragraphHead, details] = paragraph.split("│");
                                             return `
-                                                <h2 class="text-2xl font-bold text-indigo-700 mt-3 text-center">
+                                                <h2 class="text-2xl font-bold text-indigo-700 mt-3">
                                                     ${highlightTerms(paragraphHead)}
                                                 </h2>
                                                 <span class="bg-gray-200 text-violet-950 px-4 py-1 rounded text-xl hover:bg-blue-100 hover:text-blue-700 transition">${highlightTerms(details.trim())}</span>

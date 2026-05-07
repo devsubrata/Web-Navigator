@@ -2227,6 +2227,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260430",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260507_searching_for_life_on_another_planet_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0n7b9yp.jpg",
+        episode: "Episode 260507 / 07 May 2026",
+        title: "Searching for life on another planet",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260507_searching_for_life_on_another_planet_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260507_searching_for_life_on_another_planet_transcript_.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260507",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4712,6 +4724,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260429_LEFTN_trump_shooting_attempt_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260429",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260506_LEFTN_food_crisis_fears_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0njl99n.jpg",
+        episode: "Episode 260506 / 06 May 2026",
+        title: "Iran war puts global food production at risk, says fertiliser boss",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260506_LEFTN_food_crisis_fears_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260506",
     },
 ];
 
