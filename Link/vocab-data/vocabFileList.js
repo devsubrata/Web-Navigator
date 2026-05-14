@@ -79,6 +79,7 @@ const vocabFiles = [
     { fileName: "Categorized Words & Expressions.csv", url: "#", ...colorSet1 },
     { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet1 },
     { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet1 },
+    { fileName: "LEFTN-2025.csv", url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2025", ...colorSet2 },
     ...collocations,
     ...wordFamily,
 ];
