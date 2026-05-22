@@ -24,6 +24,7 @@ const pdfFiles = [
     { fileName: "IdeaBank-1.pdf", url: "#", ...colorSet3 },
     { fileName: "Basic_VS_Advanced.pdf", url: "https://www.youtube.com/watch?v=HK0VDZvjrfc&list=PLyXE-qp_6NO7yKWP-VcTZFOefqLE7CV-6", ...colorSet3 },
     { fileName: "Common Paraphrasing Synonyms.pdf", url: "#", ...colorSet3 },
+    { fileName: "300 Most Commonly Used Synonyms.pdf", url: "#", ...colorSet3 },
     { fileName: "50-Synonyms-That-Actually-Boost-Your-Score-2.pdf", url: "#", ...colorSet3 },
     { fileName: "1000 Phrasal Verbs List.pdf", url: "#", ...colorSet3 },
 ];
@@ -74,6 +75,7 @@ const vocabFiles = [
     { fileName: "Common Paraphrasing Synonyms.csv", url: "#", ...colorSet1 },
     ...topicSpecificVocab,
     { fileName: "Synonyms-1(SW).csv", url: "#", ...colorSet1 },
+    { fileName: "Barron's - 1100 Words You Need to Know.csv", url: "#", ...colorSet1 },
     ...phrasalVerbs,
     ...idioms,
     { fileName: "Categorized Words & Expressions.csv", url: "#", ...colorSet1 },

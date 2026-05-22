@@ -2251,6 +2251,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260514",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260521_6_minute_english_making_cities_feel_quieter_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nl83jf.jpg",
+        episode: "Episode 260521 / 21 May 2026",
+        title: "Making cities feel quieter",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260521_6_minute_english_making_cities_feel_quieter_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260521_6_minute_english_making_cities_feel_quieter_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260521",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4304,6 +4316,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260518",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260525_tews_gatekeep_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nhtpn5.jpg",
+        episode: "Episode 260525 / 25 May 2026",
+        title: "Gatekeep",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260525_tews_gatekeep_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260525",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -5262,6 +5283,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260513_LEFTN_Hantavirus_ship_evacuated_worksheet_.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260513",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260520_LEFTN_ebola_deadly_virus_spreads_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nm7bty.jpg",
+        episode: "Episode 260520 / 20 May 2026",
+        title: "Deadly Ebola virus spreads",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260520_LEFTN_ebola_deadly_virus_spreads_worksheet_.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260520",
     },
 ];
 
