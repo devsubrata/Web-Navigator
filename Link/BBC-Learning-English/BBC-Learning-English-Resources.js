@@ -2263,6 +2263,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260521",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260528_6_minute_english_living_with_debt_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nlzfqc.jpg",
+        episode: "Episode 260528 / 28 May 2026",
+        title: "Living with debt",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260528_6_minute_english_living_with_debt_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260528_6_minute_english_living_with_debt_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260528",
+    },
 ];
 const TEWS2022 = [
     {
@@ -5292,6 +5304,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260520_LEFTN_ebola_deadly_virus_spreads_worksheet_.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260520",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260527_LEFTN_is_social_media_the_new_smoking_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nnhqws.jpg",
+        episode: "Episode 260527 / 27 May 2026",
+        title: "Is social media 'the new smoking'?",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260527_LEFTN_is_social_media_the_new_smoking_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260527",
     },
 ];
 
