@@ -127,18 +127,30 @@ function addAllEventListeners() {
     document.querySelectorAll(".load-on-player").forEach((btn) => {
         btn.onclick = async () => {
             const data = JSON.parse(decodeURIComponent(btn.dataset.audio));
+            const audioPlayer = document.getElementById("audioPlayer");
+            const videoPlayer = document.getElementById("fsVideo");
+
             try {
-                const player = document.getElementById("audioPlayer");
-                if (player) {
-                    player.innerHTML = `<source src="${data.audioLink}" type="audio/mpeg">`;
-                    player.load(); // important!
-                    player.play();
+                if (videoPlayer) {
+                    window.dispatchEvent(
+                        new CustomEvent("ADD_FROM_ONLINE", {
+                            detail: {
+                                mediaUrl: data.audioLink,
+                                baseName: data.title || "BBC Learning English",
+                            },
+                        }),
+                    );
+                } else if (audioPlayer) {
+                    audioPlayer.innerHTML = `<source src="${data.audioLink}" type="audio/mpeg">`;
+                    audioPlayer.load(); // important!
+                    audioPlayer.play();
                 }
             } catch (err) {
                 console.error("Loading failed", err);
             }
         };
     });
+
     document.querySelectorAll(".load-on-playlist").forEach((btn) => {
         btn.onclick = async () => {
             try {

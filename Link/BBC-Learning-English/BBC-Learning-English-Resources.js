@@ -2275,6 +2275,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260528",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260604_6_minute_english_the_power_of_poetry_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0np36h5.jpg",
+        episode: "Episode 260604 / 04 Jun 2026",
+        title: "The power of poetry",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260604_6_minute_english_the_power_of_poetry_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260604_6_minute_english_the_power_of_poetry__transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260604",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4337,6 +4349,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260525",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260601_tews_moth_to_a_flame_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nhttrs.jpg",
+        episode: "Episode 260601 / 01 Jun 2026",
+        title: "Like a moth to a flame",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260601_tews_moth_to_a_flame_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260601",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -5313,6 +5334,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260527_LEFTN_is_social_media_the_new_smoking_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260527",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260603_LEFTN_El_nino_what_to_expect_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0npspv0.jpg",
+        episode: "Episode 260603 / 03 Jun 2026",
+        title: "El Niño: What to expect",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260603_LEFTN_El_nino_what_to_expect_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260603",
     },
 ];
 
