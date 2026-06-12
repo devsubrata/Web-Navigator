@@ -2287,6 +2287,19 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260604",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260611_6_minute_english_how_advertisers_make_us_spend_money_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nr4td0.jpg",
+        episode: "Episode 260611 / 11 Jun 2026",
+        title: "How advertisers make us spend money",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260611_6_minute_english_how_advertisers_make_us_spend_money_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260611_6_minute_english_how_advertisers_make_us_spend_money_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260611",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4358,6 +4371,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260601",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260608_tews_throw_ideas_at_the_wall_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0njxkyl.jpg",
+        episode: "Episode 260608 / 08 Jun 2026",
+        title: "Throw ideas at the wall",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260608_tews_throw_ideas_at_the_wall_transcript_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260608",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -5343,6 +5365,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260603_LEFTN_El_nino_what_to_expect_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260603",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260610_LEFTN_world_cup_excitement_and_concern_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nr3xn2.jpg",
+        episode: "Episode 260610 / 10 Jun 2026",
+        title: "World Cup excitement and concern ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260610_LEFTN_world_cup_excitement_and_concern_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260610",
     },
 ];
 
