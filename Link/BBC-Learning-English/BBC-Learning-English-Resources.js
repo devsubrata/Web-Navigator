@@ -2300,6 +2300,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260611",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260618_6_minute_english_limiting_screen_time_for_children_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nh80l5.jpg",
+        episode: "Episode 260618 / 18 Jun 2026",
+        title: "Limiting screen time for children",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260618_6_minute_english_limiting_screen_time_for_children_worksheet_.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260618_6_minute_english_limiting_screen_time_for_children_transcript_.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260618",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4380,6 +4392,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260608",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260615_tews_wrap_it_up_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0njxmd1.jpg",
+        episode: "Episode 260615 / 15 Jun 2026",
+        title: "Wrap it up",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260615_tews_wrap_it_up_transcript_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260615",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -5374,6 +5395,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260610_LEFTN_world_cup_excitement_and_concern_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260610",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260617_LEFTN_US-Iran_peace_deal_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nsflj9.jpg",
+        episode: "Episode 260617 / 17 Jun 2026",
+        title: "US-Iran peace deal",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260617_LEFTN_US-Iran_peace_deal_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260617",
     },
 ];
 
