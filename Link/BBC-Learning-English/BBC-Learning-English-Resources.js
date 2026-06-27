@@ -2312,6 +2312,54 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260618",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260625_6_minute_english_stress_free_family_meals_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0ntvbdk.jpg",
+        episode: "Episode 260625 / 25 Jun 2026",
+        title: "Stress-free family meals",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260625_6_minute_english_stress_free_family_meals_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260625_6_minute_english_stress_free_family_meals_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260625",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260702_6_minute_english_rude_emails_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nvr7gj.jpg",
+        episode: "Episode 260702 / 02 Jul 2026",
+        title: "Rude emails",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260702_6_minute_english_rude_emails_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260702_6_minute_english_rude_emails_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260702",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260709_6_minute_english_should_we_cycle_more_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nwc6ky.jpg",
+        episode: "Episode 260709 / 09 Jul 2026",
+        title: "Should we cycle more?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260709_6_minute_english_should_we_cycle_more_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260709_6_minute_english_should_we_cycle_more_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260709",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260716_6_minute_english_what's_in_a_footballer's_brain_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0ny1vpc.jpg",
+        episode: "Episode 260716 / 16 Jul 2026",
+        title: "What's in a footballer's brain?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260716_6_minute_english_what's_in_a_footballer's_brain_worksheet_.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260716_6_minute_english_what's_in_a_footballer's_brain_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260716",
+    },
 ];
 const TEWS2022 = [
     {
@@ -4401,6 +4449,42 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260615",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260622_tews_sell_yourself_short_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nmg3xz.jpg",
+        episode: "Episode 260622 / 22 Jun 2026",
+        title: "Sell yourself short ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260622_tews_sell_yourself_short_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260622",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260629_tews_onto_something_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nmg669.jpg",
+        episode: "Episode 260629 / 29 Jun 2026",
+        title: "Onto something",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260629_tews_onto_something.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260629",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260706_tews_understood_the_assignment_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nplm9p.jpg",
+        episode: "Episode 260706 / 06 Jul 2026",
+        title: "Understood the assignment",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260706_tews_understood_the_assignment_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260706",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260713_tews_passing_ships_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0npmnmc.jpg",
+        episode: "Episode 260713 / 13 Jul 2026",
+        title: "Passing ships",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260713_tews_passing_ships_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260713",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -5404,6 +5488,44 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260617_LEFTN_US-Iran_peace_deal_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260617",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260624_LEFTN_Keir_Starmer_resigns_as_UK_prime_minister_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nts9g0.jpg",
+        episode: "Episode 260624 / 24 Jun 2026",
+        title: "Keir Starmer resigns as UK prime minister",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260624_LEFTN_Keir_Starmer_resigns_as_UK_prime_minister_worksheet.pdf",
+        ],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260624",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260701_LEFTN_Venezuela_earthquakes_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nw3c6h.jpg",
+        episode: "Episode 260701 / 01 Jul 2026",
+        title: "Venezuela earthquakes: Search for survivors continues ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260701_LEFTN_Venezuela_earthquakes_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260701",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260708_LEFTN_Taylor_Swift_wedding_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nxhks4.jpg",
+        episode: "Episode 260708 / 08 Jul 2026",
+        title: "Taylor Swift marries Travis Kelce at Madison Square Garden ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260708_LEFTN_Taylor_Swift_wedding_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260708",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260714_LEFTN_coffee.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nyqp5c.jpg",
+        episode: "Episode 260715 / 15 Jul 2026",
+        title: "Coffee is good for you",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260715_LEFTN_coffee_is_good_for_your_brain_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260715",
     },
 ];
 

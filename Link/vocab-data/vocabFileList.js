@@ -65,6 +65,12 @@ const collocations = [
 
 const wordFamily = [{ fileName: "word-family.csv", url: "#", ...colorSet2 }];
 
+const tews = [
+    { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
+    { fileName: "TEWS-2025.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
+    { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
+];
+
 const vocabFiles = [
     ...writingFiles,
     { fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv", url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI", ...colorSet1 },
@@ -79,8 +85,7 @@ const vocabFiles = [
     ...phrasalVerbs,
     ...idioms,
     { fileName: "Categorized Words & Expressions.csv", url: "#", ...colorSet1 },
-    { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet1 },
-    { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet1 },
+    ...tews,
     { fileName: "LEFTN-2025.csv", url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2025", ...colorSet2 },
     ...collocations,
     ...wordFamily,
