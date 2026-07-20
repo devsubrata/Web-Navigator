@@ -42,3 +42,86 @@ function highlightTerms(text, colorIndex = 14) {
     });
     return highlightedText;
 }
+
+function makeTouchDraggable(el, calcNew = true) {
+    let dragging = false;
+    let offsetX = 0;
+    let offsetY = 0;
+
+    const titleBar = el.querySelector(".title") || el;
+
+    titleBar.style.cursor = "grab";
+
+    // Required for left/top to work
+    el.style.position = "fixed";
+
+    // Initial position if none
+    if (!el.style.left) {
+        el.style.left = "10px";
+        el.style.top = "10px";
+    }
+
+    function getPoint(e) {
+        if (e.touches)
+            return {
+                x: e.touches[0].clientX,
+                y: e.touches[0].clientY,
+            };
+
+        return {
+            x: e.clientX,
+            y: e.clientY,
+        };
+    }
+
+    function start(e) {
+        if (e.target !== titleBar) return;
+
+        dragging = true;
+
+        const p = getPoint(e);
+
+        offsetX = p.x - el.offsetLeft;
+        offsetY = p.y - el.offsetTop;
+
+        titleBar.style.cursor = "grabbing";
+        document.body.style.userSelect = "none";
+    }
+
+    function move(e) {
+        if (!dragging) return;
+        titleBar.style.cursor = "grabbing";
+
+        const p = getPoint(e);
+
+        let left = p.x - offsetX;
+        let top = p.y - offsetY;
+
+        if (calcNew) [left, top] = preventOffscreen(left, top);
+
+        el.style.left = left + "px";
+        el.style.top = top + "px";
+
+        if (e.cancelable) e.preventDefault();
+    }
+
+    function end() {
+        dragging = false;
+        titleBar.style.cursor = "grab";
+        document.body.style.userSelect = "";
+    }
+
+    titleBar.addEventListener("mousedown", start);
+    document.addEventListener("mousemove", move);
+    document.addEventListener("mouseup", end);
+
+    titleBar.addEventListener("touchstart", start, { passive: true });
+    document.addEventListener("touchmove", move, { passive: false });
+    document.addEventListener("touchend", end);
+
+    function preventOffscreen(left, top) {
+        left = Math.max(0, Math.min(window.innerWidth - el.offsetWidth, left));
+        top = Math.max(0, Math.min(window.innerHeight - el.offsetHeight, top));
+        return [left, top];
+    }
+}

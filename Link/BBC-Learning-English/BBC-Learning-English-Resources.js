@@ -4485,6 +4485,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260713",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260720_tews_side_quest_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nyn0vw.jpg",
+        episode: "Episode 260720 / 20 Jul 2026",
+        title: "Side quest",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260720_tews_side_quest_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260720",
+    },
 ];
 const LEFTN2024 = [
     {

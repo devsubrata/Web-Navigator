@@ -124,6 +124,285 @@ function addAllEventListeners() {
         };
     });
 
+    function addToMobilePlayer(item) {
+        const player = document.getElementById("mobile-player");
+        if (player) player.style.display = "";
+
+        if (!window.mobileAudioPlaylist) {
+            window.mobileAudioPlaylist = [];
+            window.mobileCurrentIndex = 0;
+
+            const wrapper = document.createElement("div");
+            wrapper.id = "mobile-player";
+            wrapper.style.cssText = `
+                margin:25px auto;
+                width:min(95%,350px);
+                background:#fff;
+                border:1px solid #ccc;
+                border-radius:8px;
+                padding:8px;
+                box-shadow:0 2px 8px rgba(0,0,0,.2);
+                font-size:14px;
+                user-select: none;
+            `;
+
+            wrapper.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; font-weight:bold; padding:5px;background:#eee;border-radius:5px; margin-bottom:6px;">
+                    <span class="title" style="cursor: grab; touch-action: none; padding: 2px 8px; font-size:17px; color:brown;">🎵 Playlist</span>
+                    <div style="display:flex;">
+                        <button id="mobile-toggle"
+                                style="border:none; background:none; cursor:pointer; font-size:18px;"
+                                title="Collapse">⿻</button>
+                        <button id="mobile-close"
+                                style="border:none; background:none; cursor:pointer; font-size:18px;"
+                                title="Close">❌</button>
+                    </div>
+                </div>
+                <div id="mobile-body">
+                    <div id="mobile-now-playing" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:bold; font-size: 16px; margin-bottom:4px; text-align:center; color: blue;"></div>
+                    <audio id="mobile-audio" controls style="width:100%"></audio>
+                    <div class="mobile-controls" style="display:flex; gap:3px; justify-content:center; align-items:center;">
+                        <input type="number" id="mobile-timeInput" placeholder="5s" min="0" style="width:40px; padding: 2px; border-radius: 4px; border: 1px solid #ccc; text-align: center; font-size: 16px; outline:none;"/>
+                        <button id="mobile-rewindBtn">⏪</button>
+                        <button id="mobile-playPauseBtn">⏯️</button>
+                        <button id="mobile-forwardBtn">⏩</button>
+                        <button id="mobile-repeat" title="Repeat current song / playlist">🔂/🔁</button>
+                        <button id="mobile-scroll-current" title="Scroll currently playing item">📲</button>
+                        <button id="mobile-playback-speed" title="Adjust playback speed" style="width:50px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; padding: 3px;">1× → 1.25× → 1.5× → 1.75× → 2×</button>
+                    </div>
+                    <div id="mobile-playlist" style="max-height:120px; overflow-y:auto; margin-top:6px;"></div>
+                </div>
+            `;
+            document.body.appendChild(wrapper);
+            makeTouchDraggable(wrapper);
+            wrapper.scrollIntoView({ behavior: "smooth", block: "end" });
+
+            const body = wrapper.querySelector("#mobile-body");
+            const toggleBtn = wrapper.querySelector("#mobile-toggle");
+            const closeBtn = wrapper.querySelector("#mobile-close");
+            const audio = document.getElementById("mobile-audio");
+
+            const timeInput = document.getElementById("mobile-timeInput");
+            const rewindBtn = document.getElementById("mobile-rewindBtn");
+            const playPauseBtn = document.getElementById("mobile-playPauseBtn");
+            const forwardBtn = document.getElementById("mobile-forwardBtn");
+            const repeatBtn = document.getElementById("mobile-repeat");
+            const scrollBtn = document.getElementById("mobile-scroll-current");
+            const speedBtn = document.getElementById("mobile-playback-speed");
+            const speeds = [1, 1.25, 1.5, 1.75, 2];
+            let speedIndex = 0;
+
+            const btnStyle = `
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 2px;
+            `;
+
+            [rewindBtn, playPauseBtn, forwardBtn, repeatBtn, scrollBtn].forEach((btn) => (btn.style = btnStyle));
+
+            toggleBtn.onclick = () => {
+                const hidden = body.style.display === "none";
+                body.style.display = hidden ? "block" : "none";
+                toggleBtn.textContent = hidden ? "⿻" : "▢";
+            };
+
+            closeBtn.onclick = () => {
+                wrapper.style.display = "none";
+                audio.pause();
+                audio.currentTime = 0;
+            };
+
+            // default skip
+            timeInput.value = 5;
+
+            // repeat mode
+            window.mobileRepeatMode = 0; // 0=None, 1=Song, 2=Playlist
+
+            repeatBtn.textContent = "➡️";
+            repeatBtn.title = "Repeat Off";
+
+            repeatBtn.onclick = () => {
+                window.mobileRepeatMode = (window.mobileRepeatMode + 1) % 3;
+
+                switch (window.mobileRepeatMode) {
+                    case 0:
+                        repeatBtn.textContent = "➡️";
+                        repeatBtn.title = "Repeat Off";
+                        break;
+
+                    case 1:
+                        repeatBtn.textContent = "🔂";
+                        repeatBtn.title = "Repeat Current Song";
+                        break;
+
+                    case 2:
+                        repeatBtn.textContent = "🔁";
+                        repeatBtn.title = "Repeat Playlist";
+                        break;
+                }
+            };
+
+            rewindBtn.onclick = () => {
+                const sec = Number(timeInput.value) || 5;
+                audio.currentTime = Math.max(0, audio.currentTime - sec);
+            };
+
+            forwardBtn.onclick = () => {
+                const sec = Number(timeInput.value) || 5;
+                audio.currentTime = Math.min(audio.duration || Infinity, audio.currentTime + sec);
+            };
+
+            playPauseBtn.onclick = () => {
+                if (audio.paused) audio.play();
+                else audio.pause();
+            };
+
+            audio.addEventListener("play", () => {
+                playPauseBtn.textContent = "⏸️";
+            });
+
+            audio.addEventListener("pause", () => {
+                playPauseBtn.textContent = "▶️";
+            });
+
+            audio.addEventListener("ended", () => {
+                switch (window.mobileRepeatMode) {
+                    // Repeat current song
+                    case 1:
+                        playMobileTrack(window.mobileCurrentIndex);
+                        return;
+                    // Repeat playlist
+                    case 2:
+                        window.mobileCurrentIndex++;
+                        if (window.mobileCurrentIndex >= window.mobileAudioPlaylist.length) window.mobileCurrentIndex = 0;
+                        playMobileTrack(window.mobileCurrentIndex);
+                        return;
+                    // No repeat
+                    default:
+                        window.mobileCurrentIndex++;
+                        if (window.mobileCurrentIndex < window.mobileAudioPlaylist.length) playMobileTrack(window.mobileCurrentIndex);
+                }
+            });
+
+            //* Control playback speed
+            audio.playbackRate = speeds[speedIndex];
+            speedBtn.textContent = `${speeds[speedIndex]}×`;
+
+            speedBtn.onclick = () => {
+                speedIndex = (speedIndex + 1) % speeds.length;
+                audio.playbackRate = speeds[speedIndex];
+                speedBtn.textContent = `${speeds[speedIndex]}×`;
+            };
+
+            //* Scroll current
+            scrollBtn.onclick = () => {
+                const row = window.mobilePlaylistRows?.[window.mobileCurrentIndex];
+                if (!row) return;
+
+                row.scrollIntoView({ behavior: "smooth", block: "center" });
+                row.animate([{ background: "#fff59d" }, { background: "" }], { duration: 1200 });
+            };
+        }
+        // prevent duplicates
+        if (!window.mobileAudioPlaylist.some((e) => e.audioLink === item.audioLink)) {
+            window.mobileAudioPlaylist.push(item);
+            renderMobilePlaylist();
+        }
+        // autoplay first song
+        if (window.mobileAudioPlaylist.length === 1) {
+            playMobileTrack(0);
+        }
+    }
+
+    function playMobileTrack(index) {
+        window.mobileCurrentIndex = index;
+        const item = window.mobileAudioPlaylist[index];
+        const audio = document.getElementById("mobile-audio");
+        audio.src = item.audioLink;
+        document.getElementById("mobile-now-playing").innerHTML =
+            `<a href="${item.webUrl}" target="_blank" style="text-decoration:none; color:blue;">${item.title}</a>`;
+
+        document.getElementById("mobile-playback-speed").textContent = `1×`;
+        audio.play();
+        renderMobilePlaylist();
+    }
+
+    function renderMobilePlaylist() {
+        const div = document.getElementById("mobile-playlist");
+        div.innerHTML = "";
+
+        window.mobilePlaylistRows = [];
+
+        window.mobileAudioPlaylist.forEach((item, i) => {
+            const row = document.createElement("div");
+
+            row.style.cssText = `
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                gap:8px;
+                padding:5px;
+                border-bottom:1px solid #eee;
+                background:${i === window.mobileCurrentIndex ? "#e8f5ff" : ""};
+            `;
+
+            const title = document.createElement("span");
+            title.textContent = `${i + 1}. ${item.title}`;
+            title.style.cssText = `
+                flex:1;
+                cursor:pointer;
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+            `;
+
+            title.onclick = () => playMobileTrack(i);
+
+            const del = document.createElement("button");
+            del.textContent = "⛔";
+            del.title = "Delete";
+            del.style.cssText = `
+                border:none;
+                background:none;
+                cursor:pointer;
+                font-size:16px;
+            `;
+
+            del.onclick = (e) => {
+                e.stopPropagation();
+
+                window.mobileAudioPlaylist.splice(i, 1);
+
+                if (window.mobileAudioPlaylist.length === 0) {
+                    document.getElementById("mobile-audio").removeAttribute("src");
+                    document.getElementById("mobile-audio").load();
+                    document.getElementById("mobile-now-playing").textContent = "";
+                    renderMobilePlaylist();
+                    return;
+                }
+
+                if (i < window.mobileCurrentIndex) window.mobileCurrentIndex--;
+
+                if (i === window.mobileCurrentIndex) {
+                    if (window.mobileCurrentIndex >= window.mobileAudioPlaylist.length)
+                        window.mobileCurrentIndex = window.mobileAudioPlaylist.length - 1;
+
+                    playMobileTrack(window.mobileCurrentIndex);
+                } else {
+                    renderMobilePlaylist();
+                }
+            };
+            row.appendChild(title);
+            row.appendChild(del);
+
+            div.appendChild(row);
+
+            window.mobilePlaylistRows.push(row);
+        });
+    }
+
     document.querySelectorAll(".load-on-player").forEach((btn) => {
         btn.onclick = async () => {
             const data = JSON.parse(decodeURIComponent(btn.dataset.audio));
@@ -144,6 +423,8 @@ function addAllEventListeners() {
                     audioPlayer.innerHTML = `<source src="${data.audioLink}" type="audio/mpeg">`;
                     audioPlayer.load(); // important!
                     audioPlayer.play();
+                } else {
+                    addToMobilePlayer(data);
                 }
             } catch (err) {
                 console.error("Loading failed", err);
