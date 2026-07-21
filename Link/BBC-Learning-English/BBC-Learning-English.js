@@ -159,7 +159,7 @@ function addAllEventListeners() {
                     </div>
                 </div>
                 <div id="mobile-body">
-                    <div id="mobile-now-playing" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:bold; font-size: 16px; margin-bottom:4px; text-align:center; color: blue;"></div>
+                    <div id="mobile-now-playing" style="white-space:wrap; overflow:hidden; font-weight:bold; font-size:16px; margin-bottom:4px; text-align:center; color:blue; padding:3px 8px;"></div>
                     <audio id="mobile-audio" controls style="width:100%"></audio>
                     <div class="mobile-controls" style="display:flex; gap:3px; justify-content:center; align-items:center;">
                         <input type="number" id="mobile-timeInput" placeholder="5s" min="0" style="width:40px; padding: 2px; border-radius: 4px; border: 1px solid #ccc; text-align: center; font-size: 16px; outline:none;"/>
@@ -169,8 +169,9 @@ function addAllEventListeners() {
                         <button id="mobile-repeat" title="Repeat current song / playlist">🔂/🔁</button>
                         <button id="mobile-scroll-current" title="Scroll currently playing item">📲</button>
                         <button id="mobile-playback-speed" title="Adjust playback speed" style="width:50px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; padding: 3px;">1× → 1.25× → 1.5× → 1.75× → 2×</button>
+                        <button id="mobile-websearch" title="Look up in the web">🌐</button>
                     </div>
-                    <div id="mobile-playlist" style="max-height:120px; overflow-y:auto; margin-top:6px;"></div>
+                    <div id="mobile-playlist" style="border:1px solid #ADD8E6; border-radius:3px; max-height:120px; overflow-y:auto; margin-top:6px;"></div>
                 </div>
             `;
             document.body.appendChild(wrapper);
@@ -189,8 +190,9 @@ function addAllEventListeners() {
             const repeatBtn = document.getElementById("mobile-repeat");
             const scrollBtn = document.getElementById("mobile-scroll-current");
             const speedBtn = document.getElementById("mobile-playback-speed");
-            const speeds = [1, 1.25, 1.5, 1.75, 2];
-            let speedIndex = 0;
+            window.speeds = [1, 1.25, 1.5, 1.75, 2];
+            window.speedIndex = 0;
+            const webSearchBtn = document.getElementById("mobile-websearch");
 
             const btnStyle = `
                 font-size: 16px;
@@ -200,7 +202,7 @@ function addAllEventListeners() {
                 padding: 2px;
             `;
 
-            [rewindBtn, playPauseBtn, forwardBtn, repeatBtn, scrollBtn].forEach((btn) => (btn.style = btnStyle));
+            [rewindBtn, playPauseBtn, forwardBtn, repeatBtn, scrollBtn, webSearchBtn].forEach((btn) => (btn.style = btnStyle));
 
             toggleBtn.onclick = () => {
                 const hidden = body.style.display === "none";
@@ -287,13 +289,13 @@ function addAllEventListeners() {
             });
 
             //* Control playback speed
-            audio.playbackRate = speeds[speedIndex];
-            speedBtn.textContent = `${speeds[speedIndex]}×`;
+            audio.playbackRate = window.speeds[window.speedIndex];
+            speedBtn.textContent = `${window.speeds[window.speedIndex]}×`;
 
             speedBtn.onclick = () => {
-                speedIndex = (speedIndex + 1) % speeds.length;
-                audio.playbackRate = speeds[speedIndex];
-                speedBtn.textContent = `${speeds[speedIndex]}×`;
+                window.speedIndex = (window.speedIndex + 1) % window.speeds.length;
+                audio.playbackRate = window.speeds[window.speedIndex];
+                speedBtn.textContent = `${window.speeds[window.speedIndex]}×`;
             };
 
             //* Scroll current
@@ -321,12 +323,21 @@ function addAllEventListeners() {
         const item = window.mobileAudioPlaylist[index];
         const audio = document.getElementById("mobile-audio");
         audio.src = item.audioLink;
+
         document.getElementById("mobile-now-playing").innerHTML =
             `<a href="${item.webUrl}" target="_blank" style="text-decoration:none; color:blue;">${item.title}</a>`;
+        audio.playbackRate = window.speeds[window.speedIndex];
+        document.getElementById("mobile-websearch").onclick = () => {
+            open(`https://www.google.com/search?q="${item.title}"`, "_blank");
+        };
 
-        document.getElementById("mobile-playback-speed").textContent = `1×`;
         audio.play();
-        renderMobilePlaylist();
+
+        window.mobileAudioPlaylist.forEach((item, i) => {
+            const row = document.querySelector(`#mobile-playlist div:nth-child(${i + 1})`);
+            if (i === index) row.style.background = "#e8f5ff";
+            else row.style.background = "#fff";
+        });
     }
 
     function renderMobilePlaylist() {
@@ -349,7 +360,7 @@ function addAllEventListeners() {
             `;
 
             const title = document.createElement("span");
-            title.textContent = `${i + 1}. ${item.title}`;
+            title.innerHTML = `<span style="color:teal;">${i + 1}.</span> ${item.title}`;
             title.style.cssText = `
                 flex:1;
                 cursor:pointer;
@@ -400,6 +411,7 @@ function addAllEventListeners() {
             div.appendChild(row);
 
             window.mobilePlaylistRows.push(row);
+            row.scrollIntoView({ behavior: "smooth", block: "center" });
         });
     }
 
