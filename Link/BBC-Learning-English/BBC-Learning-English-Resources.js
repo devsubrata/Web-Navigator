@@ -2360,6 +2360,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260716",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260723_6_minute_english_children_in_warzones.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nvzfk2.jpg",
+        episode: "Episode 260723 / 23 Jul 2026",
+        title: "Children in warzones ",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260723_6_minute_english_children_in_warzones_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260723_6_minute_english_children_in_warzones_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260723",
+    },
 ];
 const TEWS2021 = [
     {
@@ -4964,6 +4976,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260720",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260727_tews_one_size_fits_all_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nyqp71.jpg",
+        episode: "Episode 260727 / 27 Jul 2026",
+        title: "One size fits all",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260727_tews_one_size_fits_all_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260727",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6005,6 +6026,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260715_LEFTN_coffee_is_good_for_your_brain_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260715",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260722_LEFTN_trust_in_news_at_its_lowest_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0ny28pn.jpg",
+        episode: "Episode 260722 / 07 Jul 2026",
+        title: "Global trust in news at its lowest",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260722_LEFTN_trust_in_news_at_its_lowest__worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260722",
     },
 ];
 

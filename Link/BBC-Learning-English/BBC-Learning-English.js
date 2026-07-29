@@ -140,14 +140,13 @@ function addAllEventListeners() {
                 background:#fff;
                 border:1px solid #ccc;
                 border-radius:8px;
-                padding:8px;
                 box-shadow:0 2px 8px rgba(0,0,0,.2);
                 font-size:14px;
                 user-select: none;
             `;
 
             wrapper.innerHTML = `
-                <div style="display: flex; justify-content: space-between; align-items: center; font-weight:bold; padding:5px;background:#eee;border-radius:5px; margin-bottom:6px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-weight:bold; padding:5px;background:#eee; border-radius:5px;">
                     <span class="title" style="cursor: grab; touch-action: none; padding: 2px 8px; font-size:17px; color:brown;">🎵 Playlist</span>
                     <div style="display:flex;">
                         <button id="mobile-toggle"
@@ -158,7 +157,7 @@ function addAllEventListeners() {
                                 title="Close">❌</button>
                     </div>
                 </div>
-                <div id="mobile-body">
+                <div id="mobile-body" style="padding:8px; padding-top:0;">
                     <div id="mobile-now-playing" style="white-space:wrap; overflow:hidden; font-weight:bold; font-size:16px; margin-bottom:4px; text-align:center; color:blue; padding:3px 8px;"></div>
                     <audio id="mobile-audio" controls style="width:100%"></audio>
                     <div class="mobile-controls" style="display:flex; gap:3px; justify-content:center; align-items:center;">
