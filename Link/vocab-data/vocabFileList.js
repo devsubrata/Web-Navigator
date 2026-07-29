@@ -81,6 +81,7 @@ const vocabFiles = [
     { fileName: "Common Paraphrasing Synonyms.csv", url: "#", ...colorSet1 },
     ...topicSpecificVocab,
     { fileName: "Synonyms-1(SW).csv", url: "#", ...colorSet1 },
+    { fileName: "Synonyms-2(list).csv", url: "#", ...colorSet1 },
     { fileName: "Barron's - 1100 Words You Need to Know.csv", url: "#", ...colorSet1 },
     ...phrasalVerbs,
     ...idioms,
