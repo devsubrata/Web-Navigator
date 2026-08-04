@@ -14,7 +14,7 @@ function createCard(card) {
     const btnCSS2 =
         "margin-top:5px; background: #eee; border: 1px solid rgba(210, 215, 211, 0.9); border-radius: 5px; cursor: pointer; padding: 3px 5px";
     return `
-        <div style='margin: 0; text-align: center; padding: 10px; background:${card.cardBg}; display: inline-flex; flex-direction: column; align-items: center; border-radius: 10px;  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);'>
+        <div style='margin: 0; text-align: center; padding: 10px; background:${card.cardBg}; display: inline-flex; align-self: flex-start;  flex-direction: column; align-items: center; border-radius: 10px;  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);'>
             <span style='font-size: 15px; color: black; font-weight: bold; display: block;'>
                 ${card.episode}
             </span>

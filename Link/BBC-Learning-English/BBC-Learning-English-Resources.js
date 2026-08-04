@@ -2372,6 +2372,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260723",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260730_6_minute_english_the_enhanced_games_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p05b1k.jpg",
+        episode: "Episode 260730 / 30 Jul 2026",
+        title: "The Enhanced Games",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260730_6_minute_english_the_enhanced_games_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260730_6_minute_english_the_enhanced_games_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260730",
+    },
 ];
 const TEWS2021 = [
     {
@@ -4985,6 +4997,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260727",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260804_tews_keep_yourself_to_yourself_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nw52lv.jpg",
+        episode: "Episode 260803 / 03 Aug 2026",
+        title: "Keep yourself to yourself",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260804_tews_keep_yourself_to_yourself.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260803",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6030,11 +6051,20 @@ const LEFTN2026 = [
     {
         audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260722_LEFTN_trust_in_news_at_its_lowest_download.mp3",
         bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0ny28pn.jpg",
-        episode: "Episode 260722 / 07 Jul 2026",
+        episode: "Episode 260722 / 22 Jul 2026",
         title: "Global trust in news at its lowest",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260722_LEFTN_trust_in_news_at_its_lowest__worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260722",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260729_LEFTN_no_more_playstation_discs_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p17q4r.jpg",
+        episode: "Episode 260729 / 29 Jul 2026",
+        title: "No more PlayStation discs",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260729_LEFTN_no_more_playstation_discs_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260729",
     },
 ];
 
@@ -6169,7 +6199,7 @@ const colorSet2 = [
     "#87CEFA",
     "#FFDAB9",
     "#EEE8AA",
-    "#f1a5a5",
+    "#f1b1b1",
     "#F0E68C",
     "#D8BFD8",
     "#9AC0CD",
