@@ -6066,6 +6066,15 @@ const LEFTN2026 = [
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260729",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260805_LEFTN_ceuta_migrant_crisis_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p2qw91.jpg",
+        episode: "Episode 260805 / 05 Aug 2026",
+        title: "Ceuta migrant crisis ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260805_LEFTN_ceuta_migrant_crisis_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260805",
+    },
 ];
 
 const SixMinutesEnglish = [
