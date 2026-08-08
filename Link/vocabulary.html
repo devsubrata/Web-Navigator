@@ -264,18 +264,14 @@
             // });
             // loadCSVFromFolder({ fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4 });
             // loadCSVFromFolder({ fileName: "Collocations ➜ collocations_from_cambridge.csv", url: "#", ...colorSet4 });
-            loadCSVFromFolder({
-                fileName: "Synonyms-2(list).csv",
-                url: "#",
-                ...colorSet1,
-            });
+            // loadCSVFromFolder({
+            //     fileName: "Synonyms-2(list).csv",
+            //     url: "#",
+            //     ...colorSet1,
+            // });
             // loadCSVFromFolder({ fileName: "word-family.csv", url: "#", ...colorSet2 });
             // loadCSVFromFolder({ fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 });
-            // loadCSVFromFolder({
-            //     fileName: "LEFTN-2025.csv",
-            //     url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2025",
-            //     ...colorSet2,
-            // });
+            loadCSVFromFolder({ fileName: "Idioms Collection.csv", url: "#", ...colorSet1 });
             // loadCSVFromFolder({ fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2 });
             // loadCSVFromFolder({
             //     fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv",
@@ -622,6 +618,10 @@
             function formatDetail(text) {
                 const isList = text.includes("✦");
                 if (isList) text = text.replace("✦", "");
+
+                const isHeading = text.includes("👉");
+                if (isHeading) text = text.replace("👉", "");
+
                 const bullets = ["✦&nbsp;", "🕷️", "■&nbsp;", "★&nbsp;", "🪰", "⭐", "❀&nbsp;", "💠"];
                 const bullet = bullets[Math.floor(Math.random() * bullets.length)];
 
@@ -639,7 +639,14 @@
 
                 let html = ``;
 
-                if (!isList)
+                if (isHeading) {
+                    text = text.replace(":", "");
+                    html = `
+                        <div class="flex flex-col gap-1">
+                            <p class="text-center text-[26px] mt-6">${highlightTerms(text)}</p>
+                        </div>
+                    `;
+                } else if (!isList) {
                     html = `
                         <div class="flex flex-col gap-1">
                             <span class="font-semibold text-rose-700 text-2xl">${highlightTerms(label)}:</span>
@@ -648,7 +655,7 @@
                             </div>
                         </div>
                     `;
-                else
+                } else
                     html = `
                         <div class="flex flex-col gap-1">
                                     <span class="font-semibold text-rose-700 text-2xl">${highlightTerms(label)}:</span>

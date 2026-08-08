@@ -2384,6 +2384,19 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260730",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260806_6_minute_english_how_do_climate_scientists_make_predictions_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p2sfsv.jpg",
+        episode: "Episode 260806 / 06 Aug 2026",
+        title: "How do climate scientists make predictions?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260806_6_minute_english_how_do_climate_scientists_make_predictions_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260806_6_minute_english_how_do_climate_scientists_make_predictions_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260806",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5005,6 +5018,15 @@ const TEWS2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260804_tews_keep_yourself_to_yourself.pdf"],
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260803",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260810_tews_share_your_life_story_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0ny0kcw.jpg",
+        episode: "Episode 260810 / 10 Aug 2026",
+        title: "Share your life story",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260810_tews_share_your_life_story.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260810",
     },
 ];
 const LEFTN2024 = [

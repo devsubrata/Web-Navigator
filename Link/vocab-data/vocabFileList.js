@@ -55,6 +55,7 @@ const phrasalVerbs = [{ fileName: "PhrasalVerbs.csv", url: "#", ...colorSet1 }];
 const idioms = [
     { fileName: "Idioms.csv", url: "#", ...colorSet1 },
     { fileName: "Idioms For IELTS Speaking.csv", url: "#", ...colorSet1 },
+    { fileName: "Idioms Collection.csv", url: "#", ...colorSet1 },
 ];
 
 const collocations = [
