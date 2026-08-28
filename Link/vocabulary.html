@@ -257,27 +257,9 @@
             }
 
             //TODO:-------- Preset -------------------
-            // loadCSVFromFolder({
-            //     fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv",
-            //     url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI",
-            //     ...colorSet1,
-            // });
-            // loadCSVFromFolder({ fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4 });
-            // loadCSVFromFolder({ fileName: "Collocations ➜ collocations_from_cambridge.csv", url: "#", ...colorSet4 });
-            // loadCSVFromFolder({
-            //     fileName: "Synonyms-2(list).csv",
-            //     url: "#",
-            //     ...colorSet1,
-            // });
-            // loadCSVFromFolder({ fileName: "word-family.csv", url: "#", ...colorSet2 });
-            // loadCSVFromFolder({ fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 });
-            loadCSVFromFolder({ fileName: "Idioms Collection.csv", url: "#", ...colorSet1 });
-            // loadCSVFromFolder({ fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2 });
-            // loadCSVFromFolder({
-            //     fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv",
-            //     url: "https://www.youtube.com/watch?v=_s1rIKaoAyM",
-            //     ...colorSet1,
-            // });
+
+            loadCSVFromFolder({ fileName: "DailyVocabNotes.csv", url: "#", ...colorSet1 });
+            // loadCSVFromFolder({ fileName: "Idioms Collection.csv", url: "#", ...colorSet1 });
 
             function loadMarkdown(fileObj) {
                 fetch(`vocab-data/md/${fileObj.fileName}?t=${Date.now()}`)

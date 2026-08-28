@@ -91,6 +91,7 @@ const vocabFiles = [
     { fileName: "LEFTN-2025.csv", url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2025", ...colorSet2 },
     ...collocations,
     ...wordFamily,
+    { fileName: "DailyVocabNotes.csv", url: "#", ...colorSet1 },
 ];
 
 // console.log(pdfFiles.length);

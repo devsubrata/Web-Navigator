@@ -2397,6 +2397,43 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260806",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260813_6_minute_english_who_does_the_housework_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p444kb.jpg",
+        episode: "Episode 260813 / 13 Aug 2026",
+        title: "Who does the housework?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260813_6_minute_english_who_does_the_housework_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260813_6_minute_english_who_does_the_housework_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260813",
+    },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260820_6_minute_english_sharing_the_road_with_driverless_cars_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p5993t.jpg",
+        episode: "Episode 260820 / 20 Aug 2026",
+        title: "Sharing the road with driverless cars",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260820_6_minute_english_sharing_the_road_with_driverless_cars_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260820_6_minute_english_sharing_the_road_with_driverless_cars_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260820",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260827_6_minute_english_smells_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p6hxjv.jpg",
+        episode: "Episode 260827 / 27 Aug 2026",
+        title: "How do we describe smells?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260827_6_minute_english_smells_worksheet_.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260827_6_minute_english_smells_transcript_.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260827",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5028,6 +5065,33 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260810",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260817_tews_say_less_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nxv3tl.jpg",
+        episode: "Episode 260817 / 17 Aug 2026",
+        title: "Say less",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260817_tews_say_less_transcript__.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260817",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260824_tews_no_notes_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nzclp8.jpg",
+        episode: "Episode 260824 / 24 Aug 2026",
+        title: "No notes",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260824_tews_no_notes_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260824",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260831_tews_non_starter_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p1pv0y.jpg",
+        episode: "Episode 260831 / 31 Aug 2026",
+        title: "Non-starter",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260831_tews_non_starter_transcript__.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260831",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6096,6 +6160,42 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260805_LEFTN_ceuta_migrant_crisis_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260805",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260812_LEFTN_rare_solar_eclipse_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p40sjp.jpg",
+        episode: "Episode 260812 / 12 Aug 2026",
+        title: "Europe's first solar eclipse since 1999",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260812_LEFTN_rare_solar_eclipse_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260812",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260819_LEFTN_meta_on_trial_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p57mqj.jpg",
+        episode: "Episode 260819 / 19 Aug 2026",
+        title: "US states call for big changes to Instagram and Facebook as Meta trial begins",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260819_LEFTN_meta_on_trial_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260819",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260826_LEFTN_AI_hacking_fears_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p6b5vl.jpg",
+        episode: "Episode 260826 / 26 Aug 2026",
+        title: "AI hacking other companies by itself, causing security fears ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260826_LEFTN_AI_hacking_fears_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260826",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_Nepal_flash_floods_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p7h14b.jpg",
+        episode: "Episode 260902 / 02 Sep 2026",
+        title: "Nepal recovering from impact of flash floods",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_Nepal_flash_floods_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260902",
     },
 ];
 
