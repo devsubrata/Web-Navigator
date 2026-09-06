@@ -43,6 +43,7 @@ const writingFiles = [
     { fileName: "LinkingWords.csv", url: "https://ieltsliz.com/linking-words-for-writing/", ...colorSet4 },
     { fileName: "Paraphrases & Alternative Expressions.csv", url: "#", ...colorSet4 },
     { fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 },
+    { fileName: "IELTS Task 2 Model Response.csv", url: "#", ...colorSet2 },
 ];
 
 const topicSpecificVocab = [
@@ -92,6 +93,7 @@ const vocabFiles = [
     ...collocations,
     ...wordFamily,
     { fileName: "DailyVocabNotes.csv", url: "#", ...colorSet1 },
+    { fileName: "SpeakingBandComparison.csv", url: "#", ...colorSet1 },
 ];
 
 // console.log(pdfFiles.length);

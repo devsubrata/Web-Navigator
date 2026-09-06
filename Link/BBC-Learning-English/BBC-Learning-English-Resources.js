@@ -2434,6 +2434,15 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260827",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260903_6_minute_english_storms_and_climate_change_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0nmrk4t.jpg",
+        episode: "Episode 260903 / 03 Sep 2026",
+        title: "Climate change and extreme weather",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/6min/260903_6_minute_english_storms_and_climate_change_worksheet_.pdf"],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260903",
+    },
 ];
 const TEWS2021 = [
     {
