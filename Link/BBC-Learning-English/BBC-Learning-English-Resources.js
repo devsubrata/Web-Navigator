@@ -2443,6 +2443,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260903",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260910_6_minute_english_can_apps_teach_you_a_language_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p8rq0v.jpg",
+        episode: "Episode 260910 / 10 Sep 2026",
+        title: "Can apps teach you a language?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260910_6_minute_english_can_apps_teach_you_a_language_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260910_6_minute_english_can_apps_teach_you_a_language_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260910",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5101,6 +5113,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260831",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260907_tews_try_it_on_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p1pxl7.jpg",
+        episode: "Episode 260907 / 07 Sep 2026",
+        title: "Try it on",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260907_tews_try_it_on_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260907",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6205,6 +6226,17 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_Nepal_flash_floods_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260902",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_man_survives_longest_pig_kidney_transplant_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p8pt8h.jpg",
+        episode: "Episode 260909 / 09 Sep 2026",
+        title: "Man survives longest ever pig kidney transplant",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_man_survives_longest_pig_kidney_transplant_worksheet_.pdf",
+        ],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260909",
     },
 ];
 

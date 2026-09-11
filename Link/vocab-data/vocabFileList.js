@@ -44,6 +44,7 @@ const writingFiles = [
     { fileName: "Paraphrases & Alternative Expressions.csv", url: "#", ...colorSet4 },
     { fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 },
     { fileName: "IELTS Task 2 Model Response.csv", url: "#", ...colorSet2 },
+    { fileName: "IELTS - Vocabulary (10minuteEnglish).csv", url: "#", ...colorSet2 },
 ];
 
 const topicSpecificVocab = [

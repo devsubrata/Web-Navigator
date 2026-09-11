@@ -1,167 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sequential YouTube Player</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        textarea {
-            width: 100%;
-            height: 100px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-family: monospace;
-            margin-bottom: 15px;
-            resize: vertical;
-        }
-        button {
-            background-color: #ff0000;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background-color: #cc0000;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            margin-top: 25px;
-            border-radius: 4px;
-            background: #000;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        .status {
-            margin-top: 15px;
-            font-weight: 500;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <h2>Sequential YouTube Video Player</h2>
-    <p>Enter YouTube Video IDs (one per line or separated by commas):</p>
-    
-    <!-- Example IDs are pre-filled for testing -->
-    <textarea id="videoIds" placeholder="e.g., dQw4w9WgXcQ&#10;dQw4w9WgXcQ">dQw4w9WgXcQ&#10;jNQXAC9IVRw</textarea>
-    
-    <button onclick="startPlaylist()">Load & Play Playlist</button>
-    
-    <div id="status" class="status">Status: Ready</div>
-    
-    <div class="video-wrapper">
-        <div id="player"></div>
-    </div>
-</div>
-
-<script>
-    // Load the YouTube IFrame Player API asynchronously
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    var videoQueue = [];
-    var currentTrackIndex = 0;
-
-    // This function creates an <iframe> (and YouTube player) after the API code downloads.
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '360',
-            width: '640',
-            videoId: '', // Starts empty
-            events: {
-                'onStateChange': onPlayerStateChange,
-                'onError': onPlayerError
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sequential YouTube Player</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                max-width: 800px;
+                margin: 40px auto;
+                padding: 0 20px;
+                background-color: #f9f9f9;
+                color: #333;
             }
-        });
-    }
+            .container {
+                background: white;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            textarea {
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-family: monospace;
+                margin-bottom: 15px;
+                resize: vertical;
+            }
+            button {
+                background-color: #ff0000;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            button:hover {
+                background-color: #cc0000;
+            }
+            .video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                height: 0;
+                overflow: hidden;
+                margin-top: 25px;
+                border-radius: 4px;
+                background: #000;
+            }
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+            .status {
+                margin-top: 15px;
+                font-weight: 500;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Sequential YouTube Video Player</h2>
+            <p>Enter YouTube Video IDs (one per line or separated by commas):</p>
 
-    function startPlaylist() {
-        const rawInput = document.getElementById('videoIds').value;
-        
-        // Split by newlines or commas, trim whitespace, and filter out empty strings
-        videoQueue = rawInput.split(/[\n,]+/).map(id => id.trim()).filter(id => id.length > 0);
-        
-        if (videoQueue.length === 0) {
-            updateStatus("Error: No valid video IDs found.");
-            return;
-        }
-        
-        currentTrackIndex = 0;
-        playCurrentVideo();
-    }
+            <!-- Example IDs are pre-filled for testing -->
+            <textarea id="videoIds" placeholder="e.g., dQw4w9WgXcQ&#10;dQw4w9WgXcQ">dQw4w9WgXcQ&#10;jNQXAC9IVRw</textarea>
 
-    function playCurrentVideo() {
-        if (currentTrackIndex < videoQueue.length) {
-            const nextId = videoQueue[currentTrackIndex];
-            updateStatus(`Playing video ${currentTrackIndex + 1} of ${videoQueue.length} (ID: ${nextId})`);
-            
-            // Load and automatically play the specific video
-            player.loadVideoById(nextId);
-        } else {
-            updateStatus("Playlist finished!");
-        }
-    }
+            <button onclick="startPlaylist()">Load & Play Playlist</button>
 
-    // The API calls this function when the player's state changes.
-    function onPlayerStateChange(event) {
-        // YT.PlayerState.ENDED happens when a video finishes playing
-        if (event.data == YT.PlayerState.ENDED) {
-            currentTrackIndex++;
-            playCurrentVideo();
-        }
-    }
+            <div id="status" class="status">Status: Ready</div>
 
-    // If a video is deleted, private, or embedding is disabled, skip it
-    function onPlayerError(event) {
-        console.error("YouTube Player Error code:", event.data);
-        updateStatus(`Skipping video ${currentTrackIndex + 1} due to playback error.`);
-        
-        // Move to the next video after a short delay so the user can read the error
-        setTimeout(() => {
-            currentTrackIndex++;
-            playCurrentVideo();
-        }, 2000);
-    }
+            <div class="video-wrapper">
+                <div id="player"></div>
+            </div>
+        </div>
 
-    function updateStatus(msg) {
-        document.getElementById('status').innerText = "Status: " + msg;
-    }
-</script>
+        <script>
+            // Load the YouTube IFrame Player API asynchronously
+            var tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-</body>
+            var player;
+            var videoQueue = [];
+            var currentTrackIndex = 0;
+
+            // This function creates an <iframe> (and YouTube player) after the API code downloads.
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player("player", {
+                    height: "360",
+                    width: "640",
+                    videoId: "", // Starts empty
+                    events: {
+                        onStateChange: onPlayerStateChange,
+                        onError: onPlayerError,
+                    },
+                });
+            }
+
+            function startPlaylist() {
+                const rawInput = document.getElementById("videoIds").value;
+
+                // Split by newlines or commas, trim whitespace, and filter out empty strings
+                videoQueue = rawInput
+                    .split(/[\n,]+/)
+                    .map((id) => id.trim())
+                    .filter((id) => id.length > 0);
+
+                if (videoQueue.length === 0) {
+                    updateStatus("Error: No valid video IDs found.");
+                    return;
+                }
+
+                currentTrackIndex = 0;
+                playCurrentVideo();
+            }
+
+            function playCurrentVideo() {
+                if (currentTrackIndex < videoQueue.length) {
+                    const nextId = videoQueue[currentTrackIndex];
+                    updateStatus(`Playing video ${currentTrackIndex + 1} of ${videoQueue.length} (ID: ${nextId})`);
+
+                    // Load and automatically play the specific video
+                    player.loadVideoById(nextId);
+                } else {
+                    updateStatus("Playlist finished!");
+                }
+            }
+
+            // The API calls this function when the player's state changes.
+            function onPlayerStateChange(event) {
+                // YT.PlayerState.ENDED happens when a video finishes playing
+                if (event.data == YT.PlayerState.ENDED) {
+                    currentTrackIndex++;
+                    playCurrentVideo();
+                }
+            }
+
+            // If a video is deleted, private, or embedding is disabled, skip it
+            function onPlayerError(event) {
+                console.error("YouTube Player Error code:", event.data);
+                updateStatus(`Skipping video ${currentTrackIndex + 1} due to playback error.`);
+
+                // Move to the next video after a short delay so the user can read the error
+                setTimeout(() => {
+                    currentTrackIndex++;
+                    playCurrentVideo();
+                }, 2000);
+            }
+
+            function updateStatus(msg) {
+                document.getElementById("status").innerText = "Status: " + msg;
+            }
+        </script>
+    </body>
 </html>
