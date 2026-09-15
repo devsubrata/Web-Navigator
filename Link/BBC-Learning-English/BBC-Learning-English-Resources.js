@@ -5122,6 +5122,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260907",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260910_tews_hot_take_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p6j02y.jpg",
+        episode: "Episode 260914 / 14 Sep 2026",
+        title: "Hot take",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260910_tews_hot_take.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260914",
+    },
 ];
 const LEFTN2024 = [
     {
