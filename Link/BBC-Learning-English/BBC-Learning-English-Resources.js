@@ -2455,6 +2455,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260910",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260917_6_minute_english_is_rejection_good_for_us_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p9z0sx.jpg",
+        episode: "Episode 260917 / 17 Sep 2026",
+        title: "Is rejection good for us?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260917_6_minute_english_is_rejection_good_for_us_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260917_6_minute_english_is_rejection_good_for_us_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260917",
+    },
 ];
 const TEWS2021 = [
     {
@@ -6246,6 +6258,15 @@ const LEFTN2026 = [
         ],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260909",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260916_LEFTN_could_AI_kill_us_all_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p9vgpt.jpg",
+        episode: "Episode 260916 / 16 Sep 2026",
+        title: "Humans could lose control of AI systems, AI boss says",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260916_LEFTN_could_AI_kill_us_all_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260916",
     },
 ];
 
