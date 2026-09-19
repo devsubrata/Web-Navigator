@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Kidopoly Podcast Player</title>
+        <link href="https://googleapis.com" rel="stylesheet" />
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="min-h-screen bg-slate-100 text-slate-800">
+        <main class="mx-auto max-w-[1300px] px-4 py-8 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold tracking-tight text-slate-900">Kidopoly</h1>
+                <p class="mt-2 text-slate-600">Listen, explore and learn from children's podcasts.</p>
+            </header>
+
+            <!-- Category selector -->
+            <section class="mb-8">
+                <label for="categorySelect" class="mb-2 block text-sm font-semibold text-slate-700"> Choose a category </label>
+
+                <select
+                    id="categorySelect"
+                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm shadow-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 sm:max-w-xs"
+                ></select>
+            </section>
+
+            <!-- Episode count -->
+            <div id="categoryInfo" class="mb-5 text-sm text-slate-500"></div>
+
+            <!-- Cards -->
+            <section id="episodeContainer" class="grid grid-cols-1 gap-6 md:grid-cols-2"></section>
+        </main>
+
+        <!-- Resource data MUST load first -->
+        <script src="kidopoly-resources.js"></script>
+
+        <!-- Application -->
+        <script src="kidopoly.js"></script>
+    </body>
+</html>
