@@ -5143,6 +5143,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260914",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260921_tews_same_person_different_font_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p6jjpn.jpg",
+        episode: "Episode 260921 / 21 Sep 2026",
+        title: "Same person, different font",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260921_tews_same_person_different_font.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260921",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6267,6 +6276,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260916_LEFTN_could_AI_kill_us_all_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260916",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260923_LEFTN_Trump_Xi_talks_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pc0hyl.jpg",
+        episode: "Episode 260916 / 23 Sep 2026",
+        title: "AI and trade: Will they agree?",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260923_LEFTN_Trump_Xi_talks_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260923",
     },
 ];
 

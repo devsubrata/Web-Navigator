@@ -254,27 +254,20 @@ function createEpisodeCard(episode, index) {
         downloadButton.innerHTML = `⏳ Downloading...`;
 
         try {
-            const response = await fetch(episode.audio.url);
-            if (!response.ok) throw new Error(`Download failed: ${response.status} ${response.statusText}`);
+            const link = document.createElement("a");
 
-            const blob = await response.blob();
-            const url = URL.createObjectURL(blob);
+            link.href = episode.audio.url;
+            link.download = `${fileName}.mp3`;
+            link.target = "_blank";
 
-            const a = document.createElement("a");
-            a.href = url;
-            a.download = `${fileName}.mp3`;
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
 
-            setTimeout(() => {
-                URL.revokeObjectURL(url);
-            }, 1000);
-
-            downloadButton.innerHTML = "✅Done!";
+            downloadButton.innerHTML = "✅ Done!";
         } catch (error) {
             console.error("Download error:", error);
-            downloadButton.innerHTML = "❌Failed!";
+            downloadButton.innerHTML = "❌ Failed!";
         } finally {
             setTimeout(() => {
                 downloadButton.innerHTML = originalText;

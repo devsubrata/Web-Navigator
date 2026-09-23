@@ -1,6 +1,91 @@
 const History = [
     {
         audio: {
+            url: "https://www.buzzsprout.com/2555342/episodes/19820474-what-is-the-history-of-elephants.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/history/episodes/what-is-the-history-of-elephants/",
+        image: {
+            alt: "Artwork for What is the history of elephants?",
+            url: "https://storage.buzzsprout.com/aumgnvx4exxhka944mk4yf9jv12h?.jpg",
+        },
+        meta: {
+            date: "23 September 2026",
+            duration: "11:26",
+            number: "Episode 377",
+        },
+        notes: "Did you know that long before giant elephants stomped across the savanna, their ancient ancestor was only the size of a pig?! Join Mira and Finn as they uncover the colossal, stomping, and splashing history of elephants! In this massive episode, you'll travel back 35 million years to meet a mini-elephant that loved swamps, and then fast-forward to the Ice Age to hang out with giant woolly mammoths! Have you ever wondered how an elephant uses its amazing trunk? You'll be blown away to learn it has 40,000 muscles and can suck up water like a giant super-soaker! We'll explore the epic differences between African and Asian elephants, and find out how these brilliant creatures can smell water from 12 miles away. Plus, discover the jaw-dropping true story of a famous general named Hannibal who marched 37 real-life war elephants through the freezing, snowy Alps! From delicate peanut-peeling tricks to rumbling purrs that shake the ground, this episode is packed with elephant-sized facts. Get ready for a mammoth adventure!",
+        title: "What is the history of elephants?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2555342/episodes/19814606-what-was-the-canadian-fur-trade.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/history/episodes/what-was-the-canadian-fur-trade/",
+        image: {
+            alt: "Artwork for What was the Canadian fur trade?",
+            url: "https://storage.buzzsprout.com/jkan5jec6nmij5h458iof429dqk8?.jpg",
+        },
+        meta: {
+            date: "22 September 2026",
+            duration: "12:30",
+            number: "Episode 371",
+        },
+        notes: "Grab a paddle and jump into a giant canoe! Early Canada was a massive, wild wilderness with no roads—just freezing, rushing rivers. Travel back to the 1600s to discover how early Canadian exploration started all because of... fashion?! That's right! People in Europe were totally obsessed with waterproof beaver hats, and explorers traveled thousands of miles across the ocean to find them. You'll meet the super-strong \"voyageurs,\" who were tough French-Canadian river guides that paddled giant 40-foot birchbark canoes for 14 hours a day and carried heavy 180-pound packs on their backs! We'll explore the giant Hudson's Bay Company trading empire, learn how trading forts packed massive barrels of salted salmon to send all the way to Hawaii, and discover a genius wilderness super-food called pemmican! Plus, find out what happened in 1858 when beaver hats went out of style and 30,000 miners suddenly rushed to the Fraser River looking for shiny gold! It’s a wild adventure full of swamps, waterfalls, and treasure!",
+        title: "What was the Canadian fur trade?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2555342/episodes/19807841-how-did-television-start.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/history/episodes/how-did-television-start/",
+        image: {
+            alt: "Artwork for How did television start?",
+            url: "https://storage.buzzsprout.com/8oup5y8aeqmq355u6rjaowshn5e0?.jpg",
+        },
+        meta: {
+            date: "21 September 2026",
+            duration: "12:02",
+            number: "Episode 370",
+        },
+        notes: "Have you ever wondered how television started? Grab your remote control because we are diving into the incredible history of the screen! Believe it or not, the very first face ever shown on a TV wasn't a famous actor or a cartoon character—it was a creepy ventriloquist dummy named Stooky Bill! Back in 1925, the lights needed to record a picture were so blazing hot that a real person couldn't even sit in front of the camera!\n\nJoin Mira and Finn as they explore how a twenty-one-year-old farm boy who grew up without electricity managed to invent the very first electronic television. Then, discover the massive \"Color TV War\" of the 1950s between two huge tech companies racing to bring bright, beautiful colors into people's living rooms! You'll also learn the amazing history of the Disney Channel, find out why TV dinners were actually invented to sell leftover Thanksgiving turkey, and see how massive, hundred-pound wooden TV boxes eventually shrank into the super-fast smartphones we carry in our pockets today. Press play and let's time travel through the magic of television!",
+        title: "How did television start?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2555342/episodes/19801286-what-is-the-history-of-snakes.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/history/episodes/what-is-the-history-of-snakes/",
+        image: {
+            alt: "Artwork for What is the history of snakes?",
+            url: "https://storage.buzzsprout.com/lp3zs4lergbsi42j06y6mf8rbnus?.jpg",
+        },
+        meta: {
+            date: "20 September 2026",
+            duration: "12:31",
+            number: "Episode 369",
+        },
+        notes: "Have you ever wondered where snakes came from? Believe it or not, millions of years ago, snakes actually used to have legs! In this spectacular episode of History's Not Boring, Mira and Finn slither back in time to uncover the wild history of snakes. Discover how ancient lizards burrowed underground and lost their limbs, leaving behind weird two-legged fossils!\n\nThen, travel to a steamy prehistoric jungle to meet the terrifying Titanoboa! This monstrous snake was forty-two feet long—the size of a school bus—and hunted giant crocodiles! You will also learn the awesome science behind snake venom, which is basically just super spicy spit used to paralyze their prey.\n\nPlus, we explore why snakes pop up in so many famous ancient myths, from the snake-haired gorgon Medusa to the Aztec feathered serpent god Quetzalcoatl. Finally, find out why these creepy, legless, unblinking reptiles are actually heroes that protect our food and provide life-saving medicine. Get ready for some amazing facts, including how snakes smell using their tongues and can even fly through the air! Tune in for a totally snake-tastic adventure!",
+        title: "What is the history of snakes?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2555342/episodes/19795920-how-did-the-united-nations-start.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/history/episodes/how-did-the-united-nations-start/",
+        image: {
+            alt: "Artwork for How did the United Nations start?",
+            url: "https://storage.buzzsprout.com/ihw1aapjcm83gaquy9jwfoosgay0?.jpg",
+        },
+        meta: {
+            date: "19 September 2026",
+            duration: "12:50",
+            number: "Episode 368",
+        },
+        notes: "Have you ever had a giant argument on the playground? Now imagine if entire countries had a disagreement, but instead of fighting, they built a massive global clubhouse just to talk it out! After the devastating events of World War II, leaders from all over the globe realized they needed a permanent way to keep world peace. But how do you get 50 different countries to agree on a completely new set of rules? You throw the biggest, most important meeting ever!\n\nIn 1945, thousands of delegates traveled to San Francisco to create the United Nations. It was a monumental task! Since they didn't have computers or emails, tired typists had to use 78 tons of paper—that's heavier than a dozen elephants! The final signing ceremony for the massive UN Charter took eight whole hours!\n\nJoin Mira and Finn as they travel back to the 1940s to uncover how this amazing global team-up happened. You'll find out which US President coined the name, why the UN headquarters in New York is actually its own international territory, and why UN Peacekeepers always wear bright blue helmets!",
+        title: "How did the United Nations start?",
+    },
+    {
+        audio: {
             url: "https://www.buzzsprout.com/2555342/episodes/19793416-what-is-the-history-of-hawaii.mp3",
         },
         episode_url: "https://kidopoly.com/shows/history/episodes/what-is-the-history-of-hawaii/",
@@ -157,6 +242,91 @@ const History = [
 const Philosophy = [
     {
         audio: {
+            url: "https://www.buzzsprout.com/2631947/episodes/19814601-who-was-j-l-austin.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/philosophy/episodes/who-was-j-l-austin/",
+        image: {
+            alt: "Artwork for Who was J.L. Austin?",
+            url: "https://storage.buzzsprout.com/nufcco6r7xgrk0d4o4s7iuuyclnh?.jpg",
+        },
+        meta: {
+            date: "23 September 2026",
+            duration: "11:08",
+            number: "Episode 713",
+        },
+        notes: 'Have you ever thought about how weird it is to make a promise? One second there’s no rule, and the next second—BOOM—you owe your friend a cookie! It’s basically like magic! In this mind-bending episode of Philosophy is Not Boring, Mira and Finn explore what actually happens when we say words like "I promise," "I apologize," or "I bet you." We travel back to the mid-20th century to meet an incredible Oxford philosopher named J.L. Austin. He realized that we don\'t just use words to describe the world; we actually use them to change it! He called these magic word-spells "performative utterances." If you say "I name this ship," you are literally doing the naming right then and there! But what happens when these word-spells go wrong? Can you make a promise to a goldfish? Plus, discover an unbelievable secret about J.L. Austin: he wasn\'t just a quiet teacher reading in a dusty library. During World War Two, he was a real-life spy and intelligence officer who helped plan the famous D-Day invasion! Tune in to find out how your words are basically a superpower!',
+        title: "Who was J.L. Austin?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2631947/episodes/19807833-what-is-art.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/philosophy/episodes/what-is-art/",
+        image: {
+            alt: "Artwork for What is art?",
+            url: "https://storage.buzzsprout.com/63du9cm45l5nk01ko4sj9tcplpne?.jpg",
+        },
+        meta: {
+            date: "22 September 2026",
+            duration: "11:40",
+            number: "Episode 712",
+        },
+        notes: "Imagine walking into a super fancy art museum, turning a corner, and seeing... a toilet?! In 1917, an artist named Marcel Duchamp bought a normal, factory-made urinal, signed a fake name on it, called it “Fountain,” and entered it into a huge art show! The judges panicked and hid it. But this one sneaky prank broke everyone’s brains and started a giant argument that is still going on over a hundred years later! Does art have to take a long time to make? Does it have to be perfectly beautiful? Philosophers like Arthur Danto and George Dickie realized that maybe the thing that makes something art is actually invisible! It's not about how perfectly an object is painted or carved, but the cool ideas, clever jokes, and history behind it. It even means that if museum experts say an everyday object is art, it magically becomes art! Join Mira and Finn as they explore the wildest question in history: what actually is art? Find out why a messy drawing of a potato-shaped horse might just be a total masterpiece, and discover the hilarious fate of the world's most famous toilet!",
+        title: "What is art?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2631947/episodes/19800644-what-is-the-holiday-paradox.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/philosophy/episodes/what-is-the-holiday-paradox/",
+        image: {
+            alt: "Artwork for What is the Holiday Paradox?",
+            url: "https://storage.buzzsprout.com/ruti8d949tgdrn4ibfnrtzmevhax?.jpg",
+        },
+        meta: {
+            date: "21 September 2026",
+            duration: "11:36",
+            number: "Episode 711",
+        },
+        notes: "Have you ever noticed that sitting in a boring waiting room feels like a thousand years, but playing your favorite video game makes an hour zoom by in five seconds?! Join Mira and Finn as they uncover one of the biggest mysteries of the human mind! Did you know you actually have two clocks? There is the physical clock ticking on the wall, and the secret psychological clock inside your brain! Psychologists call this mind-bending glitch the Holiday Paradox. When you are super bored, your brain tracks every single ticking second, but when you are busy having fun, it skips counting entirely! Even weirder? When you look back at your memories, the clock completely flips! A boring month with zero new memories shrinks down to nothing, while a fun, jam-packed vacation feels like it lasted forever in your memory. Discover what brilliant thinkers like William James and Saint Augustine figured out about time, and learn a real scientific superpower to make your life feel longer! Tune in to explore why time flies!",
+        title: "What is the Holiday Paradox?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2631947/episodes/19795917-what-is-karma.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/philosophy/episodes/what-is-karma/",
+        image: {
+            alt: "Artwork for What is karma?",
+            url: "https://storage.buzzsprout.com/riftob6ineo1nj5niu5toq73je3c?.jpg",
+        },
+        meta: {
+            date: "20 September 2026",
+            duration: "12:53",
+            number: "Episode 710",
+        },
+        notes: "Have you ever heard someone say \"that's karma!\" when something bad happens? Well, the true ancient meaning of karma is way cooler—and a little weirder—than a giant cosmic scoreboard! Join Mira and Finn as they explore a massive philosophical idea from ancient India that changed the world. You'll discover that karma actually just means \"action.\" In Hinduism and Buddhism, it's all about your intention—what your brain is thinking when you do something! Is spilling a glass of water bad karma if you were just trying to help? We'll solve that mystery with a wild thought experiment. Then, get ready to blow your mind with Jainism, a religion that believes karma is actually invisible, sticky dust that clings to your soul! You will learn why Jain monks gently sweep the path ahead of them with a broom just to avoid stepping on a single tiny bug. Discover how your everyday choices send out invisible ripples, and see how you score on our fun trivia quiz at the end!",
+        title: "What is karma?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2631947/episodes/19815106-who-was-aristotle.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/philosophy/episodes/who-was-aristotle/",
+        image: {
+            alt: "Artwork for Who was Aristotle?",
+            url: "https://storage.buzzsprout.com/k1x1gs5a6sh4idathzrq9iptxb0i?.jpg",
+        },
+        meta: {
+            date: "19 September 2026",
+            duration: "9:47",
+            number: "Episode 709",
+        },
+        notes: "Have you ever wished for the absolute perfect friend? Someone who never gets annoyed, always wants to play your favorite games, and is never, ever too busy for you? Sounds amazing, right! But what if that perfect friend was actually... a robot? \n\nJoin Mira and Finn on Philosophy is Not Boring as they ask a massive question: Could an AI or a machine ever be your true friend? To find the answer, we are traveling back over two thousand years to Ancient Greece to meet a super smart philosopher named Aristotle! Aristotle believed there are three different types of friendship: friendships of utility (when you help each other out), friendships of pleasure (when you just have fun playing together), and complete friendships (when you care about someone for exactly who they are). \n\nBut where does a robot fit in? If a machine is just programmed to be nice and doesn't actually have its own life to give up to spend time with you, does its kindness even count? Tune in to discover why the messy, slightly annoying parts of having human friends might actually be the greatest thing of all!",
+        title: "Who was Aristotle?",
+    },
+    {
+        audio: {
             url: "https://www.buzzsprout.com/2631947/episodes/19789663-what-is-beauty.mp3",
         },
         episode_url: "https://kidopoly.com/shows/philosophy/episodes/what-is-beauty/",
@@ -311,6 +481,91 @@ const Philosophy = [
 ];
 
 const Science = [
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2624612/episodes/19815128-what-is-space-made-of.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/science/episodes/what-is-space-made-of/",
+        image: {
+            alt: "Artwork for What is space made of?",
+            url: "https://storage.buzzsprout.com/et74zowjsfruk1gsrn6kbouevkpf?.jpg",
+        },
+        meta: {
+            date: "23 September 2026",
+            duration: "11:59",
+            number: "Episode 472",
+        },
+        notes: "Look up at the night sky. It looks like a giant, empty, pitch-black room, right? But what if I told you space isn't actually empty at all?! Join Mira and Finn on a mind-blowing journey into the deepest, darkest parts of the universe to find out what space is really made of! We usually think of space as a perfect vacuum with absolutely nothing inside, but that’s a cosmic myth! You'll discover the secrets of the Interstellar Medium, where lonely atoms float in the dark, and ride alongside Voyager One, a robotic probe that has been flying for almost fifty years and can actually hear the hum of deep space! Plus, find out about the freezing Boomerang Nebula, the invisible gravity glue called Dark Matter that holds our universe together, and the crazy quantum particles that pop in and out of existence from nothing! Space isn't a boring empty room; it is a giant, buzzing ocean of plasma, ghost matter, and icy gas clouds. Oh, and did we mention there’s a giant dust cloud in the center of our galaxy that smells exactly like sweet raspberries?! Buckle up for an epic cosmic adventure!",
+        title: "What is space made of?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2624612/episodes/19807840-how-do-animals-defend-themselves.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/science/episodes/how-do-animals-defend-themselves/",
+        image: {
+            alt: "Artwork for How do animals defend themselves?",
+            url: "https://storage.buzzsprout.com/4i91nkam4apd7jgoi7kem8qb2d8v?.jpg",
+        },
+        meta: {
+            date: "22 September 2026",
+            duration: "11:00",
+            number: "Episode 471",
+        },
+        notes: "In the wild, nobody wants to become someone else's dinner! But how do small creatures stay safe from hungry predators? Join Mira and Finn on a wild adventure to uncover the most mind-blowing and explosive animal defense mechanisms on the planet! Did you know there is a mammal covered entirely in giant fingernail-like scales? Discover the amazing Pangolin, an animal that rolls into a heavy, razor-sharp ball of armor! We will also bust a massive myth about the North American Porcupine and its 30,000 spiky quills. But wait, it gets even crazier! Prepare to be shocked by the Bombardier Beetle, a tiny insect that shoots a boiling hot, toxic chemical spray out of its bottom to blast away attackers! Plus, dive underwater to see how clever squids create gooey, fake bodies out of ink to trick sharks. Finally, meet the absolute wildest reptile of all—the Texas Horned Lizard, which literally squirts foul-tasting blood right out of its eyeballs to scare off coyotes! Packed with wild facts, gross science, and an awesome quiz, this episode proves that science is definitely not boring!",
+        title: "How do animals defend themselves?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2624612/episodes/19800654-what-are-feelings.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/science/episodes/what-are-feelings/",
+        image: {
+            alt: "Artwork for What are feelings?",
+            url: "https://storage.buzzsprout.com/lcuvu2307r2hd00oigi3bqxo1nja?.jpg",
+        },
+        meta: {
+            date: "21 September 2026",
+            duration: "12:38",
+            number: "Episode 470",
+        },
+        notes: "Have you ever wondered why you feel happy, sad, angry, or even scared? Feelings aren't just magic—they are a super cool mix of chemistry and electricity zooming around inside your body! Join Mira and Finn on a wild emotional rollercoaster to discover what is actually happening in your brain when you feel a feeling. Did you know you have a tiny, almond-shaped alarm system in your head called the amygdala? It can react to danger in just 74 milliseconds, which is way faster than you can even blink! We will also explore how human beings actually have 27 different types of emotions beautifully blended together. Plus, get ready for some incredibly wacky science facts! You will find out why your mouth gets super dry when you are nervous, how crying when you are sad is completely different from crying over chopped onions, and why scientists actually tickle rats just to hear them laugh! Understanding our emotions helps us be much kinder to ourselves and each other, so take a deep breath and let's dive in!",
+        title: "What are feelings?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2624612/episodes/19795924-how-does-the-internet-work.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/science/episodes/how-does-the-internet-work/",
+        image: {
+            alt: "Artwork for How does the internet work?",
+            url: "https://storage.buzzsprout.com/5t528aaojwl5liwg8bav95blsj0a?.jpg",
+        },
+        meta: {
+            date: "20 September 2026",
+            duration: "10:49",
+            number: "Episode 469",
+        },
+        notes: "Have you ever wondered what happens when you send a message, watch a video, or play a game online? Do the signals just float through the air like magic? Join Mira and Finn on a mind-blowing journey to discover the secret, physical machine that connects our whole world—the internet! Get ready to be amazed because the internet isn't floating up in the sky; it is actually buried at the absolute bottom of the freezing, deep ocean! Discover how thousands of miles of underwater cables, some no thicker than a garden hose, carry your messages using super-fast laser beams. You will learn about giant buildings called data centers that hold millions of computers and are as big as one hundred and twenty-five football fields! We will even uncover some hilarious and wild secrets, like why deep-sea sharks sometimes try to eat the internet! Tune in to find out how your favorite games and videos travel across the globe in a heartbeat. It is an epic underwater adventure you won't want to miss!",
+        title: "How does the internet work?",
+    },
+    {
+        audio: {
+            url: "https://www.buzzsprout.com/2624612/episodes/19793419-what-is-a-whale.mp3",
+        },
+        episode_url: "https://kidopoly.com/shows/science/episodes/what-is-a-whale/",
+        image: {
+            alt: "Artwork for What is a whale?",
+            url: "https://storage.buzzsprout.com/r4huxyj7yzeby8ug9a1378hb8f7q?.jpg",
+        },
+        meta: {
+            date: "19 September 2026",
+            duration: "11:06",
+            number: "Episode 468",
+        },
+        notes: "Did you know the biggest animal to ever live on planet Earth isn't a mighty dinosaur? It is alive today and swimming in our oceans! Join Mira and Finn as they dive deep into the fascinating world of whales and dolphins. Discover the incredible Antarctic Blue Whale, a gentle giant so massive that its heart is the size of a golf cart! But wait, if whales live in the ocean, why do they have to hold their breath underwater? \n\nYou won't believe the answer! We'll travel back 50 million years to meet Pakicetus, a bizarre, wolf-like land creature that was actually the ancient ancestor of all whales. Plus, find out exactly how these ocean giants talk to each other in the dark. From humpback whales singing beautiful 30-minute songs, to sperm whales using the loudest clicks on the planet to hunt giant squid, their sonic superpowers will blow your mind! We’ll even learn how whale poop gives humans the oxygen we need to breathe, and how dolphins invent special names for their friends. Get ready for an underwater adventure!",
+        title: "What is a whale?",
+    },
     {
         audio: {
             url: "https://www.buzzsprout.com/2624612/episodes/19789008-what-is-body-temperature.mp3",
