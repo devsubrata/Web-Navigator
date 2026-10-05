@@ -26,7 +26,13 @@ const pdfFiles = [
     { fileName: "Common Paraphrasing Synonyms.pdf", url: "#", ...colorSet3 },
     { fileName: "300 Most Commonly Used Synonyms.pdf", url: "#", ...colorSet3 },
     { fileName: "50-Synonyms-That-Actually-Boost-Your-Score-2.pdf", url: "#", ...colorSet3 },
-    { fileName: "1000 Phrasal Verbs List.pdf", url: "#", ...colorSet3 },
+    { fileName: "1000 Phrasal Verbs List.pdf", url: "#", ...colorSet3, tag: ["Phrasal Verb"] },
+    {
+        fileName: "Advanced grammar for academic task-1.pdf",
+        url: "https://www.youtube.com/watch?v=i6U4GdE3_wI",
+        ...colorSet3,
+        tag: ["Grammar"],
+    },
 ];
 const markDownFile = [
     { fileName: "TheEnglishWeSpeak-2024.md", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
@@ -35,6 +41,11 @@ const markDownFile = [
     { fileName: "LearnEnglishFromTheNews.md", url: "https://www.bbc.co.uk/programmes/p05hw4bq/episodes/downloads", ...colorSet2 },
     { fileName: "SixMinuteEnglish-2024.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english", ...colorSet2 },
     { fileName: "SixMinuteEnglish.md", url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english", ...colorSet2 },
+    {
+        fileName: "10 Real Idioms to Improve your English Fluency.md",
+        url: "#",
+        ...colorSet2,
+    },
 ];
 
 // TODO----------------- CSV files -------------------------
@@ -44,26 +55,39 @@ const writingFiles = [
     { fileName: "Paraphrases & Alternative Expressions.csv", url: "#", ...colorSet4 },
     { fileName: "Task2 ➜ BodyParagraphAnalysis.csv", url: "#", ...colorSet2 },
     { fileName: "IELTS Task 2 Model Response.csv", url: "#", ...colorSet2 },
-    { fileName: "IELTS - Vocabulary (10minuteEnglish).csv", url: "#", ...colorSet2 },
+    { fileName: "IELTS - Vocabulary (10minuteEnglish).csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary"] },
 ];
 
 const topicSpecificVocab = [
-    { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1 },
-    { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1 },
-    { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2 },
+    { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
+    { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
+    { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary"] },
 ];
 
-const phrasalVerbs = [{ fileName: "PhrasalVerbs.csv", url: "#", ...colorSet1 }];
+const phrasalVerbs = [{ fileName: "PhrasalVerbs.csv", url: "#", ...colorSet1, tag: ["Phrasal Verb"] }];
 const idioms = [
-    { fileName: "Idioms.csv", url: "#", ...colorSet1 },
-    { fileName: "Idioms For IELTS Speaking.csv", url: "#", ...colorSet1 },
-    { fileName: "Idioms Collection.csv", url: "#", ...colorSet1 },
+    { fileName: "Idioms.csv", url: "#", ...colorSet3, tag: ["Idiom"] },
+    { fileName: "Idioms For IELTS Speaking.csv", url: "#", ...colorSet3, tag: ["Idiom"] },
+    { fileName: "Idioms Collection.csv", url: "#", ...colorSet3, tag: ["Idiom"] },
+    { fileName: "IELTS-Speaking-Success-Idioms (Keith).csv", url: "#", ...colorSet3, tag: ["Idiom"] },
+    {
+        fileName: "100 Useful Idioms for the IELTS Speaking Test.csv",
+        url: "https://ieltscharlie.com/100-useful-idioms-for-the-ielts-speaking-test/",
+        ...colorSet1,
+        tag: ["Idiom"],
+    },
 ];
 
 const collocations = [
-    { fileName: "Collocations ➜ pearson-academic-collocations.csv", url: "#", ...colorSet4 },
-    { fileName: "Collocations ➜ collocations_from_cambridge.csv", url: "#", ...colorSet4 },
-    { fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4 },
+    { fileName: "Collocations ➜ pearson-academic-collocations.csv", url: "#", ...colorSet4, tag: ["Collocation"] },
+    { fileName: "Collocations ➜ collocations_from_cambridge.csv", url: "#", ...colorSet4, tag: ["Collocation"] },
+    { fileName: "Collocations ➜ Using Collocations for Natural English.csv", url: "#", ...colorSet4, tag: ["Collocation"] },
+    {
+        fileName: "IELTS Speaking – 20 Most Common Collocations to Sound More Fluent.csv",
+        url: "https://www.youtube.com/watch?v=5dq2A9GwckU",
+        ...colorSet4,
+        tag: ["Collocation"],
+    },
 ];
 
 const wordFamily = [{ fileName: "word-family.csv", url: "#", ...colorSet2 }];
@@ -76,11 +100,26 @@ const tews = [
 
 const vocabFiles = [
     ...writingFiles,
-    { fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv", url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI", ...colorSet1 },
-    { fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv", url: "https://www.youtube.com/watch?v=_s1rIKaoAyM", ...colorSet1 },
-    { fileName: "IELTS most useful vocabulary.csv", url: "#", ...colorSet1 },
-    { fileName: "Top 300 IELTS Vocabulary.csv", url: "#", ...colorSet1 },
-    { fileName: "30 IELTS Academic Writing Vocabulary Synonyms for Band 7+.csv", url: "https://www.youtube.com/watch?v=FIfKnfQU8KU", ...colorSet1 },
+    {
+        fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv",
+        url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary"],
+    },
+    {
+        fileName: "69 Advanced Words (C1 + C2) to Get a Band 9.csv",
+        url: "https://www.youtube.com/watch?v=_s1rIKaoAyM",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary"],
+    },
+    { fileName: "IELTS most useful vocabulary.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
+    { fileName: "Top 300 IELTS Vocabulary.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
+    {
+        fileName: "30 IELTS Academic Writing Vocabulary Synonyms for Band 7+.csv",
+        url: "https://www.youtube.com/watch?v=FIfKnfQU8KU",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary"],
+    },
     { fileName: "Common Paraphrasing Synonyms.csv", url: "#", ...colorSet1 },
     ...topicSpecificVocab,
     { fileName: "Synonyms-1(SW).csv", url: "#", ...colorSet1 },

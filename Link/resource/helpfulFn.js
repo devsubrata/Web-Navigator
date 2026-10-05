@@ -33,6 +33,7 @@ function highlightTerms(text, colorIndex = 14) {
         "text-[#f53928]", // 17
         "text-[#151201]", // 18
         "text-[#512d01]", // 19
+        "text-[#e8474a]", // 20
     ];
 
     const highlightedText = text.replace(/(\d+)?\*(.*?)\*/g, (match, index, content) => {

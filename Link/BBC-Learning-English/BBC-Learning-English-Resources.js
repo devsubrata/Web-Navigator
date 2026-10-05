@@ -2467,6 +2467,30 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260917",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/260924_6_minute_english_why_do_we_itch_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pc1zxm.jpg",
+        episode: "Episode 260924 / 24 Sep 2026",
+        title: "Why do we itch?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260924_6_minute_english_why_do_we_itch_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/260924_6_minute_english_why_do_we_itch_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260924",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/261001_6_minute_english_why_does_heartbreak_hurt_so_much_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pdbrwr.jpg",
+        episode: "Episode 261001 / 01 Oct 2026",
+        title: "Why does heartbreak hurt so much?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261001_6_minute_english_why_does_heartbreak_hurt_so_much_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261001_6_minute_english_why_does_heartbreak_hurt_so_much_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261001",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5152,6 +5176,24 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260921",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260928_tews_in_a_tizzy_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p8fkt8.jpg",
+        episode: "Episode 260928 / 28 Sep 2026",
+        title: "In a tizzy",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/260928_tews_in_a_tizzy_transcript_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260928",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/261005_tews_sack_something_off_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p8cd5t.jpg",
+        episode: "Episode 261005 / 05 Oct 2026",
+        title: "Sack something off",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261005_tews_sack_something_off_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261005",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6285,6 +6327,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260923_LEFTN_Trump_Xi_talks_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260923",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260930_LEFTN_young_people_aren't_weak_expert_says_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pd52vz.jpg",
+        episode: "Episode 260930 / 30 Sep 2026",
+        title: "Young people's mental distress is real, according to the head of a new review in the UK",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260930_LEFTN_young_people_aren't_weak_expert_says_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260930",
     },
 ];
 

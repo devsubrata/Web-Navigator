@@ -24,29 +24,33 @@
                     <!-- navigate BBC Learning English -->
                     <a
                         href="./BBC-Learning-English/BBC_Learning_English.html"
-                        class="inline-block max-w-md text-sm text-gray-500 mr-4 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
+                        class="inline-block max-w-md text-sm text-gray-500 mr-2 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
                         >BBC Learning English</a
                     >
                     <a
                         href="./Kidopoly/kidopoly.html"
-                        class="inline-block max-w-md text-sm text-gray-500 mr-4 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
+                        class="inline-block max-w-md text-sm text-gray-500 mr-2 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
                         >Kidopoly</a
                     >
                     <button
                         id="vocab-load"
-                        class="inline-block max-w-md text-sm text-gray-500 mr-4 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
+                        class="inline-block max-w-md text-sm text-gray-500 mr-2 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
                         title="load vocabulary file"
                     >
                         Load Vocabulary
                     </button>
                     <button
                         id="image-load"
-                        class="inline-block max-w-md text-sm text-gray-500 mr-4 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
+                        class="inline-block max-w-md text-sm text-gray-500 mr-2 py-2 px-4 rounded-lg border-0 text-xl bg-blue-500 text-white hover:bg-blue-600 cursor-pointer"
                         title="Show Grammar Notes"
                     >
                         ImageCards
                     </button>
-                    <button id="refreshBtn" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">Refresh</button>
+                    <select
+                        id="searchTag"
+                        class="appearance-none bg-green-500 hover:bg-green-600 focus:bg-green-600 text-white px-4 py-2 pr-10 rounded-lg cursor-pointer font-medium shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 transition-all duration-200"
+                    ></select>
+                    <button id="refreshBtn" class="bg-red-500 text-white ml-2 px-4 py-2 rounded-lg hover:bg-red-600 transition">Refresh</button>
                 </div>
                 <div id="fileList" class="mt-4 flex flex-wrap gap-3 justify-center"></div>
                 <input type="file" id="fileInput" accept=".csv,.md, .pdf" class="hidden" />
@@ -174,6 +178,8 @@
             let pdfDoc = null;
             let currentPage = 1;
             let scale = 1.2;
+            let tags = new Set();
+
             const canvas = document.getElementById("pdfCanvas");
             const ctx = canvas.getContext("2d");
 
@@ -181,6 +187,12 @@
             const input = document.getElementById("fileInput");
             const container = document.getElementById("cardsContainer");
             const imageContainer = document.getElementById("imageContainer");
+
+            const allFiles = [
+                ...vocabFiles.map((f) => ({ ...f, type: "csv" })),
+                ...markDownFile.map((f) => ({ ...f, type: "md" })),
+                ...pdfFiles.map((f) => ({ ...f, type: "pdf" })),
+            ];
 
             document.getElementById("image-load").onclick = () => {
                 clearAllViews();
@@ -204,17 +216,11 @@
                 document.getElementById("loaderOverlay").classList.add("hidden");
             }
 
-            function renderUnifiedFileList() {
+            function renderUnifiedFileList(files) {
                 const list = document.getElementById("fileList");
                 list.innerHTML = ""; // Clear any existing buttons
 
-                const allFiles = [
-                    ...vocabFiles.map((f) => ({ ...f, type: "csv" })),
-                    ...markDownFile.map((f) => ({ ...f, type: "md" })),
-                    ...pdfFiles.map((f) => ({ ...f, type: "pdf" })),
-                ];
-
-                allFiles.forEach((fileObj) => {
+                files.forEach((fileObj) => {
                     const btn = document.createElement("button");
 
                     const { backgroundColor, textColor, hoverColor } = fileObj;
@@ -239,9 +245,11 @@
                         }
                     };
 
+                    if (fileObj.tag) fileObj.tag.forEach((t) => tags.add(t));
                     list.appendChild(btn);
                 });
             }
+
             function loadCSVFromFolder(fileObj) {
                 fetch(`vocab-data/csv/${fileObj.fileName}?t=${Date.now()}`)
                     .then((res) => res.text())
@@ -260,12 +268,6 @@
                         alert("Failed to load CSV file");
                     });
             }
-
-            //TODO:-------- Preset -------------------
-
-            // loadCSVFromFolder({ fileName: "DailyVocabNotes.csv", url: "#", ...colorSet1 });
-            loadCSVFromFolder({ fileName: "IELTS Task 2 Model Response.csv", url: "#", ...colorSet1 });
-
             function loadMarkdown(fileObj) {
                 fetch(`vocab-data/md/${fileObj.fileName}?t=${Date.now()}`)
                     .then((res) => res.text())
@@ -297,7 +299,44 @@
                     })
                     .catch((err) => console.error("PDF load error:", err));
             }
-            renderUnifiedFileList();
+
+            renderUnifiedFileList(allFiles);
+
+            function populateSearchBox() {
+                const selectElm = document.getElementById("searchTag");
+
+                // 1. Clear any existing options (optional but recommended)
+                selectElm.innerHTML = "";
+
+                // 2. Add a default placeholder option (optional)
+                const defaultOption = document.createElement("option");
+                defaultOption.textContent = "All Items";
+                defaultOption.className = "text-gray-800 bg-white";
+                defaultOption.value = "all";
+                selectElm.appendChild(defaultOption);
+
+                // 3. Populate from the tags Set
+                tags.forEach((tag) => {
+                    const option = document.createElement("option");
+                    option.className = "text-gray-800 bg-white";
+                    option.value = tag; // What gets sent to the server/state
+                    option.textContent = tag; // What the user sees
+                    selectElm.appendChild(option);
+                });
+            }
+            populateSearchBox();
+
+            document.getElementById("searchTag").onchange = (e) => {
+                const tag = e.target.value;
+                if (tag === "all") {
+                    renderUnifiedFileList(allFiles);
+                    clearAllViews();
+                    return;
+                }
+                const searchedFiles = allFiles.filter((fileObj) => fileObj?.tag?.includes(tag));
+                renderUnifiedFileList(searchedFiles);
+                clearAllViews();
+            };
 
             //TODO:------Render pdf file--------------
             function renderPage(num) {
@@ -380,6 +419,7 @@
             input.addEventListener("change", handleFile);
 
             function clearAllViews() {
+                document.getElementById("fileNameHeading").innerHTML = "";
                 document.getElementById("cardsContainer").innerHTML = "";
                 document.getElementById("mdFileContainer").innerHTML = "";
                 document.getElementById("pdfSection").classList.add("hidden");
@@ -696,6 +736,18 @@
                     container.style.justifyContent = `center`;
                 }
             }
+
+            function testFunction(columns, width, filename) {
+                container.style.gridTemplateColumns = `repeat(${columns}, ${width}px)`;
+                container.style.justifyContent = `center`;
+                loadCSVFromFolder({ fileName: filename, url: "#", ...colorSet3 });
+            }
+            // testFunction(1, 600, "100 Useful Idioms for the IELTS Speaking Test.csv");
+            // testFunction(1, 850, "IELTS-Speaking-Success-Idioms (Keith).csv");
+            // testFunction(1, 600, "IELTS Speaking – 20 Most Common Collocations to Sound More Fluent.csv");
+
+            // loadCSVFromFolder({ fileName: "IELTS-Speaking-Success-Idioms (Keith).csv", url: "#", ...colorSet3 });
+            // loadCSVFromFolder({ fileName: "100 Useful Idioms for the IELTS Speaking Test.csv", url: "#", ...colorSet3 });
 
             // on change
             slider.addEventListener("input", (e) => {
