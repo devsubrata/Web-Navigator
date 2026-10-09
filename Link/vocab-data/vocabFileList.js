@@ -93,9 +93,10 @@ const collocations = [
 const wordFamily = [{ fileName: "word-family.csv", url: "#", ...colorSet2 }];
 
 const tews = [
-    { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
-    { fileName: "TEWS-2025.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
-    { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2 },
+    { fileName: "TEWS-2023.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2, tag: ["BBC"] },
+    { fileName: "TEWS-2025.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2, tag: ["BBC"] },
+    { fileName: "TEWS-2026.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2, tag: ["BBC"] },
+    { fileName: "TheEnglishWeSpeak.csv", url: "https://www.bbc.co.uk/learningenglish/features/the-english-we-speak", ...colorSet2, tag: ["BBC"] },
 ];
 
 const vocabFiles = [

@@ -2491,6 +2491,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261001",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/261008_6_minute_english_are_people_drinking_less_alcohol_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pffthk.jpg",
+        episode: "Episode 261008 / 08 Oct 2026",
+        title: "Are people drinking less alcohol?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261008_6_minute_english_are_people_drinking_less_alcohol_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261008_6_minute_english_are_people_drinking_less_alcohol_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261008",
+    },
 ];
 const TEWS2021 = [
     {
@@ -6336,6 +6348,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260930_LEFTN_young_people_aren't_weak_expert_says_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260930",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261007_LEFTN_French_student_protests_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pfd6pp.jpg",
+        episode: "Episode 261007 / 07 Oct 2026",
+        title: "French student protests",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261007_LEFTN_French_student_protests_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261007",
     },
 ];
 

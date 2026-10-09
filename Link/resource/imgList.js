@@ -24,6 +24,9 @@ const GRA = [
     "Sentence Structure.png",
     "ParagraphDevelopment.png",
     "Writing improvement.png",
+    "Task 1 ➜ Before & After + ing.png",
+    "Task 1 ➜ Participle Clause.png",
+    "Task 1 ➜ Relative Clause.png",
 ];
 
 const GrammarCards = [
