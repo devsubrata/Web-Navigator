@@ -2503,6 +2503,18 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261008",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/261015_6_minute_english_why_do_people_buy_gold_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pgrtq9.jpg",
+        episode: "Episode 261015 / 15 Oct 2026",
+        title: "Why do people buy gold?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261015_6_minute_english_why_do_people_buy_gold_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261015_6_minute_english_why_do_people_buy_gold_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261015",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5206,6 +5218,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261005",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/260912_tews_try_ones_patience_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p9w296.jpg",
+        episode: "Episode 261012 / 12 Oct 2026",
+        title: "Try one's patience",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261012_tews_try_ones_patience_transcript_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261012",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6357,6 +6378,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261007_LEFTN_French_student_protests_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261007",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261014_LEFTN_deadly_saudi_airport_attack_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pgkvhr.jpg",
+        episode: "Episode 261014 / 14 Oct 2026",
+        title: "Deadly Saudi airport attacks",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261014_LEFTN_deadly_saudi_airport_attack_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261014",
     },
 ];
 

@@ -62,6 +62,12 @@ const topicSpecificVocab = [
     { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
     { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
     { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary"] },
+    {
+        fileName: "IELTS Vocabulary 🟢 English Pro Tips.csv",
+        url: "https://www.youtube.com/watch?v=z4pxc2eESbw&list=PLs_vfE4jCVSoDgiMMMiEiaZYYgDCJCZZR",
+        ...colorSet4,
+        tag: ["IELTS Vocabulary"],
+    },
 ];
 
 const phrasalVerbs = [{ fileName: "PhrasalVerbs.csv", url: "#", ...colorSet1, tag: ["Phrasal Verb"] }];
