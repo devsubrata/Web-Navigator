@@ -127,6 +127,13 @@ const vocabFiles = [
         ...colorSet1,
         tag: ["IELTS Vocabulary"],
     },
+    {
+        fileName: "IELTS Vocabulary (Juva).csv",
+        url: "#",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary"],
+    },
+
     { fileName: "Common Paraphrasing Synonyms.csv", url: "#", ...colorSet1 },
     ...topicSpecificVocab,
     { fileName: "Synonyms-1(SW).csv", url: "#", ...colorSet1 },

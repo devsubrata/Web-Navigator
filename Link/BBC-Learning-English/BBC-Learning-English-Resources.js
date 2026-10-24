@@ -2515,6 +2515,19 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261015",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261022_6_minute_english_what_should_you_eat_for_a_better_nights_sleep_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0phpgsm.jpg",
+        episode: "Episode 261022 / 22 Oct 2026",
+        title: "What should you eat for a better night’s sleep?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261022_6_minute_english_what_should_you_eat_for_a_better_nights_sleep_worksheet_.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261022_6_minute_english_what_should_you_eat_for_a_better_nights_sleep_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261022",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5227,6 +5240,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261012",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/261019_tews_leave_to_one's_own_devices_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p9w43s.jpg",
+        episode: "Episode 261019 / 16 Sep 2026",
+        title: "Leave to one's own devices",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261019_tews_leave_to_ones_own_devices_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261019",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6387,6 +6409,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261014_LEFTN_deadly_saudi_airport_attack_worksheet.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261014",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261021_LEFTN_gen_z_protests_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0phsfs5.jpg",
+        episode: "Episode 261021 / 21 Oct 2026",
+        title: "Why are young people protesting around the world? ",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261021_LEFTN_gen_z_protests_worksheet_.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261021",
     },
 ];
 
