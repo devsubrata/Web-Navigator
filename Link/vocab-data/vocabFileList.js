@@ -58,15 +58,23 @@ const writingFiles = [
     { fileName: "IELTS - Vocabulary (10minuteEnglish).csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary"] },
 ];
 
+const readingFiles = [{ fileName: "Top 100 List of heading Vocabulary.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary", "Reading"] }];
+
 const topicSpecificVocab = [
-    { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
-    { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary"] },
-    { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary"] },
+    { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"] },
+    {
+        fileName: "IELTS Writing Task 2 Vocabulary List — Band 7+.csv",
+        url: "#",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"],
+    },
+    { fileName: "IELTS Academic vocabulary (Mitchel).csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"] },
+    { fileName: "Udemy IELTS Vocabulary.csv", url: "#", ...colorSet2, tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"] },
     {
         fileName: "IELTS Vocabulary 🟢 English Pro Tips.csv",
         url: "https://www.youtube.com/watch?v=z4pxc2eESbw&list=PLs_vfE4jCVSoDgiMMMiEiaZYYgDCJCZZR",
         ...colorSet4,
-        tag: ["IELTS Vocabulary"],
+        tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"],
     },
 ];
 
@@ -107,6 +115,7 @@ const tews = [
 
 const vocabFiles = [
     ...writingFiles,
+    ...readingFiles,
     {
         fileName: "50 Synonyms You NEED To Know to Pass The IELTS Test.csv",
         url: "https://www.youtube.com/watch?v=8oYpg7Gb1QI",
