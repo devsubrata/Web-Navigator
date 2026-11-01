@@ -2528,6 +2528,19 @@ const SME2026 = [
         type: "SME",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261022",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261029_6_minute_english_is_aircon_the_answer_to_a_heating_world_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pjxyf3.jpg",
+        episode: "Episode 261029 / 29 Oct 2026",
+        title: "Is aircon the answer to a heating world?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261029_6_minute_english_is_aircon_the_answer_to_a_heating_world_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261029_6_minute_english_is_aircon_the_answer_to_a_heating_world_transcript.pdf",
+        ],
+        type: "SME",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261029",
+    },
 ];
 const TEWS2021 = [
     {
@@ -5243,11 +5256,20 @@ const TEWS2026 = [
     {
         audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/261019_tews_leave_to_one's_own_devices_download.mp3",
         bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0p9w43s.jpg",
-        episode: "Episode 261019 / 16 Sep 2026",
+        episode: "Episode 261019 / 19 Oct 2026",
         title: "Leave to one's own devices",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261019_tews_leave_to_ones_own_devices_transcript.pdf"],
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261019",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/261026_tews_in_the_same_breath_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pc1wfy.jpg",
+        episode: "Episode 261026 / 26 Oct 2026",
+        title: "In the same breath",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261026_tews_in_the_same_breath_transcript.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261026",
     },
 ];
 const LEFTN2024 = [
@@ -6418,6 +6440,15 @@ const LEFTN2026 = [
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261021_LEFTN_gen_z_protests_worksheet_.pdf"],
         type: "LEFTN",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261021",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261028_LEFTN_Brazil_election_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pk12d3.jpg",
+        episode: "Episode 261028 / 28 Oct 2026",
+        title: " Lula surprises many with fourth election win",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261028_LEFTN_Brazil_election_worksheet.pdf"],
+        type: "LEFTN",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261028",
     },
 ];
 

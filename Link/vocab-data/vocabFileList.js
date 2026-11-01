@@ -63,6 +63,12 @@ const readingFiles = [{ fileName: "Top 100 List of heading Vocabulary.csv", url:
 const topicSpecificVocab = [
     { fileName: "IELTS-TopicSpecific-Vocabulary-1.csv", url: "#", ...colorSet1, tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"] },
     {
+        fileName: "IELTS Speaking Vocabulary (topic specific).csv",
+        url: "#",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary", "Topic Specific Vocabulary", "Speaking"],
+    },
+    {
         fileName: "IELTS Writing Task 2 Vocabulary List — Band 7+.csv",
         url: "#",
         ...colorSet1,
