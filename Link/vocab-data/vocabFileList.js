@@ -69,6 +69,13 @@ const topicSpecificVocab = [
         tag: ["IELTS Vocabulary", "Topic Specific Vocabulary", "Speaking"],
     },
     {
+        fileName: "2500 IELTS Vocabulary.csv",
+        url: "#",
+        ...colorSet1,
+        tag: ["IELTS Vocabulary", "Topic Specific Vocabulary"],
+    },
+
+    {
         fileName: "IELTS Writing Task 2 Vocabulary List — Band 7+.csv",
         url: "#",
         ...colorSet1,

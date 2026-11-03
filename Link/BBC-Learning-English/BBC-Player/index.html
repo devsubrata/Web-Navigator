@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBC Video Player</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="h-screen w-screen overflow-hidden bg-slate-950 font-sans text-slate-100 antialiased">
+
+  <!-- Desktop backdrop -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0"
+       style="background:
+         radial-gradient(60rem 40rem at 15% 10%, rgb(139 92 246 / .18), transparent 60%),
+         radial-gradient(50rem 40rem at 90% 90%, rgb(244 63 94 / .14), transparent 60%),
+         radial-gradient(40rem 30rem at 80% 5%, rgb(6 182 212 / .10), transparent 60%);"></div>
+  <div aria-hidden="true" class="grid-bg pointer-events-none fixed inset-0 opacity-40"></div>
+  <p class="pointer-events-none fixed inset-x-0 bottom-5 text-center text-xs text-slate-500">
+    Drag the title bar · resize from any edge or corner · press <span class="kbd">?</span> for shortcuts
+  </p>
+
+  <!-- Reopen dock (shown after the window is closed) -->
+  <button id="dock" class="fixed bottom-8 left-1/2 z-50 hidden -translate-x-1/2 items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2.5 text-sm font-medium text-slate-100 shadow-2xl backdrop-blur-xl transition hover:bg-slate-800">
+    <span class="grid h-5 w-5 place-items-center rounded-md acc-grad text-white [&>svg]:h-3 [&>svg]:w-3" data-icon="play" data-fill></span>
+    Reopen BBC Player
+  </button>
+
+  <!-- ================= PLAYER WINDOW ================= -->
+  <main id="win" class="fixed z-40 select-none" style="left:0;top:0;width:880px;height:600px" role="dialog" aria-label="BBC Video Player">
+
+    <!-- Ambient glow -->
+    <div id="glow" aria-hidden="true" class="acc-grad pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] opacity-30 blur-3xl"></div>
+
+    <section id="frame" data-w="lg" data-immersive="false" data-chrome="shown" data-max="false" data-min="false"
+             class="relative h-full w-full overflow-hidden rounded-2xl bg-slate-900/90 shadow-[0_30px_80px_-20px_rgba(0,0,0,.85)] ring-1 ring-white/10 backdrop-blur-xl">
+
+      <!-- ===== Title bar ===== -->
+      <header id="titlebar" class="title absolute inset-x-0 top-0 z-30 flex h-11 items-center justify-between gap-3 border-b border-white/10 bg-slate-900/85 px-3 backdrop-blur-md">
+        <div class="pointer-events-none flex min-w-0 items-center gap-2.5">
+          <span class="grid h-6 w-6 flex-none place-items-center rounded-md acc-grad text-white shadow [&>svg]:h-3.5 [&>svg]:w-3.5" data-icon="play" data-fill></span>
+          <div class="min-w-0 leading-tight">
+            <div class="truncate text-[13px] font-semibold tracking-tight">BBC Video Player</div>
+            <div class="flex items-center gap-1.5 text-[10px] text-slate-400">
+              <span id="status-dot" class="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+              <span id="status-text">Loading…</span>
+              <span class="text-slate-600">•</span>
+              <span id="pid-text" class="font-mono">p0phstk6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pointer-events-none flex items-center gap-0.5">
+          <button id="btn-lock"  class="tb-btn pointer-events-auto tip-down tip-end" data-tip="Lock position · P" aria-label="Lock position" data-icon="unlock"></button>
+          <button id="btn-min"   class="tb-btn pointer-events-auto tip-down tip-end" data-tip="Minimize · N" aria-label="Minimize" data-icon="minus"></button>
+          <button id="btn-max"   class="tb-btn pointer-events-auto tip-down tip-end" data-tip="Maximize · M" aria-label="Maximize" data-icon="square"></button>
+          <button id="btn-close" class="tb-btn tb-close pointer-events-auto tip-down tip-end" data-tip="Close" aria-label="Close" data-icon="x"></button>
+        </div>
+      </header>
+
+      <!-- ===== Stage ===== -->
+      <div id="stage" class="absolute inset-x-0 overflow-hidden bg-black">
+        <iframe id="player" title="BBC programme player"
+                class="absolute left-0 top-0 border-0 bg-black"
+                style="width:100%;height:100%;transform-origin:0 0"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture; clipboard-write"
+                allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Loading overlay -->
+        <div id="loading" class="absolute inset-0 z-10 grid place-items-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+          <div class="flex max-w-xs flex-col items-center gap-4 px-6 text-center">
+            <div class="h-10 w-10 animate-spin rounded-full border-2 border-white/10 border-t-[rgb(var(--accent))]"></div>
+            <p class="text-sm text-slate-300">Connecting to the BBC player…</p>
+            <div id="slow" class="hidden space-y-3">
+              <p class="text-xs leading-relaxed text-slate-400">Taking a while. The BBC may restrict playback in your region or block embedding for this programme.</p>
+              <button id="slow-open" class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:bg-white/10">Open on BBC instead</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sleep / stopped overlay -->
+        <div id="idle" class="absolute inset-0 z-10 hidden place-items-center bg-slate-950">
+          <div class="flex flex-col items-center gap-4 px-6 text-center">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl acc-soft [&>svg]:h-7 [&>svg]:w-7" data-icon="moon"></span>
+            <div>
+              <p class="text-sm font-semibold">Sleep timer ended</p>
+              <p class="mt-1 text-xs text-slate-400">Playback was stopped.</p>
+            </div>
+            <button id="idle-resume" class="rounded-lg acc-grad px-4 py-2 text-sm font-semibold text-white shadow-lg transition hover:brightness-110">Resume</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Immersive hot zones -->
+      <div id="hot-top" class="absolute inset-x-0 top-0 z-20 h-3"></div>
+      <div id="hot-bottom" class="absolute inset-x-0 bottom-0 z-20 h-3"></div>
+
+      <!-- Menu backdrop (the iframe swallows outside clicks, so we cover it) -->
+      <div id="backdrop" class="absolute inset-0 z-20 hidden"></div>
+
+      <!-- ===== Menus ===== -->
+      <div id="menu-load" class="menu hidden left-3 w-[min(22rem,calc(100%-1.5rem))]">
+        <div class="menu-label">Load programme</div>
+        <form id="load-form" class="flex gap-2 px-1.5 pb-1">
+          <input id="load-input" autocomplete="off" spellcheck="false" placeholder="p0phstk6 or a bbc.co.uk URL"
+                 class="min-w-0 flex-1 rounded-lg border border-white/10 bg-black/30 px-3 py-2 text-sm placeholder:text-slate-500 focus:border-[rgb(var(--accent))] focus:outline-none" />
+          <button class="rounded-lg acc-grad px-3.5 text-sm font-semibold text-white transition hover:brightness-110">Load</button>
+        </form>
+        <p id="load-err" class="hidden px-2 pb-1 text-xs text-rose-400">That doesn't look like a BBC programme ID.</p>
+        <div class="menu-label mt-1">Recent</div>
+        <ul id="recent" class="space-y-0.5"></ul>
+      </div>
+
+      <div id="menu-ratio" class="menu hidden right-3 w-52">
+        <div class="menu-label">Fit window to ratio</div>
+        <button class="menu-item" data-ratio="16:9">Widescreen <kbd>16:9</kbd></button>
+        <button class="menu-item" data-ratio="21:9">Cinema <kbd>21:9</kbd></button>
+        <button class="menu-item" data-ratio="4:3">Classic <kbd>4:3</kbd></button>
+        <button class="menu-item" data-ratio="1:1">Square <kbd>1:1</kbd></button>
+      </div>
+
+      <div id="menu-snap" class="menu hidden right-3 w-56">
+        <div class="menu-label">Snap window</div>
+        <button class="menu-item" data-snap="tl">Top left <kbd>1</kbd></button>
+        <button class="menu-item" data-snap="tr">Top right <kbd>2</kbd></button>
+        <button class="menu-item" data-snap="bl">Bottom left <kbd>3</kbd></button>
+        <button class="menu-item" data-snap="br">Bottom right <kbd>4</kbd></button>
+        <button class="menu-item" data-snap="center">Center <kbd>5</kbd></button>
+        <button class="menu-item" data-snap="left">Left half</button>
+        <button class="menu-item" data-snap="right">Right half</button>
+        <button class="menu-item" data-snap="mini">Mini player</button>
+      </div>
+
+      <div id="menu-sleep" class="menu hidden right-3 w-48">
+        <div class="menu-label">Sleep timer</div>
+        <button class="menu-item" data-sleep="0">Off</button>
+        <button class="menu-item" data-sleep="15">15 minutes</button>
+        <button class="menu-item" data-sleep="30">30 minutes</button>
+        <button class="menu-item" data-sleep="45">45 minutes</button>
+        <button class="menu-item" data-sleep="60">1 hour</button>
+        <button class="menu-item" data-sleep="90">90 minutes</button>
+      </div>
+
+      <div id="menu-help" class="menu hidden right-3 w-72">
+        <div class="menu-label">Keyboard shortcuts</div>
+        <ul id="help-list" class="space-y-0.5 px-1"></ul>
+        <p class="px-2 pb-1 pt-2 text-[11px] leading-relaxed text-slate-500">Shortcuts work while this window frame has focus. Once you click inside the BBC page, the BBC page receives the keys.</p>
+      </div>
+
+      <div id="menu-settings" class="menu hidden right-3 w-72">
+        <div class="menu-label">Appearance</div>
+        <div class="space-y-4 px-2 pb-2 pt-1">
+          <div>
+            <div class="mb-1.5 flex items-center justify-between text-xs text-slate-300">
+              <span>Window opacity</span><span id="opacity-val" class="tabular-nums text-slate-400">100%</span>
+            </div>
+            <input id="opacity" type="range" min="40" max="100" value="100" class="w-full" />
+          </div>
+          <div>
+            <div class="mb-2 text-xs text-slate-300">Accent</div>
+            <div id="swatches" class="flex gap-2"></div>
+          </div>
+          <div class="space-y-2.5">
+            <label class="flex items-center justify-between text-sm text-slate-200">Ambient glow
+              <button id="sw-glow" role="switch" aria-checked="true" class="sw" aria-label="Ambient glow"></button></label>
+            <label class="flex items-center justify-between text-sm text-slate-200">Immersive mode
+              <button id="sw-immersive" role="switch" aria-checked="false" class="sw" aria-label="Immersive mode"></button></label>
+            <label class="flex items-center justify-between text-sm text-slate-200">Lock position
+              <button id="sw-lock" role="switch" aria-checked="false" class="sw" aria-label="Lock position"></button></label>
+          </div>
+          <div class="flex gap-2 pt-1">
+            <button id="btn-reset" class="flex-1 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-slate-200 transition hover:bg-white/10">Reset layout</button>
+            <button id="btn-open-menu" class="flex-1 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-slate-200 transition hover:bg-white/10">Open on BBC</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast -->
+      <div id="toast" class="pointer-events-none absolute bottom-[4.5rem] left-1/2 z-40 -translate-x-1/2 translate-y-2 rounded-full border border-white/10 bg-slate-950/90 px-3.5 py-1.5 text-xs font-medium text-slate-100 opacity-0 shadow-xl backdrop-blur-md transition duration-200"></div>
+
+        <!-- ===== Control bar ===== -->
+        <footer id="controls" class="absolute inset-x-0 bottom-0 z-30 flex h-14 items-center gap-1 border-t border-white/10 bg-slate-900/85 px-3 backdrop-blur-md">
+        <button id="btn-reload" class="cb-btn tip-start" data-tip="Reload · R" aria-label="Reload" data-icon="refresh"></button>
+        <button id="btn-load" data-menu="menu-load" aria-expanded="false" class="cb-btn" data-tip="Load programme · L" aria-label="Load programme" data-icon="globe"></button>
+        <button id="btn-open" class="cb-btn hide-sm" data-tip="Open on BBC · O" aria-label="Open on BBC" data-icon="external"></button>
+        <button id="btn-copy" class="cb-btn hide-sm" data-tip="Copy link · C" aria-label="Copy link" data-icon="link"></button>
+
+        <span class="hide-md mx-1.5 h-5 w-px bg-white/10"></span>
+
+        <div class="hide-md flex items-center rounded-lg bg-white/5 p-0.5">
+            <button id="zoom-out" class="cb-btn !h-7 !w-7" data-tip="Zoom out · −" aria-label="Zoom out" data-icon="zoomout"></button>
+            <button id="zoom-val" class="w-12 text-center text-xs font-medium tabular-nums text-slate-300 transition hover:text-white" data-tip="Reset zoom · 0" aria-label="Reset zoom">100%</button>
+            <button id="zoom-in" class="cb-btn !h-7 !w-7" data-tip="Zoom in · +" aria-label="Zoom in" data-icon="zoomin"></button>
+        </div>
+
+        <form id="pid-form" class="mx-2 flex min-w-0 flex-1 items-center gap-1.5">
+        <input id="pid-input" list="pid-list" autocomplete="off" spellcheck="false"
+                placeholder="Programme ID, e.g. p0phstk6" aria-label="Programme ID"
+                class="min-w-0 flex-1 select-text rounded-lg border border-white/10 bg-black/30 px-3 py-1.5 text-xs placeholder:text-slate-500 focus:border-[rgb(var(--accent))] focus:outline-none" />
+        <datalist id="pid-list"></datalist>
+        <button type="submit"
+                class="shrink-0 rounded-lg acc-grad px-3.5 py-1.5 text-xs font-semibold text-white shadow transition hover:brightness-110 active:scale-95">
+            Play
+        </button>
+        </form>
+
+        <span id="sleep-pill" class="hide-sm mr-1 hidden items-center gap-1.5 rounded-full acc-soft px-2.5 py-1 text-[11px] font-medium tabular-nums">
+            <span data-icon="moon" class="[&>svg]:h-3 [&>svg]:w-3"></span><span id="sleep-left">00:00</span>
+        </span>
+
+        <button id="btn-ratio" data-menu="menu-ratio" aria-expanded="false" class="cb-btn hide-md" data-tip="Fit ratio" aria-label="Fit ratio" data-icon="ratio"></button>
+        <button id="btn-snap" data-menu="menu-snap" aria-expanded="false" class="cb-btn" data-tip="Snap window" aria-label="Snap window" data-icon="layout"></button>
+        <button id="btn-sleep" data-menu="menu-sleep" aria-expanded="false" class="cb-btn hide-sm" data-tip="Sleep timer" aria-label="Sleep timer" data-icon="moon"></button>
+        <button id="btn-immersive" class="cb-btn hide-md" data-tip="Immersive · I" aria-label="Immersive mode" data-icon="eye"></button>
+        <button id="btn-help" data-menu="menu-help" aria-expanded="false" class="cb-btn hide-md" data-tip="Shortcuts · ?" aria-label="Keyboard shortcuts" data-icon="keyboard"></button>
+        <button id="btn-settings" data-menu="menu-settings" aria-expanded="false" class="cb-btn" data-tip="Settings" aria-label="Settings" data-icon="sliders"></button>
+        <button id="btn-fs" class="cb-btn tip-end" data-tip="Fullscreen · F" aria-label="Fullscreen" data-icon="fullscreen"></button>
+        </footer>
+        </section>
+        </main>
+
+    <script src="icons.js"></script>
+    <script src="window-helpers.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

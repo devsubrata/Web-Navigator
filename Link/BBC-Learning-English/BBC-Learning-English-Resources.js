@@ -2465,6 +2465,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/260917_6_minute_english_is_rejection_good_for_us_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0p9vs00",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260917",
     },
     {
@@ -2477,6 +2478,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/260924_6_minute_english_why_do_we_itch_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0pc1zd9",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260924",
     },
     {
@@ -2489,6 +2491,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/261001_6_minute_english_why_does_heartbreak_hurt_so_much_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0pd5j7c",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261001",
     },
     {
@@ -2501,6 +2504,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/261008_6_minute_english_are_people_drinking_less_alcohol_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0pfkfd0",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261008",
     },
     {
@@ -2513,6 +2517,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/261015_6_minute_english_why_do_people_buy_gold_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0pglyp9",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261015",
     },
     {
@@ -2526,6 +2531,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/261022_6_minute_english_what_should_you_eat_for_a_better_nights_sleep_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0phstk6",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261022",
     },
     {
@@ -2539,6 +2545,7 @@ const SME2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/6min/261029_6_minute_english_is_aircon_the_answer_to_a_heating_world_transcript.pdf",
         ],
         type: "SME",
+        videoPID: "p0pk76nt",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261029",
     },
 ];
@@ -5271,6 +5278,15 @@ const TEWS2026 = [
         type: "TEWS",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261026",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/tews/261102_tews_here_for_it_download_.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pc1y3m.jpg",
+        episode: "Episode 261102 / 02 Nov 2026",
+        title: "Here for it",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/tews/261102_tews_here_for_it_.pdf"],
+        type: "TEWS",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261102",
+    },
 ];
 const LEFTN2024 = [
     {
@@ -6059,6 +6075,7 @@ const LEFTN2026 = [
         title: "US seizes Venezuelan president Maduro",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260107_LEFTN_US_seizes_Venezuelan_president_Maduro_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260107",
     },
     {
@@ -6068,6 +6085,7 @@ const LEFTN2026 = [
         title: "Iran protesters killed",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260114_LEFTN_iran_protesters_killed_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260114",
     },
 
@@ -6078,6 +6096,7 @@ const LEFTN2026 = [
         title: "Greenland: Trump clashes with allies",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260121_LEFTN_greenland_trump_clashes_with_allies_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260121",
     },
     {
@@ -6089,6 +6108,7 @@ const LEFTN2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260128_LEFTN_doomsday_clock_highest_ever_disaster_risk_worksheet__.pdf",
         ],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260128",
     },
     {
@@ -6098,6 +6118,7 @@ const LEFTN2026 = [
         title: "Women secretly filmed with new tech",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260204_LEFTN_secret_recording_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260204",
     },
     {
@@ -6107,6 +6128,7 @@ const LEFTN2026 = [
         title: "Bad Bunny's Super Bowl show",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260211_LEFTN_bad_bunny_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260211",
     },
     {
@@ -6116,6 +6138,7 @@ const LEFTN2026 = [
         title: "Russia killed opposition leader Alexei Navalny with frog toxin, UK says ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260218_LEFTN_navalny_killed_with_frog_toxin_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260218",
     },
     {
@@ -6127,6 +6150,7 @@ const LEFTN2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260225_LEFTN_violence_after_mexican_drug_leader_killed_worksheet.pdf",
         ],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260225",
     },
     {
@@ -6136,6 +6160,7 @@ const LEFTN2026 = [
         title: "US-Israel war with Iran",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260304_LEFTN_US_Israel_war_with_Iran_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260304",
     },
     {
@@ -6147,6 +6172,7 @@ const LEFTN2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260311_LEFTN_Global_impact_of_US-Israel_war_with_Iran_worksheet__.pdf",
         ],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260311",
     },
     {
@@ -6156,6 +6182,7 @@ const LEFTN2026 = [
         title: "Cuba protests: millions without power",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260318_LEFTN_Cuba_protests_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260318",
     },
     {
@@ -6165,6 +6192,7 @@ const LEFTN2026 = [
         title: "Earth ‘pushed beyond its limit’ UN warns",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260325_climate_imbalance_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260325",
     },
     {
@@ -6174,6 +6202,7 @@ const LEFTN2026 = [
         title: "Meta and YouTube lose social media addiction case",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260401_US_court_YT_meta_built_addictive_platforms_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260401",
     },
     {
@@ -6183,6 +6212,7 @@ const LEFTN2026 = [
         title: "Artemis II takes humans further from Earth than ever before",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260408_space_mission_breaks_records_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260408",
     },
     {
@@ -6192,6 +6222,7 @@ const LEFTN2026 = [
         title: "Hungary election landslide",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260415_LEFTN_Hungary_election_landslide_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260415",
     },
     {
@@ -6201,6 +6232,7 @@ const LEFTN2026 = [
         title: "Mass shooting at Mexican pyramids",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260422_LEFTN_Mass_shooting_at_Mexican_pyramids_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260422",
     },
     {
@@ -6210,6 +6242,7 @@ const LEFTN2026 = [
         title: "Trump shooting attempt ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260429_LEFTN_trump_shooting_attempt_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260429",
     },
     {
@@ -6219,6 +6252,7 @@ const LEFTN2026 = [
         title: "Iran war puts global food production at risk, says fertiliser boss",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260506_LEFTN_food_crisis_fears_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260506",
     },
     {
@@ -6228,6 +6262,7 @@ const LEFTN2026 = [
         title: "Passengers evacuated from hantavirus-affected MV Hondius",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260513_LEFTN_Hantavirus_ship_evacuated_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260513",
     },
     {
@@ -6237,6 +6272,7 @@ const LEFTN2026 = [
         title: "Deadly Ebola virus spreads",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260520_LEFTN_ebola_deadly_virus_spreads_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260520",
     },
     {
@@ -6246,6 +6282,7 @@ const LEFTN2026 = [
         title: "Is social media 'the new smoking'?",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260527_LEFTN_is_social_media_the_new_smoking_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260527",
     },
     {
@@ -6255,6 +6292,7 @@ const LEFTN2026 = [
         title: "El Niño: What to expect",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260603_LEFTN_El_nino_what_to_expect_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260603",
     },
     {
@@ -6264,6 +6302,7 @@ const LEFTN2026 = [
         title: "World Cup excitement and concern ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260610_LEFTN_world_cup_excitement_and_concern_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260610",
     },
     {
@@ -6273,6 +6312,7 @@ const LEFTN2026 = [
         title: "US-Iran peace deal",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260617_LEFTN_US-Iran_peace_deal_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260617",
     },
     {
@@ -6284,6 +6324,7 @@ const LEFTN2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260624_LEFTN_Keir_Starmer_resigns_as_UK_prime_minister_worksheet.pdf",
         ],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260624",
     },
     {
@@ -6293,6 +6334,7 @@ const LEFTN2026 = [
         title: "Venezuela earthquakes: Search for survivors continues ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260701_LEFTN_Venezuela_earthquakes_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260701",
     },
     {
@@ -6302,6 +6344,7 @@ const LEFTN2026 = [
         title: "Taylor Swift marries Travis Kelce at Madison Square Garden ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260708_LEFTN_Taylor_Swift_wedding_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260708",
     },
     {
@@ -6311,6 +6354,7 @@ const LEFTN2026 = [
         title: "Coffee is good for you",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260715_LEFTN_coffee_is_good_for_your_brain_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260715",
     },
     {
@@ -6320,6 +6364,7 @@ const LEFTN2026 = [
         title: "Global trust in news at its lowest",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260722_LEFTN_trust_in_news_at_its_lowest__worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260722",
     },
     {
@@ -6329,6 +6374,7 @@ const LEFTN2026 = [
         title: "No more PlayStation discs",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260729_LEFTN_no_more_playstation_discs_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260729",
     },
     {
@@ -6338,6 +6384,7 @@ const LEFTN2026 = [
         title: "Ceuta migrant crisis ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260805_LEFTN_ceuta_migrant_crisis_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260805",
     },
     {
@@ -6347,6 +6394,7 @@ const LEFTN2026 = [
         title: "Europe's first solar eclipse since 1999",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260812_LEFTN_rare_solar_eclipse_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: null,
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260812",
     },
     {
@@ -6356,6 +6404,7 @@ const LEFTN2026 = [
         title: "US states call for big changes to Instagram and Facebook as Meta trial begins",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260819_LEFTN_meta_on_trial_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0p58mgp",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260819",
     },
     {
@@ -6365,6 +6414,7 @@ const LEFTN2026 = [
         title: "AI hacking other companies by itself, causing security fears ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260826_LEFTN_AI_hacking_fears_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0p6bsmj",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260826",
     },
     {
@@ -6374,6 +6424,7 @@ const LEFTN2026 = [
         title: "Nepal recovering from impact of flash floods",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_Nepal_flash_floods_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0p7hny6",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260902",
     },
     {
@@ -6385,6 +6436,7 @@ const LEFTN2026 = [
             "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260902_LEFTN_man_survives_longest_pig_kidney_transplant_worksheet_.pdf",
         ],
         type: "LEFTN",
+        videoPID: "p0p8q1nd",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260909",
     },
     {
@@ -6394,6 +6446,7 @@ const LEFTN2026 = [
         title: "Humans could lose control of AI systems, AI boss says",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260916_LEFTN_could_AI_kill_us_all_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0p9vpxy",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260916",
     },
     {
@@ -6403,6 +6456,7 @@ const LEFTN2026 = [
         title: "AI and trade: Will they agree?",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260923_LEFTN_Trump_Xi_talks_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0pc1340",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260923",
     },
     {
@@ -6412,6 +6466,7 @@ const LEFTN2026 = [
         title: "Young people's mental distress is real, according to the head of a new review in the UK",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260930_LEFTN_young_people_aren't_weak_expert_says_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0pd5hmv",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260930",
     },
     {
@@ -6421,6 +6476,7 @@ const LEFTN2026 = [
         title: "French student protests",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261007_LEFTN_French_student_protests_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0pfdmjm",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261007",
     },
     {
@@ -6430,6 +6486,7 @@ const LEFTN2026 = [
         title: "Deadly Saudi airport attacks",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261014_LEFTN_deadly_saudi_airport_attack_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0pglhgj",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261014",
     },
     {
@@ -6439,6 +6496,7 @@ const LEFTN2026 = [
         title: "Why are young people protesting around the world? ",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261021_LEFTN_gen_z_protests_worksheet_.pdf"],
         type: "LEFTN",
+        videoPID: "p0phsmrl",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261021",
     },
     {
@@ -6448,6 +6506,7 @@ const LEFTN2026 = [
         title: " Lula surprises many with fourth election win",
         transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261028_LEFTN_Brazil_election_worksheet.pdf"],
         type: "LEFTN",
+        videoPID: "p0pk111c",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261028",
     },
 ];

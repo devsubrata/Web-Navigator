@@ -31,6 +31,12 @@ function createCard(card) {
                 <button style="${btnCSS}" title="Copy Card Image" class="copy-image" data-img="${encodeURIComponent(JSON.stringify(card))}">🖼️</button>
                 <button style="${btnCSS2}" title="load on player" class="load-on-player" data-audio="${encodeURIComponent(JSON.stringify(card))}">Load</button>
                 <button style="${btnCSS2}" title="load on play list" class="load-on-playlist" data-audio="${encodeURIComponent(JSON.stringify(card))}">LoadOnList</button>
+                ${
+                    card?.videoPID
+                        ? `<a href="${"./BBC-Player/index.html?pid=" + card.videoPID}" target="_blank" style="text-decoration: none; color: teal; font-size: 22
+                20px; font-weight: 700; margin-bottom:10px;">🎥</a>`
+                        : ""
+                }
             </div>
         </div>
     `;
