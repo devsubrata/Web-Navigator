@@ -2548,6 +2548,19 @@ const SME2026 = [
         videoPID: "p0pk76nt",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261029",
     },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/6min/261105_6_minute_english_could_vaccines_cure_cancer_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pl6496.jpg",
+        episode: "Episode 261105 / 05 Nov 2026",
+        title: "Could vaccines cure cancer?",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261105_6_minute_english_could_vaccines_cure_cancer_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261105_6_minute_english_could_vaccines_cure_cancer_transcript.pdf",
+        ],
+        type: "SME",
+        videoPID: "p0pl659f",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261105",
+    },
 ];
 const TEWS2021 = [
     {
@@ -6508,6 +6521,16 @@ const LEFTN2026 = [
         type: "LEFTN",
         videoPID: "p0pk111c",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261028",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261104_LEFTN_cyber-attacks_on_shops_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pl8mqg.jpg",
+        episode: "Episode 261104 / 04 Nov 2026",
+        title: "Cyber-attacks on shops",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261104_LEFTN_cyber-attacks_on_shops_worksheet.pdf"],
+        type: "LEFTN",
+        videoPID: "p0pl835m",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261104",
     },
 ];
 
