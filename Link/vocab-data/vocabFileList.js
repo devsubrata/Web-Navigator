@@ -48,6 +48,9 @@ const markDownFile = [
     },
 ];
 
+// TODO----------------- txt files for tabular format -------------------------
+const tabularFiles = [{ fileName: "500 Phrasal Verbs.txt", url: "#", ...colorSet2 }];
+
 // TODO----------------- CSV files -------------------------
 const writingFiles = [
     { fileName: "Common Essay Topics with Subtopics.csv", url: "https://ieltsliz.com/common-essay-topics-for-ielts/", ...colorSet4 },

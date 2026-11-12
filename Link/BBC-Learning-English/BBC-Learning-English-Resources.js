@@ -2561,6 +2561,20 @@ const SME2026 = [
         videoPID: "p0pl659f",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261105",
     },
+    {
+        audioLink:
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261112_6_minute_english_learning_from_different_generations_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pmgv7y.jpg",
+        episode: "Episode 261112 / 12 Nov 2026",
+        title: "Learning from different generations",
+        transcripts: [
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261112_6_minute_english_learning_from_different_generations_worksheet.pdf",
+            "https://downloads.bbc.co.uk/learningenglish/features/6min/261112_6_minute_english_learning_from_different_generations_transcript.pdf",
+        ],
+        type: "SME",
+        videoPID: "p0pmgqb0",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261122",
+    },
 ];
 const TEWS2021 = [
     {
@@ -6540,6 +6554,16 @@ const LEFTN2026 = [
         type: "LEFTN",
         videoPID: "p0pl835m",
         webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261104",
+    },
+    {
+        audioLink: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261111_LEFTN_the_healthy_food_you're_wasting_download.mp3",
+        bgImageLink: "https://ichef.bbci.co.uk/images/ic/1200xn/p0pmdwwd.jpg",
+        episode: "Episode 261111 / 11 Nov 2026",
+        title: "How experts say you can boost fibre in your diet",
+        transcripts: ["https://downloads.bbc.co.uk/learningenglish/features/LEFTN/261111_LEFTN_the_healthy_food_you're_wasting_worksheet.pdf"],
+        type: "LEFTN",
+        videoPID: "p0pmfmsq",
+        webUrl: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261111",
     },
 ];
 

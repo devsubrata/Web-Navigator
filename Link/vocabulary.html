@@ -194,6 +194,7 @@
             const imageContainer = document.getElementById("imageContainer");
 
             const allFiles = [
+                ...tabularFiles.map((f) => ({ ...f, type: "txt" })),
                 ...vocabFiles.map((f) => ({ ...f, type: "csv" })),
                 ...markDownFile.map((f) => ({ ...f, type: "md" })),
                 ...pdfFiles.map((f) => ({ ...f, type: "pdf" })),
@@ -232,7 +233,7 @@
                     btn.className = `${backgroundColor} ${textColor} px-4 py-2 rounded-lg hover:${hoverColor} transition`;
 
                     // Remove extension for display
-                    let cleanName = fileObj.fileName.replace(/\.(csv|md|pdf)/, "");
+                    let cleanName = fileObj.fileName.replace(/\.(txt|csv|md|pdf)/, "");
                     btn.textContent = cleanName;
 
                     // Assign proper loader function
@@ -246,6 +247,9 @@
                                 break;
                             case "pdf":
                                 loadPDFFromFolder(fileObj);
+                                break;
+                            case "txt":
+                                loadTXTFromFolder(fileObj);
                                 break;
                         }
                     };
@@ -271,6 +275,21 @@
                     .catch((err) => {
                         console.error("Error loading CSV:", err);
                         alert("Failed to load CSV file");
+                    });
+            }
+            function loadTXTFromFolder(fileObj) {
+                fetch(`vocab-data/txt/${fileObj.fileName}?t=${Date.now()}`)
+                    .then((res) => res.text())
+                    .then((text) => {
+                        const tableHeader = fileObj.fileName.replace(".txt", "");
+                        const sourceURL = fileObj.url;
+                        const tableData = { tableHeader, tableContent: text, sourceURL };
+                        localStorage.setItem("tableTransferData", JSON.stringify(tableData));
+                        window.open("./HTMLtableGenerator/index.html", "_blank");
+                    })
+                    .catch((err) => {
+                        console.error("Error loading TXT:", err);
+                        alert("Failed to load TXT file");
                     });
             }
             function loadMarkdown(fileObj) {
@@ -585,7 +604,6 @@
                         let paragraph = items.slice(1).join(", ");
                         let paragraphs = paragraph.includes("❗") ? paragraph.split("❗") : [paragraph];
 
-                        console.log(paragraphs);
                         html = `
                             <div class="flex justify-center mb-2">
                                 <span class="

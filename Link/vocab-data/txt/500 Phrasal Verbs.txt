@@ -1,0 +1,501 @@
+Phrasal Verb | Meaning | Example
+*Act out* | Express feelings through behavior | The child acts out when he feels ignored.
+*Add up* | Calculate the total | Add up the bill before we leave.
+*Ask around* | Ask several people | I'll ask around to find a good dentist.
+*Ask for* | Request something | She asked for a glass of water.
+*Ask out* | Invite someone on a date | He asked her out to dinner.
+*Back away* | Move backward | The crowd backed away from the fire.
+*Back down* | Stop arguing or give in | He refused to back down during the debate.
+*Back off* | Move away or stop interfering | Back off and let me finish my work.
+*Back up* | Support or make a copy | Always back up your files.
+*Bear with* | Be patient with | Please bear with me while I find the file.
+*Blow away* | Impress greatly | Her performance blew us away.
+*Blow up* | Explode or become very angry | He blew up when he saw the mess.
+*Break away* | Escape from control | The prisoner broke away from the guard.
+*Break down* | Stop functioning; lose emotional control | Our car broke down on the highway.
+*Break in* | Enter by force; interrupt | Thieves broke in last night.
+*Break into* | Enter a place illegally | Someone broke into the shop.
+*Break off* | End suddenly | They broke off the talks.
+*Break out* | Begin suddenly; escape | A fire broke out in the kitchen.
+*Break through* | Overcome an obstacle | Scientists broke through a major barrier.
+*Break up* | End a relationship | They broke up last year.
+*Bring about* | Cause something to happen | The new law brought about big changes.
+*Bring along* | Take someone or something with you | Bring along your umbrella.
+*Bring back* | Return something; revive a memory | This song brings back memories.
+*Bring down* | Reduce; cause to fall | The scandal brought down the government.
+*Bring in* | Introduce; earn money | She brings in a good salary.
+*Bring out* | Publish; make noticeable | The company brought out a new phone.
+*Bring up* | Mention a topic; raise a child | Don't bring up politics at dinner.
+*Brush aside* | Ignore or dismiss | He brushed aside my concerns.
+*Brush up on* | Improve existing knowledge | I need to brush up on my French.
+*Burn down* | Be destroyed by fire | The old barn burned down.
+*Burn out* | Become exhausted | She burned out after years of overwork.
+*Burst into* | Suddenly begin doing something | She burst into tears.
+*Call back* | Return a phone call | I'll call you back in ten minutes.
+*Call for* | Require; demand | This situation calls for patience.
+*Call off* | Cancel | They called off the match because of rain.
+*Call on* | Visit; ask someone to speak | The teacher called on me to answer.
+*Call up* | Telephone someone | I'll call you up tonight.
+*Calm down* | Become relaxed | Calm down and tell me what happened.
+*Carry on* | Continue | Carry on with your work.
+*Carry out* | Perform or complete a task | They carried out the experiment.
+*Catch on* | Understand; become popular | The trend caught on quickly.
+*Catch up* | Reach the same level | I need to catch up on my studies.
+*Catch up with* | Reach someone; become up to date | I'll catch up with you later.
+*Check in* | Register upon arrival | We checked in at the hotel at noon.
+*Check out* | Leave a hotel; examine | Check out this new app.
+*Cheer up* | Become or make happier | Cheer up! Things will get better.
+*Chip in* | Contribute money or help | Everyone chipped in for the gift.
+*Clean up* | Make something clean | Clean up your room.
+*Clear away* | Remove things | Please clear away the dishes.
+*Clear up* | Resolve confusion; become clear | Let me clear up the confusion.
+*Come about* | Happen | How did this situation come about?
+*Come across* | Find or meet unexpectedly | I came across an old photo.
+*Come along* | Accompany; make progress | Come along with us to the park.
+*Come apart* | Separate into pieces | The book came apart in my hands.
+*Come around* | Change one's opinion; regain consciousness | He finally came around to our idea.
+*Come back* | Return | When will you come back?
+*Come by* | Obtain; visit briefly | How did you come by this rare book?
+*Come down* | Descend; decrease | Prices have come down.
+*Come down with* | Become ill with | I think I'm coming down with a cold.
+*Come forward* | Offer information or help | Witnesses came forward.
+*Come in* | Enter | Please come in.
+*Come off* | Succeed; become detached | The plan didn't come off.
+*Come on* | Hurry; begin; encourage | Come on, we're late!
+*Come out* | Appear; become known | The truth finally came out.
+*Come over* | Visit someone's home | Come over for dinner tonight.
+*Come through* | Survive; deliver what was promised | He came through when we needed him.
+*Come up* | Arise; be mentioned | A problem has come up.
+*Come up against* | Face a difficulty | We came up against strong opposition.
+*Come up with* | Think of an idea | She came up with a clever solution.
+*Count on* | Depend on | You can count on me.
+*Cut back on* | Reduce consumption or spending | I'm cutting back on sugar.
+*Cut down* | Reduce; fell a tree | They cut down the old oak tree.
+*Cut down on* | Consume less | He should cut down on coffee.
+*Cut in* | Interrupt; move into traffic | Don't cut in while I'm speaking.
+*Cut off* | Disconnect; isolate | The storm cut off the village.
+*Cut out* | Remove; stop doing something | Cut out the junk food.
+*Cut up* | Cut into pieces | Cut up the vegetables.
+*Deal with* | Handle a problem | She deals with customer complaints.
+*Die away* | Gradually become quieter or weaker | The sound died away.
+*Die down* | Become less intense | The wind died down by evening.
+*Die out* | Become extinct or disappear | Dinosaurs died out millions of years ago.
+*Do away with* | Abolish; eliminate | The school did away with uniforms.
+*Do over* | Do again | I have to do this essay over.
+*Do without* | Manage without something | We had to do without electricity.
+*Dress up* | Wear formal or special clothes | They dressed up for the party.
+*Drop by* | Visit briefly | Drop by my office anytime.
+*Drop off* | Deliver; fall asleep; decrease | I'll drop off the package tomorrow.
+*Drop out* | Leave a course or activity | He dropped out of college.
+*Eat out* | Eat at a restaurant | We eat out every Friday.
+*End up* | Finally reach a situation | We ended up staying home.
+*Face up to* | Accept and confront a problem | You must face up to the truth.
+*Fall apart* | Break into pieces; lose emotional control | The old chair fell apart.
+*Fall behind* | Fail to keep up | Don't fall behind in your payments.
+*Fall down* | Drop to the ground | The child fell down and cried.
+*Fall for* | Fall in love; be deceived by | He fell for her immediately.
+*Fall out* | Quarrel; become detached | They fell out over money.
+*Fall through* | Fail to happen | Our travel plans fell through.
+*Figure out* | Understand or solve | I can't figure out this puzzle.
+*Fill in* | Complete missing information | Fill in the blanks.
+*Fill out* | Complete a form | Please fill out this application form.
+*Find out* | Discover information | I found out the truth.
+*Get across* | Communicate an idea successfully | He couldn't get his point across.
+*Get ahead* | Make progress or succeed | She works hard to get ahead.
+*Get along* | Have a good relationship | We get along well.
+*Get around* | Move from place to place | It's easy to get around by bike.
+*Get around to* | Finally do something planned | I finally got around to cleaning the garage.
+*Get at* | Mean; imply | What are you getting at?
+*Get away* | Escape | The thief got away.
+*Get away with* | Avoid punishment | He got away with cheating.
+*Get back* | Return | We got back at midnight.
+*Get back at* | Take revenge on | She wanted to get back at him.
+*Get back to* | Reply or contact again | I'll get back to you tomorrow.
+*Get by* | Manage with what is available | They get by on a small income.
+*Get down* | Lower; make someone sad | The rainy weather gets me down.
+*Get down to* | Start doing something seriously | Let's get down to business.
+*Get in* | Enter; arrive | What time does your train get in?
+*Get into* | Become interested in; enter | She got into photography.
+*Get off* | Leave a bus or train | I get off at the next stop.
+*Get on* | Board a bus or train | Get on the bus quickly.
+*Get on with* | Continue; have a good relationship | I get on well with my boss.
+*Get out* | Leave; escape | Get out of my room!
+*Get over* | Recover from something | He got over the flu quickly.
+*Get through* | Finish; survive; make contact | I couldn't get through on the phone.
+*Get together* | Meet socially | Let's get together this weekend.
+*Get up* | Rise from bed | I get up at six every day.
+*Give away* | Donate; reveal a secret | She gave away her old clothes.
+*Give back* | Return something | Give back my book.
+*Give in* | Surrender; stop resisting | He finally gave in to pressure.
+*Give off* | Produce a smell, heat, or light | The flowers give off a sweet smell.
+*Give out* | Distribute; stop working | The teacher gave out the papers.
+*Give up* | Quit; stop trying | Never give up on your dreams.
+*Go about* | Begin or approach a task | How should I go about this problem?
+*Go after* | Pursue or try to obtain | Go after your goals.
+*Go ahead* | Proceed | Go ahead and start the meeting.
+*Go along with* | Agree with or support | I'll go along with your plan.
+*Go around* | Circulate; visit places | A rumor is going around.
+*Go away* | Leave | Go away and leave me alone.
+*Go back* | Return | I want to go back home.
+*Go back on* | Break a promise | He went back on his word.
+*Go by* | Pass; use as a guide | Don't go by appearances alone.
+*Go down* | Decrease; happen | Prices went down last month.
+*Go for* | Choose; try to obtain | I'll go for the chicken.
+*Go in for* | Enjoy or participate in | She goes in for tennis.
+*Go off* | Explode; ring; spoil | The alarm went off at six.
+*Go on* | Continue; happen | What's going on here?
+*Go out* | Leave home socially; stop burning | We go out on Saturdays.
+*Go over* | Review or examine | Let's go over the report.
+*Go through* | Experience; examine carefully | She went through a difficult time.
+*Go through with* | Complete despite difficulty | He went through with the surgery.
+*Go up* | Increase; rise | Prices keep going up.
+*Go with* | Match; choose | This tie goes with your shirt.
+*Go without* | Manage without | They went without food for two days.
+*Grow apart* | Become less close | The friends slowly grew apart.
+*Grow up* | Become an adult | I grew up in a small town.
+*Hand back* | Return something by hand | The teacher handed back the tests.
+*Hand down* | Pass to a younger generation | The ring was handed down to her.
+*Hand in* | Submit work | Hand in your homework by Friday.
+*Hand out* | Distribute | They handed out free samples.
+*Hand over* | Give control or possession | He handed over the keys.
+*Hang around* | Spend time waiting or relaxing | We hung around the mall.
+*Hang on* | Wait; hold tightly | Hang on a second, please.
+*Hang out* | Spend time relaxing socially | I hang out with my friends on weekends.
+*Hang up* | End a phone call | She hung up without saying goodbye.
+*Hold back* | Restrain; keep information secret | He held back his tears.
+*Hold on* | Wait; grip tightly | Hold on to the rope.
+*Hold onto* | Keep possession of | Hold onto your ticket.
+*Hold out* | Resist; continue to offer hope | They held out for three weeks.
+*Hold up* | Delay; rob; remain strong | Traffic held us up.
+*Hurry up* | Do something faster | Hurry up or we'll be late.
+*Keep away* | Stay at a distance | Keep away from the edge.
+*Keep back* | Maintain a distance | Keep back from the stage.
+*Keep down* | Control or prevent an increase | Try to keep your costs down.
+*Keep from* | Prevent someone from doing something | I couldn't keep from laughing.
+*Keep off* | Stay away from a surface or area | Keep off the grass.
+*Keep on* | Continue doing something | Keep on trying.
+*Keep out* | Stay outside | Keep out of the room.
+*Keep up* | Maintain the same pace | Keep up the good work.
+*Keep up with* | Stay at the same level as | It's hard to keep up with technology.
+*Kick off* | Begin an event | The festival kicks off tomorrow.
+*Kick out* | Force someone to leave | They kicked him out of the club.
+*Knock down* | Hit and make something fall | The storm knocked down several trees.
+*Knock out* | Make unconscious; eliminate | The boxer knocked out his opponent.
+*Leave behind* | Forget or fail to take | I left my phone behind.
+*Leave out* | Exclude | Don't leave out any details.
+*Let down* | Disappoint | I won't let you down.
+*Let in* | Allow to enter | Please let the cat in.
+*Let off* | Give a light punishment; release | The officer let him off with a warning.
+*Let out* | Release; make clothing looser | She let out the dog.
+*Live on* | Survive by using something | They live on rice and beans.
+*Live up to* | Meet expectations | The movie lived up to the hype.
+*Look after* | Take care of | She looks after her grandmother.
+*Look ahead* | Think about the future | We must look ahead and plan.
+*Look around* | Explore a place | We looked around the old town.
+*Look at* | Examine; consider | Look at this picture.
+*Look back* | Think about the past | I often look back on my school days.
+*Look down on* | Consider someone inferior | Don't look down on others.
+*Look for* | Search for | I'm looking for my keys.
+*Look forward to* | Feel excited about something future | I look forward to meeting you.
+*Look into* | Investigate | The police are looking into the case.
+*Look out* | Be careful | Look out! There's a car coming.
+*Look out for* | Watch for; protect | Look out for pickpockets.
+*Look over* | Examine quickly | Look over my essay before I submit it.
+*Look through* | Read or examine briefly | I looked through the magazine.
+*Look up* | Search for information | Look up the word in a dictionary.
+*Look up to* | Respect or admire | He looks up to his older brother.
+*Make for* | Move toward; contribute to | We made for the nearest shelter.
+*Make of* | Form an opinion about | What do you make of this news?
+*Make off* | Escape, usually with something | The thieves made off with the jewels.
+*Make out* | Understand; see with difficulty | I can't make out the words.
+*Make up* | Invent; reconcile; apply cosmetics | He made up an excuse.
+*Make up for* | Compensate for something | I'll make up for the lost time.
+*Mix up* | Confuse; put in the wrong order | I mixed up the dates.
+*Move in* | Start living in a place | They moved in last week.
+*Move on* | Continue to the next stage | It's time to move on.
+*Move out* | Leave a home | She moved out of her parents' house.
+*Move over* | Shift to make room | Move over so I can sit.
+*Pass away* | Die | His grandfather passed away last year.
+*Pass by* | Go past | I pass by the bakery every day.
+*Pass on* | Give something to another person | Please pass on the message.
+*Pass out* | Faint; distribute | He passed out from the heat.
+*Pass up* | Miss or reject an opportunity | Don't pass up this chance.
+*Pay back* | Repay money; take revenge | I'll pay you back on Friday.
+*Pay for* | Give money for something | I'll pay for dinner.
+*Pay off* | Finish paying a debt; produce results | Her hard work paid off.
+*Pick at* | Eat small amounts; criticize repeatedly | She just picked at her food.
+*Pick on* | Bully or repeatedly criticize | Stop picking on your sister.
+*Pick out* | Choose; identify | She picked out a nice dress.
+*Pick up* | Collect; learn; improve | I'll pick you up at eight.
+*Point out* | Draw attention to | He pointed out my mistake.
+*Pull apart* | Separate into pieces | They pulled apart the old machine.
+*Pull away* | Move away | The car pulled away from the curb.
+*Pull back* | Withdraw | The army pulled back.
+*Pull down* | Demolish; lower | They pulled down the old building.
+*Pull in* | Arrive; attract | The train pulled in at noon.
+*Pull off* | Succeed in doing something difficult | He pulled off an amazing win.
+*Pull out* | Withdraw; remove | The company pulled out of the deal.
+*Pull over* | Move a vehicle to the roadside | The police officer told him to pull over.
+*Pull through* | Recover from a serious difficulty | The patient pulled through.
+*Pull up* | Stop a vehicle; bring up information | The taxi pulled up outside.
+*Put across* | Communicate an idea clearly | She put her ideas across well.
+*Put aside* | Save for later | Put aside some money each month.
+*Put away* | Store; put in its proper place | Put away your toys.
+*Put back* | Return to its original place | Put the book back on the shelf.
+*Put down* | Place on a surface; criticize | Put down your pen.
+*Put forward* | Suggest an idea | He put forward a new proposal.
+*Put off* | Postpone; discourage | Don't put off your homework.
+*Put on* | Wear; switch on; organize | Put on your coat.
+*Put out* | Extinguish; inconvenience | Firefighters put out the fire.
+*Put through* | Connect by phone; make someone experience | Can you put me through to the manager?
+*Put together* | Assemble; organize | He put together a bookshelf.
+*Put up* | Erect; accommodate; increase | They put up a tent.
+*Put up with* | Tolerate | I can't put up with the noise.
+*Ring back* | Return a phone call | Ring me back later.
+*Ring up* | Telephone; register a sale | I'll ring you up tomorrow.
+*Run across* | Find unexpectedly | I ran across an old friend.
+*Run after* | Chase | The dog ran after the ball.
+*Run around* | Be very busy moving from place to place | I've been running around all day.
+*Run away* | Escape | The boy ran away from home.
+*Run down* | Criticize; lose power; hit with a vehicle | My phone battery has run down.
+*Run into* | Meet unexpectedly; encounter a problem | I ran into my teacher at the mall.
+*Run off* | Leave quickly; make copies | Run off twenty copies of this page.
+*Run out* | Have none left | We've run out of milk.
+*Run out of* | Use all of something | We ran out of time.
+*Run over* | Hit with a vehicle; review quickly | Let's run over the plan again.
+*Run through* | Rehearse; examine quickly | Let's run through the script.
+*Run up* | Accumulate a bill or debt | He ran up a huge phone bill.
+*See off* | Say goodbye to someone leaving | We saw them off at the airport.
+*See through* | Recognize deception; continue to the end | I can see through his lies.
+*See to* | Take care of | I'll see to the arrangements.
+*Sell off* | Sell assets or goods, often quickly | They sold off the old stock.
+*Send back* | Return something | I sent the shirt back.
+*Send for* | Ask someone to come | Send for a doctor.
+*Set about* | Begin doing something | She set about cleaning the house.
+*Set aside* | Reserve; save for a purpose | Set aside time to study.
+*Set back* | Delay; cost money | The delay set us back a week.
+*Set down* | Put something down; record | Set down your bags here.
+*Set off* | Start a journey; trigger | We set off at dawn.
+*Set out* | Begin a journey; explain clearly | They set out for the mountains.
+*Set up* | Establish; arrange | He set up a new business.
+*Settle down* | Become calm or establish a stable life | They settled down in the countryside.
+*Settle for* | Accept less than desired | I settled for a cheaper model.
+*Show off* | Boast or display proudly | He likes to show off his car.
+*Show up* | Arrive; become visible | He didn't show up for the meeting.
+*Shut down* | Close; stop operating | The factory shut down last year.
+*Shut off* | Stop the flow or supply | Shut off the water.
+*Shut up* | Stop talking | Please shut up and listen.
+*Sign in* | Register arrival | Sign in at the front desk.
+*Sign off* | End a message or broadcast | He signed off with a smile.
+*Sign up* | Register to participate | I signed up for a yoga class.
+*Sit back* | Relax without taking action | Sit back and enjoy the show.
+*Sit down* | Take a seat | Please sit down.
+*Sit in* | Attend or participate as a substitute | I'll sit in for the manager.
+*Sit out* | Not participate in an activity | She sat out the second half.
+*Sit up* | Sit with your back straight; stay awake | I sat up all night studying.
+*Sleep in* | Sleep later than usual | I sleep in on Sundays.
+*Slip away* | Leave quietly; gradually disappear | He slipped away from the party.
+*Slip up* | Make a mistake | I slipped up on the date.
+*Sort out* | Organize; resolve a problem | We need to sort out this mess.
+*Speak out* | Express an opinion openly | She spoke out against injustice.
+*Speak up* | Talk louder; express an opinion confidently | Please speak up, I can't hear you.
+*Stand by* | Support; be ready | I'll stand by you no matter what.
+*Stand down* | Resign from a position; withdraw | The chairman stood down.
+*Stand for* | Represent; tolerate | What does UN stand for?
+*Stand out* | Be noticeable | Her red coat stands out.
+*Stand up* | Rise to your feet | Everyone stood up.
+*Stand up for* | Defend or support someone | Stand up for your rights.
+*Stand up to* | Resist someone confidently | He stood up to the bully.
+*Start off* | Begin | Let's start off with an easy question.
+*Start out* | Begin a journey or career | She started out as a waitress.
+*Stay away* | Avoid going somewhere | Stay away from that dog.
+*Stay in* | Remain at home | I'll stay in tonight.
+*Stay on* | Remain in a place or job | He stayed on after the deadline.
+*Stay up* | Remain awake | We stayed up late.
+*Step aside* | Move out of the way; resign | Please step aside.
+*Step down* | Resign from a position | The CEO stepped down.
+*Step in* | Intervene to help | The teacher stepped in to stop the fight.
+*Step up* | Increase effort or intensity | We need to step up our efforts.
+*Stick around* | Stay nearby | Stick around, the best part is coming.
+*Stick by* | Remain loyal to | She stuck by him.
+*Stick out* | Protrude; be noticeable | His ears stick out.
+*Stick to* | Follow or continue with | Stick to the plan.
+*Stick up for* | Defend someone | He stuck up for his friend.
+*Stick with* | Continue using or supporting | I'll stick with my old phone.
+*Sum up* | Summarize | To sum up, we need more time.
+*Take aback* | Surprise or shock someone | His rude reply took me aback.
+*Take after* | Resemble a family member | She takes after her mother.
+*Take apart* | Separate into pieces | He took apart the engine.
+*Take away* | Remove; learn as a lesson | Take away the empty plates.
+*Take back* | Return; withdraw a statement | I take back what I said.
+*Take down* | Remove; write information | Take down my phone number.
+*Take in* | Understand; deceive; provide shelter | It's a lot to take in.
+*Take off* | Remove clothing; leave the ground | The plane took off on time.
+*Take on* | Accept responsibility; employ | She took on extra work.
+*Take out* | Remove; invite someone socially | He took her out to dinner.
+*Take over* | Gain control | A new manager took over.
+*Take up* | Begin a hobby; occupy time or space | I took up painting.
+*Talk back* | Reply rudely | Don't talk back to your parents.
+*Talk into* | Persuade someone to do something | She talked me into joining.
+*Talk out of* | Persuade someone not to do something | I talked him out of quitting.
+*Talk over* | Discuss carefully | Let's talk it over tonight.
+*Tear apart* | Destroy or criticize severely | Critics tore the film apart.
+*Tear down* | Demolish; criticize harshly | They tore down the old stadium.
+*Tear up* | Rip into pieces; fill with tears | She tore up the letter.
+*Tell apart* | Recognize the difference between | I can't tell the twins apart.
+*Think over* | Consider carefully | Think it over before you decide.
+*Think through* | Consider all the details | Think through the consequences.
+*Throw away* | Discard | Don't throw away that receipt.
+*Throw back* | Return by throwing; remind of the past | He threw the ball back.
+*Throw in* | Include something extra | They threw in a free case.
+*Throw out* | Discard; reject | Throw out the old newspapers.
+*Throw up* | Vomit | He threw up after the ride.
+*Tidy up* | Make a place neat | Tidy up before guests arrive.
+*Track down* | Find after searching | I tracked down the old record.
+*Try on* | Put on clothing to see if it fits | Try on this jacket.
+*Try out* | Test something | Try out the new software.
+*Turn around* | Change direction; improve a situation | He turned the company around.
+*Turn away* | Refuse entry; reject | The club turned him away.
+*Turn back* | Return in the opposite direction | We turned back because of the storm.
+*Turn down* | Reject; reduce volume or heat | Turn down the music.
+*Turn in* | Submit; go to bed | I turn in at ten.
+*Turn into* | Become | The caterpillar turned into a butterfly.
+*Turn off* | Switch off; cause dislike | Turn off the lights.
+*Turn on* | Switch on; attack unexpectedly | Turn on the TV.
+*Turn out* | Prove to be; attend an event | It turned out to be true.
+*Turn over* | Flip; transfer control | Turn over the page.
+*Turn to* | Seek help from | She turned to her friends.
+*Turn up* | Arrive; increase volume | He turned up late.
+*Use up* | Consume completely | We used up all the paper.
+*Wait around* | Wait without doing much | I waited around for an hour.
+*Wait on* | Serve; attend to someone's needs | The waiter waited on our table.
+*Wait up* | Stay awake until someone arrives | Don't wait up for me.
+*Wake up* | Stop sleeping | Wake up, it's morning.
+*Walk away* | Leave a situation | He walked away from the argument.
+*Walk away with* | Win or obtain something easily | She walked away with the prize.
+*Walk in* | Enter without an appointment | Walk-in customers are welcome.
+*Walk out* | Leave suddenly, often in protest | Workers walked out of the meeting.
+*Walk out on* | Abandon someone or something | He walked out on his family.
+*Walk through* | Explain or practise step by step | Let me walk you through the process.
+*Warm up* | Make or become warmer | Warm up the soup.
+*Watch out* | Be careful | Watch out for the step.
+*Wear off* | Gradually disappear | The pain wore off.
+*Wear out* | Become unusable; exhaust someone | My shoes wore out.
+*Wind down* | Relax gradually; reduce activity | I wind down by reading.
+*Wind up* | Finish; end up in a situation | We wound up in a small cafe.
+*Wipe out* | Destroy completely; eliminate | The flood wiped out the village.
+*Work around* | Find a way to avoid an obstacle | We worked around the problem.
+*Work on* | Spend time improving or developing | I'm working on my speech.
+*Work out* | Exercise; solve; succeed | I work out every morning.
+*Work through* | Deal with a problem step by step | They worked through their differences.
+*Work up* | Develop a feeling; build up gradually | I worked up an appetite.
+*Write down* | Record in writing | Write down the address.
+*Write off* | Cancel a debt; consider a failure | The bank wrote off the loan.
+*Write out* | Write something completely | Write out your full name.
+*Zero in on* | Focus attention on | The police zeroed in on a suspect.
+*Zoom in* | Move closer to a subject or image | Zoom in on the map.
+*Zoom out* | View a wider area | Zoom out to see the whole city.
+*Act on* | Take action based on information | The police acted on a tip.
+*Add on* | Include something extra | They added on a small fee.
+*Allow for* | Take into consideration | Allow for traffic delays.
+*Appeal to* | Attract or interest someone | The idea appeals to me.
+*Apply for* | Formally request a job or opportunity | She applied for a scholarship.
+*Back out* | Withdraw from an agreement | He backed out of the deal.
+*Bank on* | Depend on or count on | Don't bank on getting a raise.
+*Bargain for* | Expect or anticipate something | I didn't bargain for so much work.
+*Black out* | Lose consciousness; lose electrical power | The city blacked out during the storm.
+*Block off* | Close an area or passage | Police blocked off the road.
+*Boil down to* | Have as the main point | It all boils down to money.
+*Branch out* | Expand into new areas | The shop branched out into online sales.
+*Bump into* | Meet someone unexpectedly | I bumped into an old friend.
+*Buy out* | Purchase someone's share of a business | He bought out his partner.
+*Buy up* | Buy all or most available items | Investors bought up the land.
+*Call around* | Contact several people or places | I called around for prices.
+*Carry over* | Transfer to another time or situation | Unused leave carries over to next year.
+*Cast aside* | Reject or discard | He cast aside his doubts.
+*Clamp down on* | Take strict action against | The government clamped down on fraud.
+*Close down* | Stop operating permanently | The shop closed down.
+*Come apart at the seams* | Lose control emotionally; fall into disorder | The team came apart at the seams.
+*Come between* | Damage a relationship between people | Money came between the brothers.
+*Come down to* | Depend on the most important factor | It comes down to trust.
+*Come out with* | Say something, sometimes unexpectedly | She came out with a surprising comment.
+*Come round to* | Eventually agree with an idea | He came round to my view.
+*Crack down on* | Enforce rules more strictly | Police cracked down on speeding.
+*Creep up on* | Approach gradually and unnoticed | Old age creeps up on you.
+*Cross out* | Draw a line through something written | Cross out the wrong answer.
+*Cry out* | Shout or call loudly | She cried out for help.
+*Cut across* | Go across; affect several areas | Cut across the field to save time.
+*Cut in on* | Interrupt someone or an activity | He cut in on our conversation.
+*Cut through* | Find a direct route; overcome complexity | Cut through the red tape.
+*Dash off* | Leave quickly; write something quickly | I dashed off a quick note.
+*Dawn on* | Suddenly become clear to someone | It dawned on me that I was wrong.
+*Dig into* | Investigate deeply; begin eating eagerly | Dig into your meal.
+*Dip into* | Use a small amount of money or a resource | I dipped into my savings.
+*Drag on* | Continue for too long | The meeting dragged on for hours.
+*Draw back* | Move away because of fear or hesitation | She drew back in fear.
+*Draw on* | Use experience or knowledge | Draw on your experience.
+*Draw up* | Prepare a document or plan | The lawyer drew up a contract.
+*Dream up* | Invent an idea | He dreamed up a clever plan.
+*Drive away* | Force someone or something to leave | The noise drove the birds away.
+*Drive off* | Leave in a vehicle | He drove off without a word.
+*Ease off* | Become less intense | The rain eased off.
+*Eat away at* | Gradually damage or worry someone | Guilt ate away at him.
+*Egg on* | Encourage someone to do something, often foolish | His friends egged him on.
+*Face off* | Confront an opponent | The two teams will face off tonight.
+*Fall back on* | Use as a backup | I can fall back on my savings.
+*Feel up to* | Feel capable of doing something | I don't feel up to going out.
+*Fight back* | Resist an attack or difficulty | They fought back bravely.
+*Figure on* | Expect or plan for something | I figure on finishing by noon.
+*Finish off* | Complete the last part | Finish off your dinner.
+*Fizzle out* | Gradually lose strength or excitement | The protest fizzled out.
+*Follow through* | Complete what you promised or started | Follow through on your promises.
+*Take after* | Resemble a family member | He takes after his father.
+*Take down* | Write something; bring someone to the ground | Take down these notes.
+*Take in* | Understand; also mean to accept someone temporarily | They took in a stray cat.
+*Take off* | Remove clothes; also mean to depart | Take off your shoes.
+*Take on* | Accept a responsibility; become larger | He took on a new project.
+*Take over* | Gain control; replace someone | She took over from the old manager.
+*Take up* | Begin a new activity or hobby | He took up swimming.
+*Talk back* | Answer rudely; speak in a disrespectful way | Never talk back to your teacher.
+*Talk down to* | Treat someone as inferior | Don't talk down to me.
+*Talk into* | Persuade someone to do something | He talked me into buying it.
+*Talk out of* | Dissuade someone from doing something | She talked him out of leaving.
+*Talk over* | Discuss something together | Let's talk this over.
+*Tap into* | Use a resource or take advantage of something | The firm tapped into a new market.
+*Tear apart* | Ruin a relationship or object | The argument tore the family apart.
+*Tear down* | Destroy something; criticize harshly | They tore down the wall.
+*Tee off* | Start a golf game; begin a journey | We teed off at nine.
+*Test out* | Try something to see if it works | Test out the new recipe.
+*Thaw out* | Melt after being frozen | Thaw out the chicken first.
+*Think over* | Consider carefully | I'll think over your offer.
+*Throw away* | Discard something | Throw away the trash.
+*Throw back* | Return something; also mean vomit | He threw back the drink.
+*Throw in* | Add something; give up | They threw in a free gift.
+*Throw off* | Distract; cause to lose balance | The noise threw me off.
+*Throw out* | Remove something; discard | Throw out the old food.
+*Tidy up* | Clean and organize | Tidy up your desk.
+*Time out* | Pause in a game or activity | The coach called a time out.
+*Take apart* | Disassemble; analyze | The experts took apart the report.
+*Touch base* | Contact someone; get an update | Let's touch base next week.
+*Try on* | Test clothes or something before buying | Try on these shoes.
+*Turn down* | Refuse; also mean to reduce volume | She turned down the offer.
+*Turn in* | Submit something; go to bed | Turn in your assignment.
+*Turn over* | Change position; give to someone | Turn over onto your back.
+*Turn up* | Arrive; increase (volume, heat, etc.) | Turn up the heat.
+*Turn away* | Reject someone; move in an opposite direction | He turned away from the window.
+*Use up* | Finish something completely | Don't use up all the milk.
+*Value out* | Estimate the worth of something | They valued out the antique.
+*Wake up* | Stop sleeping; become aware | Wake up to the facts.
+*Walk away* | Leave a place or situation | Sometimes it's best to walk away.
+*Warm up* | Increase temperature; prepare for activity | Warm up before running.
+*Watch out* | Be careful; avoid danger | Watch out for ice.
+*Wear out* | Become very tired or damaged | The carpet wore out.
+*Weigh in* | Give an opinion; add weight (also weigh) | Experts weighed in on the issue.
+*Work out* | Solve a problem; also mean exercise | Things will work out.
+*Wrap up* | Finish; cover something | Let's wrap up the meeting.
+*Write down* | Record something in writing | Write down your ideas.
+*Zoom in* | Focus closely on something | Zoom in on the details.
+*Zoom out* | View a wider picture | Zoom out and look at the big picture.
+*Own up* | Admit something | He owned up to the mistake.
+*Log in* | Access an account or system | Log in to your account.
+*Log out* | Sign out from an account or system | Don't forget to log out.
